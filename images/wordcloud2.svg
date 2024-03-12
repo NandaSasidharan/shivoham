@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="148mm"
+   height="105mm"
+   viewBox="0 0 148 105"
+   version="1.1"
+   id="svg38675"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="wordcloud2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview38677"
+     pagecolor="#b1b1b1"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.189"
+     inkscape:cx="270.3"
+     inkscape:cy="171.9"
+     inkscape:window-width="1620"
+     inkscape:window-height="1058"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs38672">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter54868"
+       x="-0.04909"
+       y="-0.257"
+       width="1.098"
+       height="1.514">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.5652"
+         id="feGaussianBlur54870" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter54872"
+       x="-0.03428"
+       y="-0.1532"
+       width="1.069"
+       height="1.306">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.5652"
+         id="feGaussianBlur54874" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter54876"
+       x="-0.0389"
+       y="-0.1604"
+       width="1.078"
+       height="1.321">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.5652"
+         id="feGaussianBlur54878" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter54880"
+       x="-0.0695"
+       y="-0.126"
+       width="1.139"
+       height="1.252">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.5652"
+         id="feGaussianBlur54882" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter54884"
+       x="-0.02949"
+       y="-0.1479"
+       width="1.059"
+       height="1.296">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.5652"
+         id="feGaussianBlur54886" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter54888"
+       x="-0.02542"
+       y="-0.165"
+       width="1.051"
+       height="1.33">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.5652"
+         id="feGaussianBlur54890" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter54892"
+       x="-0.03306"
+       y="-0.1554"
+       width="1.066"
+       height="1.311">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.5652"
+         id="feGaussianBlur54894" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter54896"
+       x="-0.02647"
+       y="-0.1532"
+       width="1.053"
+       height="1.306">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.5652"
+         id="feGaussianBlur54898" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter54900"
+       x="-0.02017"
+       y="-0.1571"
+       width="1.04"
+       height="1.314">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.5652"
+         id="feGaussianBlur54902" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter54904"
+       x="-0.01396"
+       y="-0.1332"
+       width="1.028"
+       height="1.266">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.5652"
+         id="feGaussianBlur54906" />
+    </filter>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="shadow"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:9.8778px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#666666;stroke-width:0.2646;filter:url(#filter54904)"
+       x="26.74"
+       y="29.3"
+       id="text39939-1"><tspan
+         sodipodi:role="line"
+         id="tspan39937-8"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.8778px;font-family:Poppins;-inkscape-font-specification:'Poppins Medium';fill:#666666;stroke-width:0.2646"
+         x="26.74"
+         y="29.3">More clarity &amp; focus</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4672px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#666666;fill-opacity:1;stroke-width:0.2646;filter:url(#filter54900)"
+       x="1.79"
+       y="42.73"
+       id="text39943-4"><tspan
+         sodipodi:role="line"
+         id="tspan39941-6"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:'Poppins Light';fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="1.79"
+         y="42.73">Spiritualt growth</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4672px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#666666;fill-opacity:1;stroke-width:0.2646;filter:url(#filter54896)"
+       x="91.11"
+       y="55.83"
+       id="text39997-3"><tspan
+         sodipodi:role="line"
+         id="tspan39995-1"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="91.11"
+         y="55.83">Productivity</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="91.11"
+         y="66.41"
+         id="tspan39999-9" /><tspan
+         sodipodi:role="line"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="91.11"
+         y="77"
+         id="tspan40001-0" /><tspan
+         sodipodi:role="line"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="91.11"
+         y="87.58"
+         id="tspan40003-5" /><tspan
+         sodipodi:role="line"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="91.11"
+         y="98.17"
+         id="tspan40005-8" /><tspan
+         sodipodi:role="line"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="91.11"
+         y="108.8"
+         id="tspan40007-0" /></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4672px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#666666;fill-opacity:1;stroke-width:0.2646;filter:url(#filter54892)"
+       x="12.85"
+       y="69.58"
+       id="text39997-2-0"><tspan
+         sodipodi:role="line"
+         id="tspan39995-6-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="12.85"
+         y="69.58">Wellbeing</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="12.85"
+         y="80.16"
+         id="tspan39999-4-3" /><tspan
+         sodipodi:role="line"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="12.85"
+         y="90.75"
+         id="tspan40001-3-0" /><tspan
+         sodipodi:role="line"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="12.85"
+         y="101.3"
+         id="tspan40003-1-0" /><tspan
+         sodipodi:role="line"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="12.85"
+         y="111.9"
+         id="tspan40005-3-5" /><tspan
+         sodipodi:role="line"
+         style="fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="12.85"
+         y="122.5"
+         id="tspan40007-98-5" /></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4667px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#666666;fill-opacity:1;stroke-width:0.2646;filter:url(#filter54888)"
+       x="91.11"
+       y="42.32"
+       id="text40011-1"><tspan
+         sodipodi:role="line"
+         id="tspan40009-9"
+         style="font-size:8.4667px;fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="91.11"
+         y="42.32">More energy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4672px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#666666;fill-opacity:1;stroke-width:0.2646;filter:url(#filter54884)"
+       x="1.71"
+       y="56.4"
+       id="text40015-8"><tspan
+         sodipodi:role="line"
+         id="tspan40013-2"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:'Poppins Ultra-Bold';fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="1.71"
+         y="56.4">Happiness</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:11.2889px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#666666;fill-opacity:1;stroke-width:0.2646;filter:url(#filter54880)"
+       x="91.21"
+       y="71.48"
+       id="text40019-4"><tspan
+         sodipodi:role="line"
+         id="tspan40017-8"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:11.2889px;font-family:Poppins;-inkscape-font-specification:'Poppins Medium';fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="91.21"
+         y="71.48">Joy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:11.2889px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#666666;fill-opacity:1;stroke-width:0.2646;filter:url(#filter54876)"
+       x="63.83"
+       y="16.27"
+       id="text40023-7"><tspan
+         sodipodi:role="line"
+         id="tspan40021-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="63.83"
+         y="16.27">Health</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4672px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#666666;stroke-width:0.2646;filter:url(#filter54872)"
+       x="51.5"
+       y="-62.87"
+       id="text40027-4"
+       transform="rotate(90,0.2646,-0.2646)"><tspan
+         sodipodi:role="line"
+         id="tspan40025-2"
+         style="fill:#666666;stroke-width:0.2646"
+         x="51.5"
+         y="-62.87">Flexibility</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:7.0556px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;display:inline;fill:#666666;fill-opacity:1;stroke-width:0.2646;filter:url(#filter54868)"
+       x="36.53"
+       y="-78.01"
+       id="text40031-5"
+       transform="rotate(90,0.2646,-0.2646)"><tspan
+         sodipodi:role="line"
+         id="tspan40029-6"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.0556px;font-family:Poppins;-inkscape-font-specification:'Poppins Light';fill:#666666;fill-opacity:1;stroke-width:0.2646"
+         x="36.53"
+         y="-78.01">Balance</tspan></text>
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:9.8778px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.2646"
+       x="26.66"
+       y="28.53"
+       id="text39939"><tspan
+         sodipodi:role="line"
+         id="tspan39937"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.8778px;font-family:Poppins;-inkscape-font-specification:'Poppins Medium';stroke-width:0.2646"
+         x="26.66"
+         y="28.53">More clarity &amp; focus</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4672px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#525252;fill-opacity:1;stroke-width:0.2646"
+       x="1.707"
+       y="41.96"
+       id="text39943"><tspan
+         sodipodi:role="line"
+         id="tspan39941"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:'Poppins Light';fill:#525252;fill-opacity:1;stroke-width:0.2646"
+         x="1.707"
+         y="41.96">Spiritualt growth</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4672px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+       x="91.04"
+       y="55.06"
+       id="text39997"><tspan
+         sodipodi:role="line"
+         id="tspan39995"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="91.04"
+         y="55.06">Productivity</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="91.04"
+         y="65.64"
+         id="tspan39999" /><tspan
+         sodipodi:role="line"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="91.04"
+         y="76.23"
+         id="tspan40001" /><tspan
+         sodipodi:role="line"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="91.04"
+         y="86.81"
+         id="tspan40003" /><tspan
+         sodipodi:role="line"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="91.04"
+         y="97.4"
+         id="tspan40005" /><tspan
+         sodipodi:role="line"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="91.04"
+         y="108"
+         id="tspan40007" /></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4672px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+       x="12.77"
+       y="68.85"
+       id="text39997-2"><tspan
+         sodipodi:role="line"
+         id="tspan39995-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="12.77"
+         y="68.85">Wellbeing</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="12.77"
+         y="79.43"
+         id="tspan39999-4" /><tspan
+         sodipodi:role="line"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="12.77"
+         y="90.02"
+         id="tspan40001-3" /><tspan
+         sodipodi:role="line"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="12.77"
+         y="100.6"
+         id="tspan40003-1" /><tspan
+         sodipodi:role="line"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="12.77"
+         y="111.2"
+         id="tspan40005-3" /><tspan
+         sodipodi:role="line"
+         style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.2646"
+         x="12.77"
+         y="121.8"
+         id="tspan40007-98" /></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4667px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#ffcc3f;fill-opacity:1;stroke-width:0.2646"
+       x="91.04"
+       y="41.55"
+       id="text40011"><tspan
+         sodipodi:role="line"
+         id="tspan40009"
+         style="font-size:8.4667px;fill:#ffcc3f;fill-opacity:1;stroke-width:0.2646"
+         x="91.04"
+         y="41.55">More energy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4672px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#fcb900;fill-opacity:1;stroke-width:0.2646"
+       x="1.632"
+       y="55.63"
+       id="text40015"><tspan
+         sodipodi:role="line"
+         id="tspan40013"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:'Poppins Ultra-Bold';fill:#fcb900;fill-opacity:1;stroke-width:0.2646"
+         x="1.632"
+         y="55.63">Happiness</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:11.2889px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#525252;fill-opacity:1;stroke-width:0.2646"
+       x="91.13"
+       y="70.75"
+       id="text40019"><tspan
+         sodipodi:role="line"
+         id="tspan40017"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:11.2889px;font-family:Poppins;-inkscape-font-specification:'Poppins Medium';fill:#525252;fill-opacity:1;stroke-width:0.2646"
+         x="91.13"
+         y="70.75">Joy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:11.2889px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#525252;fill-opacity:1;stroke-width:0.2646"
+       x="63.75"
+       y="15.5"
+       id="text40023"><tspan
+         sodipodi:role="line"
+         id="tspan40021"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#525252;fill-opacity:1;stroke-width:0.2646"
+         x="63.75"
+         y="15.5">Health</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:8.4672px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;stroke-width:0.2646"
+       x="50.2"
+       y="-62.79"
+       id="text40027"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         id="tspan40025"
+         style="stroke-width:0.2646"
+         x="50.2"
+         y="-62.79">Flexibility</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:600;font-size:7.0556px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#ffcc3f;fill-opacity:1;stroke-width:0.2646"
+       x="35.23"
+       y="-77.94"
+       id="text40031"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         id="tspan40029"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.0556px;font-family:Poppins;-inkscape-font-specification:'Poppins Light';fill:#ffcc3f;fill-opacity:1;stroke-width:0.2646"
+         x="35.23"
+         y="-77.94">Balance</tspan></text>
+    <rect
+       style="fill:#ffcc3f;fill-opacity:1;stroke:none;stroke-width:0.694091;stroke-linecap:round;stroke-linejoin:round"
+       id="rect3433-0-8"
+       width="22.46"
+       height="13.62"
+       x="71.04"
+       y="-31.94" />
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.694091;stroke-linecap:round;stroke-linejoin:round"
+       id="rect3433-0-0"
+       width="22.46"
+       height="13.62"
+       x="93.5"
+       y="-31.94" />
+    <rect
+       style="fill:#b1b1b1;fill-opacity:1;stroke:none;stroke-width:0.694091;stroke-linecap:round;stroke-linejoin:round"
+       id="rect16687"
+       width="22.46"
+       height="13.62"
+       x="115.5"
+       y="-31.94" />
+    <rect
+       style="fill:#525252;fill-opacity:1;stroke:none;stroke-width:0.694091;stroke-linecap:round;stroke-linejoin:round"
+       id="rect16689"
+       width="22.46"
+       height="13.62"
+       x="137.9"
+       y="-31.94" />
+    <rect
+       style="fill:#fcb900;fill-opacity:1;stroke:none;stroke-width:0.694091;stroke-linecap:round;stroke-linejoin:round"
+       id="rect18630"
+       width="22.46"
+       height="13.62"
+       x="48.57"
+       y="-31.94" />
+    <rect
+       style="fill:#353535;fill-opacity:1;stroke:none;stroke-width:0.694091;stroke-linecap:round;stroke-linejoin:round"
+       id="rect25616"
+       width="22.46"
+       height="13.62"
+       x="160.5"
+       y="-31.95" />
+  </g>
+</svg>
