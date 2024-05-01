@@ -36,7 +36,7 @@ nav .icon {display:none}
   .nav-links ul li .submenu a {color:var(--colG1);}
 }
 .language {margin: 0px 0px }
-.language a{ text-decoration:none; color:var(--colG1); background:var(--colY1); border:0px solid var(--colY1); border-radius: 7px; padding:0px 10px}
+.language a{color:var(--colG1); background:var(--colY1); border:0px solid var(--colY1); border-radius: 7px; padding:0px 10px}
 .language a:hover{color:var(--colY1); background:var(--colG1); border:0px solid var(--colY1); transition:.25s}
 /* news box */
 .news-box{ overflow: hidden; color: var(--colG1); position:absolute; text-align:center; top: 100%; width:100%; padding: 5px;}
@@ -99,7 +99,8 @@ display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relativ
 .card-container {display: flex; flex-wrap: wrap; justify-content: center;}
 .card {max-width: 25%; min-width: 250px; text-align:left; margin:20px 20px; border-radius: 10px;}
 .card img {border-radius:10px; width:100% }
-
+.widecard {width: 100%; text-align:left; margin:20px 20px; border-radius: 10px;}
+.widecard img {border-radius:10px; width:80% }
 
 /* Participant sharings */
 .slide { flex-basis: 7%; font-size: 70px; color: var(--colG2); margin:auto; cursor:pointer; }
@@ -197,3 +198,9 @@ tr:nth-child(even) { background-color: #dddddd;}
 .youtube-player img { object-fit: cover; display: block; left: 0; bottom: 0; margin: auto; max-width: 100%; width: 100%; position: absolute; right: 0; top: 0; border: none; height: auto; cursor: pointer; -webkit-transition: 0.4s all; -moz-transition: 0.4s all; transition: 0.4s all;  }
 .youtube-player img:hover { -webkit-filter: brightness(75%);  }
 .youtube-player .play { height: 48px; width: 68px; left: 50%; top: 50%; margin-left: -34px; margin-top: -24px; position: absolute; background: url('https://i.ibb.co/j3jcJKv/yt.png') no-repeat; cursor: pointer;  }
+
+.badge {position: absolute;
+  top: -3px;
+  right: 7px;
+  color: red;
+font-size:larger;}
