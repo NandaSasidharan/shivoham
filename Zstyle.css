@@ -19,12 +19,13 @@ nav .icon {display:none}
 .nav-links {float:1;text-align:right}
 .nav-links ul li {display:inline-block; list-style:none; padding:8px 12px; position:relative }
 .nav-links ul li a, .nav-links ul li p{color:var(--colW1); font-size:15px; height:100%; text-decoration:none; padding: 0px; line-height: normal; }
-.nav-links ul li a:hover, .nav-links ul li p:hover {color:var(--colY1)}
+.nav-links ul li a:hover, .nav-links ul li p:hover {color:var(--colW1)}
 .nav-links ul li .submenu {background:var(--colY1); display:none; position:absolute; text-align:left; transition:all .5s; width:152px; box-shadow:0 0 7px 0px rgba(0,0,0,0.3);}
 .nav-links ul li:hover .submenu {display:block; z-index:100}
 .nav-links ul li:hover .submenu li{display:block;}
 .nav-links ul li:hover .submenu li a{ color:var(--colG1)}
 .nav-links ul li:hover .submenu li a:hover {color:var(--colW1)}
+.badge {position: relative; top: -7px; right: 4px; color: red; font-size:larger;}
 
 @media (max-width: 700px) {
   nav .icon {color:var(--colW1); cursor:pointer; display:block; font-size:20px; margin:10px }
@@ -199,8 +200,3 @@ tr:nth-child(even) { background-color: #dddddd;}
 .youtube-player img:hover { -webkit-filter: brightness(75%);  }
 .youtube-player .play { height: 48px; width: 68px; left: 50%; top: 50%; margin-left: -34px; margin-top: -24px; position: absolute; background: url('https://i.ibb.co/j3jcJKv/yt.png') no-repeat; cursor: pointer;  }
 
-.badge {position: absolute;
-  top: -3px;
-  right: 7px;
-  color: red;
-font-size:larger;}
