@@ -200,3 +200,7 @@ tr:nth-child(even) { background-color: #dddddd;}
 .youtube-player img:hover { -webkit-filter: brightness(75%);  }
 .youtube-player .play { height: 48px; width: 68px; left: 50%; top: 50%; margin-left: -34px; margin-top: -24px; position: absolute; background: url('https://i.ibb.co/j3jcJKv/yt.png') no-repeat; cursor: pointer;  }
 
+
+.cookie-banner {position: fixed;bottom: 0px;width: 100%;padding: 5px;display: flex;align-items: center;justify-content: center;background: var(--colG10);font-size: smaller;}
+.close {background: inherit;padding: 0 10px;border: none;cursor: pointer;border-radius: 10px;}
+
