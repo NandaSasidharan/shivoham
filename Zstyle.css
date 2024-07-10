@@ -120,7 +120,8 @@ display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relativ
 .content ul { list-style-position: outside; line-height:25px; margin: 2px 15px 50px;}
 
 .bg-img {background-attachment:fixed;background-position:bottom; background-repeat:no-repeat;background-size:cover;position:relative;}
-.home-img {background-image:url('images/Promo - PP092-v2.jpg');min-height:100vh;background-position:bottom;}
+.home-img {background-image:url('images/20240709_224139v2.jpg');min-height:100vh;background-position:bottom;}
+/* .home-img {background-image:url('images/Promo - PP092-v2.jpg');min-height:100vh;background-position:bottom;} */
 .pcl-img {background-image:linear-gradient(rgba(80,80,10,0.1), rgba(80,80,10,.8)),url('images/IMG-20230529-WA4.jpg');min-height:100vh;background-position:bottom;}
 .asanas-img {background-image:url('images/Promo - PP131_139_142.jpg');height:50vh;background-position:top;}
 .flower-img {background-image:url('images/frangipani.jpg');height:50vh;background-position:top;}
