@@ -6,12 +6,17 @@
 		<lastmod>2024-10-08</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/blogs/</loc>
+		<loc>https://shivoham.ch/yogic-practices/</loc>
 		<priority>0.67</priority>
-		<lastmod>2024-10-04</lastmod>
+		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/classes/</loc>
+		<loc>https://shivoham.ch/yoga/</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-10-10</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/sadhguru/</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-10-04</lastmod>
 	</url>
@@ -21,22 +26,32 @@
 		<lastmod>2024-07-31</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/sadhguru/</loc>
+		<loc>https://shivoham.ch/classes/</loc>
 		<priority>0.67</priority>
 		<lastmod>2024-10-04</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/yoga/</loc>
+		<loc>https://shivoham.ch/blogs/</loc>
 		<priority>0.67</priority>
-		<lastmod>2024-10-09</lastmod>
+		<lastmod>2024-10-04</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/yogic-practices/</loc>
-		<priority>0.67</priority>
+		<loc>https://shivoham.ch/de/yogic-practices/</loc>
+		<priority>0.33</priority>
 		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/blogs/sincerity-of-a-child/</loc>
+		<loc>https://shivoham.ch/de/yoga/</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-10-10</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/de/sadhguru/</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-10-04</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/de/classes/</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-10-04</lastmod>
 	</url>
@@ -46,23 +61,8 @@
 		<lastmod>2024-07-24</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/de/classes/</loc>
+		<loc>https://shivoham.ch/blogs/sincerity-of-a-child/</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-10-04</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/de/sadhguru/</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-10-04</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/de/yoga/</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-10-08</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/de/yogic-practices/</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-07-24</lastmod>
 	</url>
 </urlset>
