@@ -41,7 +41,11 @@ nav .icon {display:none}
 .language a{color:var(--colG1); background:var(--colY1); border:0px solid var(--colY1); border-radius: 7px; padding:0px 10px}
 .language a:hover{color:var(--colY1); background:var(--colG1); border:0px solid var(--colY1); transition:.25s}
 /* news box */
-.news-box{ overflow: hidden; color: var(--colG1); position:absolute; text-align:center; top: 100%; width:100%; padding: 5px;}
+.news-box{text-decoration:none;cursor:pointer; font-size: 14px; overflow: hidden; background: var(--colY2); position:fixed; text-align:center; 
+  bottom:0%; right: 0;z-index: 101; width:80px;height:80px; padding: 10px;border-radius:50%;box-shadow:0 0 7px 0px rgba(0,0,0,0.3);border:1px solid var(--colY2); color:var(--colG1);}
+.news-box:hover { background:var(--colG1); border:1px solid var(--colG1); color:var(--colY1); transition:.25s }
+.click-btn { background:var(--colY2);  
+  display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relative; max-width: 50%;box-shadow:0 0 7px 0px rgba(0,0,0,0.3);}
 /* general */
 body {word-wrap: break-word;}
 img {max-width: 100%;}
