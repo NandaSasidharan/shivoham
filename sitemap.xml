@@ -3,32 +3,7 @@
 	<url>
 		<loc>https://shivoham.ch</loc>
 		<priority>1.00</priority>
-		<lastmod>2024-10-24</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/yogic-practices/</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-10-20</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/yoga/</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-10-20</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/sadhguru/</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-10-20</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/de/</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-10-22</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/classes/</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-10-24</lastmod>
+		<lastmod>2024-10-25</lastmod>
 	</url>
 	<url>
 		<loc>https://shivoham.ch/blogs/</loc>
@@ -36,17 +11,37 @@
 		<lastmod>2024-10-20</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/de/yogic-practices/</loc>
+		<loc>https://shivoham.ch/classes/</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-10-24</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/de/</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-10-25</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/sadhguru/</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-10-20</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/yoga/</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-10-25</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/yogic-practices/</loc>
+		<priority>0.67</priority>
+		<lastmod>2024-10-20</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/blogs/sincere-like-a-child/</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-10-20</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/de/yoga/</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-10-20</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/de/sadhguru/</loc>
+		<loc>https://shivoham.ch/blogs/about-nanda/</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-10-20</lastmod>
 	</url>
@@ -56,12 +51,17 @@
 		<lastmod>2024-10-24</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/blogs/about-nanda/</loc>
+		<loc>https://shivoham.ch/de/sadhguru/</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-10-20</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/blogs/sincere-like-a-child/</loc>
+		<loc>https://shivoham.ch/de/yoga/</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-10-25</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/de/yogic-practices/</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-10-20</lastmod>
 	</url>
