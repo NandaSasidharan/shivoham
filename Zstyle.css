@@ -137,7 +137,7 @@ display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relativ
 
 .sub-img {background-image:url('images/Promo - PP017.jpg');background-position: right; color:var(--colG1);height:50vh;text-align:center;}
 .sub-img h1 {padding-top:30vh;}
-.gallery img{width:100%; height:40vh;object-fit:cover;margin: 5px;}
+.gallery img{width:100%; height:40vh;object-fit:cover;margin: 10px;}
 .mandala img{width:75%; position: relative;top: 50%;transform: translateY(-50%);}
 
 .no-img {color:var(--colG1);height:30vh;position:relative;text-align:center;width:100%}
