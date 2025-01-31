@@ -3,7 +3,7 @@
 	<url>
 		<loc>https://shivoham.ch</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-01-28</lastmod>
+		<lastmod>2025-01-31</lastmod>
 	</url>
 	<url>
 		<loc>https://shivoham.ch/blogs/</loc>
@@ -33,7 +33,12 @@
 	<url>
 		<loc>https://shivoham.ch/yogic-practices/</loc>
 		<priority>0.67</priority>
-		<lastmod>2025-01-21</lastmod>
+		<lastmod>2025-01-29</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/support/</loc>
+		<priority>0.67</priority>
+		<lastmod>2025-01-30</lastmod>
 	</url>
 	<url>
 		<loc>https://shivoham.ch/blogs/sincere-like-a-child/</loc>
@@ -64,5 +69,15 @@
 		<loc>https://shivoham.ch/de/yogic-practices/</loc>
 		<priority>0.33</priority>
 		<lastmod>2025-01-21</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/about/teacher/</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-01-30</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/about/shivoham/</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-01-30</lastmod>
 	</url>
 </urlset>
