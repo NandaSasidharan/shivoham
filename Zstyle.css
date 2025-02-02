@@ -96,7 +96,7 @@ figcaption p{font-size:14px; line-height:25px; padding-bottom:20px}
 /* click buttons */
 a {text-decoration:inherit; }
 .click-btn {text-decoration:none; font-size: 14px; background:var(--colY2); border:1px solid var(--colY2); border-radius:10px; color:var(--colG1); cursor:pointer;
-display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relative; max-width: 50%;box-shadow:0 0 7px 0px rgba(0,0,0,0.3);}
+display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relative; max-width: 60%;box-shadow:0 0 7px 0px rgba(0,0,0,0.3);}
 .click-btn:hover { background:var(--colG1); border:1px solid var(--colG1); color:var(--colY1); transition:.5s }
 
 /* flowing cards */
@@ -126,8 +126,11 @@ display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relativ
 .content ul { list-style-position: outside; line-height:25px; margin: 2px 15px 50px;}
 
 .bg-img {background-attachment:fixed;background-position:bottom; background-repeat:no-repeat;background-size:cover;position:relative;}
-.home-img {background-image:url('images/20240709_224139v2.jpg');min-height:100vh;background-position:bottom;}
-/* .home-img {background-image:url('images/Promo - PP092-v2.jpg');min-height:100vh;background-position:bottom;} */
+/* .home-img {background-image:url('images/20240709_224139v2.jpg');min-height:100vh;background-position:bottom;} */
+.home-img {background-image:url('images/Promo - PP092-v2.jpg');min-height:100vh;background-position:center;}
+/* .home-img {background-image:url('images/20230119_164656.jpg');min-height:100vh;background-position:80% 40%;} */
+/* .home-img {background-image:url('images/20240715_165722.jpg');min-height:100vh;background-position:80% 70%;} */
+
 .pcl-img {background-image:linear-gradient(rgba(80,80,10,0.1), rgba(80,80,10,.8)),url('images/IMG-20230529-WA4.jpg');min-height:100vh;background-position:bottom;}
 .asanas-img {background-image:url('images/Promo - PP131_139_142.jpg');height:50vh;background-position:top;}
 .flower-img {background-image:url('images/frangipani.jpg');height:50vh;background-position:top;}
@@ -150,12 +153,14 @@ background-color:var(--colW1);background-image: url("data:image/svg+xml,%3Csvg w
 
 /* .cta {background-image:url('images/Promo - PP266.webp?v1');
 background-position:top;background-size:cover;border-radius:10px;margin:5vh auto 5vh;padding:10vh 0;text-align:center;} */
-.cta {background: linear-gradient(40deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-  background-position:top;background-size:cover;border-radius:10px;margin:5vh auto 5vh;padding:10vh 0;text-align:center;}
-  
-.cta h2 {color:var(--colW1);padding:0}
-.cta .click-btn {color:var(--colW1)}
-.cta .click-btn:hover {border-color:var(--colG1);}
+/* .cta {background: linear-gradient(40deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background-position:top;background-size:cover;border-radius:10px;margin:5vh auto 5vh;padding:10vh 0;text-align:center;} */
+.cta {background: var(--colG2);;
+  background-position:top;background-size:cover;border-radius:10px;margin:5vh auto 5vh;padding:7vh 0;text-align:center;}
+      
+.cta h2, .cta h3 {color:var(--colW1);padding:0}
+/* .cta .click-btn {color:var(--colW1)}
+.cta .click-btn:hover {border-color:var(--colG1);} */
 
 @media(max-width:700px) {
 .blog-header{padding: 10vh 0 10vh;}
