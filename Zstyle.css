@@ -153,8 +153,6 @@ background-color:var(--colW1);background-image: url("data:image/svg+xml,%3Csvg w
 
 /* .cta {background-image:url('images/Promo - PP266.webp?v1');
 background-position:top;background-size:cover;border-radius:10px;margin:5vh auto 5vh;padding:10vh 0;text-align:center;} */
-/* .cta {background: linear-gradient(40deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-  background-position:top;background-size:cover;border-radius:10px;margin:5vh auto 5vh;padding:10vh 0;text-align:center;} */
 .cta {background: var(--colG2);;
   background-position:top;background-size:cover;border-radius:10px;margin:5vh auto 5vh;padding:7vh 0;text-align:center;}
       
