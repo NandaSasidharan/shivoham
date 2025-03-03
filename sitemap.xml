@@ -6,27 +6,7 @@
 		<lastmod>2025-02-25</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/blogs/</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-02-25</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/classes/</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-02-25</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/de/</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-02-25</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/sadhguru/</loc>
-		<priority>0.67</priority>
-		<lastmod>2025-01-21</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/yoga/</loc>
+		<loc>https://shivoham.ch/support/</loc>
 		<priority>0.67</priority>
 		<lastmod>2025-02-25</lastmod>
 	</url>
@@ -36,37 +16,32 @@
 		<lastmod>2025-02-25</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/support/</loc>
+		<loc>https://shivoham.ch/yoga/</loc>
 		<priority>0.67</priority>
 		<lastmod>2025-02-25</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/blogs/sincere-like-a-child/</loc>
-		<priority>0.33</priority>
-		<lastmod>2025-02-25</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/blogs/about-nanda/</loc>
-		<priority>0.33</priority>
-		<lastmod>2025-02-25</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/de/classes/</loc>
-		<priority>0.33</priority>
-		<lastmod>2025-02-25</lastmod>
-	</url>
-	<url>
-		<loc>https://shivoham.ch/de/sadhguru/</loc>
-		<priority>0.33</priority>
+		<loc>https://shivoham.ch/sadhguru/</loc>
+		<priority>0.67</priority>
 		<lastmod>2025-01-21</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/de/yoga/</loc>
-		<priority>0.33</priority>
+		<loc>https://shivoham.ch/de/</loc>
+		<priority>0.67</priority>
 		<lastmod>2025-02-25</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/de/yogic-practices/</loc>
+		<loc>https://shivoham.ch/classes/</loc>
+		<priority>0.67</priority>
+		<lastmod>2025-03-03</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/blogs/</loc>
+		<priority>0.67</priority>
+		<lastmod>2025-02-25</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/about/shivoham/</loc>
 		<priority>0.33</priority>
 		<lastmod>2025-02-25</lastmod>
 	</url>
@@ -76,7 +51,32 @@
 		<lastmod>2025-02-25</lastmod>
 	</url>
 	<url>
-		<loc>https://shivoham.ch/about/shivoham/</loc>
+		<loc>https://shivoham.ch/de/yogic-practices/</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-02-25</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/de/yoga/</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-02-25</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/de/sadhguru/</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-01-21</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/de/classes/</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-03-03</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/blogs/about-nanda/</loc>
+		<priority>0.33</priority>
+		<lastmod>2025-02-25</lastmod>
+	</url>
+	<url>
+		<loc>https://shivoham.ch/blogs/sincere-like-a-child/</loc>
 		<priority>0.33</priority>
 		<lastmod>2025-02-25</lastmod>
 	</url>
