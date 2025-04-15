@@ -142,6 +142,7 @@ display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relativ
 
 .pcl-img {background-image:linear-gradient(rgba(80,80,10,0.1), rgba(80,80,10,.8)),url('images/IMG-20230529-WA4.jpg');min-height:100vh;background-position:bottom;}
 .asanas-img {background-image:url('images/Promo - PP131_139_142.jpg');height:50vh;background-position:top;}
+.asanas2-img {background-image:url('images/Promo - PP139_v2.jpg');height:100vh;background-position:top;}
 .flower-img {background-image:url('images/frangipani.jpg');height:50vh;background-position:top;}
 .flower2-img {background-image:url('images/pexels-min-an-1171581.jpg');height:50vh;background-position:center;}
 
