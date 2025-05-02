@@ -1,6 +1,6 @@
 * {
 font-family:'Poppins',sans-serif;
-font-size: 12px;
+font-size: 16px;
 margin:0;
 padding:0;
 --colG1:#353535; 
@@ -21,7 +21,7 @@ nav .icon {display:none}
 .nav-links ul li {display:inline-block; list-style:none; padding:8px 12px; position:relative }
 .nav-links ul li a, .nav-links ul li p{color:var(--colW1); font-size:1rem; height:100%; text-decoration:none; padding: 0px; line-height: normal; }
 .nav-links ul li a:hover, .nav-links ul li p:hover {color:var(--colW1)}
-.nav-links ul li .submenu {background:var(--colY1); display:none; position:absolute; text-align:left; transition:all .5s; width:152px; box-shadow:0 0 7px 0px rgba(0,0,0,0.3);}
+.nav-links ul li .submenu {background:var(--colY1); display:none; position:absolute; text-align:left; transition:all .5s; width:165px; box-shadow:0 0 7px 0px rgba(0,0,0,0.3);}
 .nav-links ul li:hover .submenu {display:block; z-index:100}
 .nav-links ul li:hover .submenu li{display:block;}
 .nav-links ul li:hover .submenu li a{ color:var(--colG1)}
@@ -54,7 +54,7 @@ h1{font-size:3rem}h2{font-size:2rem}h3{font-size:1.75rem}h4{font-size:1.5rem}h5{
 h1,h2,h3,h4,h5,h6{font-family:'Source Serif Pro', serif;font-weight:700; padding:0px 0px 15px;}
 p{font-size:1rem; line-height:2rem; padding-bottom:15px}
 figcaption p{font-size:14px; line-height:25px; padding-bottom:20px}
-.special-font {font-family: Moon Dance; font-size: 2rem;}
+.special-font {font-family: Moon Dance; font-size: 1.5rem;}
 /* @media (max-width: 700px) {
   h1{font-size:36px}h2{font-size:28px}h3{font-size:22px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
   } */
@@ -70,7 +70,7 @@ figcaption p{font-size:14px; line-height:25px; padding-bottom:20px}
   position:relative;left:0;top:0;
   width: 100%; 
   background:rgba(256, 256, 256, 0.5);
-  border-radius: 10px 10px 0 0;
+  border-radius:10px;
 }
 .txtOverImg h4{padding: 15px 0px 10px 15px;}
 .txtOverImg p{padding: 0px 0px 10px 15px;}
@@ -80,8 +80,8 @@ figcaption p{font-size:14px; line-height:25px; padding-bottom:20px}
 .txtW1{color:var(--colW1)} .txtW2{color:var(--colW2)}
 /* div */
 .row {display:flex;justify-content:space-between;}
-.col-20p {flex-basis:20%;} .col-25p {flex-basis:25%;} .col-33p {flex-basis:33.3%;} .col-50p {flex-basis:50%;} .col-66p {flex-basis:66%;} .col-75p {flex-basis:75%;} .col-100p {flex-basis:100%;}
-.col-20p, .col-25p, .col-33p, .col-50p, .col-66p, .col-75p .col-100p{position:relative; overflow: hidden;}
+.col-10p {flex-basis:10%;} .col-20p {flex-basis:20%;} .col-25p {flex-basis:25%;} .col-33p {flex-basis:33.3%;} .col-50p {flex-basis:50%;} .col-66p {flex-basis:66%;} .col-75p {flex-basis:75%;} .col-100p {flex-basis:100%;}
+.col-10p, .col-20p, .col-25p, .col-33p, .col-50p, .col-66p, .col-75p .col-100p{position:relative; overflow: hidden;}
 /* display position */
 .w3-display-topleft{position:absolute;left:0;top:0}.w3-display-topright{position:absolute;right:0;top:0}
 .w3-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
@@ -111,7 +111,7 @@ display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relativ
 /* flowing cards */
 .card-container {display: flex; flex-wrap: wrap; justify-content: center;}
 .card {max-width: 25%; min-width: 250px; text-align:left; margin:20px 20px; border-radius: 10px;position:relative;}
-.card img {width:100%;object-fit:cover;border-radius:0 0 10px 10px;}
+.card img {width:100%;object-fit:cover;border-radius:10px 10px 0 0 ;}
 .card h3 {padding-top: 15px;}
 .widecard {width: 100%; text-align:left; margin:20px 20px; border-radius: 10px;}
 .widecard img {border-radius:10px; width:80%;}
@@ -153,7 +153,7 @@ display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relativ
 .gallery img{width:100%; height:35vh;object-fit:cover;margin: 10px;}
 .mandala img{width:75%; position: relative;top: 50%;transform: translateY(-50%);}
 
-.no-img {color:var(--colG1);height:30vh;position:relative;text-align:center;width:100%}
+.no-img {color:var(--colG1);height:35vh;position:relative;text-align:center;width:100%}
 .no-img h1 {padding-top:15vh}
 
 .blog-header {color:var(--colG1);text-align:center; padding: 20vh 0 20vh;
