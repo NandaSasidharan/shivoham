@@ -105,7 +105,7 @@ figcaption p{font-size:14px; line-height:25px; padding-bottom:20px}
 /* click buttons */
 a {text-decoration:inherit; }
 .click-btn {text-decoration:none; font-size: 1rem; background:var(--colY2); border:1px solid var(--colY2); border-radius:10px; color:var(--colG1); cursor:pointer;
-display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relative; max-width: 60%;box-shadow:0 0 7px 0px rgba(0,0,0,0.3);}
+display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relative; max-width: 70%;box-shadow:0 0 7px 0px rgba(0,0,0,0.3);}
 .click-btn:hover { background:var(--colG1); border:1px solid var(--colG1); color:var(--colY1); transition:.5s }
 
 /* flowing cards */
