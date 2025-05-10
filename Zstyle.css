@@ -1,6 +1,6 @@
 * {
 font-family:'Poppins',sans-serif;
-font-size: 14px;
+font-size: 16px;
 margin:0;
 padding:0;
 --colG1:#353535; 
@@ -51,7 +51,7 @@ img {max-width: 100%;}
 /* text formatting */
 h1{font-size:3rem}h2{font-size:2rem}h3{font-size:1.75rem}h4{font-size:1.5rem}h5{font-size:1.3rem}h6{font-size:1rem}
 /* h1{font-size:54px}h2{font-size:36px}h3{font-size:22px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px} */
-h1,h2,h3,h4,h5,h6{font-family:'Poppins', serif;font-weight:700; padding:0px 0px 15px;}
+h1,h2,h3,h4,h5,h6{font-family:'Source Serif Pro', serif;font-weight:700; padding:0px 0px 15px;}
 p{font-size:1rem; line-height:2rem; padding-bottom:15px}
 figcaption p{font-size:0.9rem; line-height:25px; padding-bottom:20px}
 .special-font {font-family: Moon Dance; font-size: 1.5rem;}
