@@ -8,7 +8,7 @@ padding:0;
 --colG2:#525252;
 --colW1:#e6e6e6;
 --colW2:#b1b1b1;
---colY1:#fcb900;
+--colY1:#fca700;
 --colY2:#ffcc3f;
 }
 /* header */
@@ -26,7 +26,7 @@ nav .icon {display:none}
 .nav-links ul li:hover .submenu li{display:block;}
 .nav-links ul li:hover .submenu li a{ color:var(--colG1)}
 .nav-links ul li:hover .submenu li a:hover {color:var(--colW1)}
-.badge {position: relative; top: -7px; right: 4px; color: red; font-size:larger;}
+.badge {position: relative; top: -7px; right: 4px; color: var(--colY1); font-size:larger;}
 
 @media (max-width: 700px) {
   nav .icon {color:var(--colW1); cursor:pointer; display:block; font-size:20px; margin:10px }
@@ -36,13 +36,14 @@ nav .icon {display:none}
   .nav-links ul li .submenu {display:block; padding:0; position:inherit; z-index:2}
   .nav-links ul li a, .nav-links ul li p {color:var(--colG1)}
   .nav-links ul li .submenu a {color:var(--colG1);}
+  .badge {color: white;}
 }
 .language {margin: 0px 0px;}
 .language a{color:var(--colG1); background:var(--colY1); border:0px solid var(--colY1); border-radius: 7px; padding:0px 10px}
 .language a:hover{color:var(--colY1); background:var(--colG1); border:0px solid var(--colY1); transition:.5s}
 /* news box */
-.news-box{text-decoration:none;cursor:pointer; font-size: 1rem; overflow: hidden; background: var(--colY2); position:fixed; text-align:center; 
-  bottom:0%; right: 0;z-index: 101; width:80px;height:80px; padding: 10px;border-radius:50%;box-shadow:0 0 7px 0px rgba(0,0,0,0.3);border:1px solid var(--colY2); color:var(--colG1);}
+.news-box{text-decoration:none;cursor:pointer; font-size: 1rem; overflow: hidden; background: var(--colY1); position:fixed; text-align:center; 
+  bottom:0%; right: 0;z-index: 101; width:80px;height:80px; padding: 10px;border-radius:50%;box-shadow:0 0 7px 0px rgba(0,0,0,0.3);border:1px solid var(--colY1); color:var(--colG1);}
 .news-box:hover { background:var(--colG1); border:1px solid var(--colG1); color:var(--colY1); transition:.5s }
 /* general */
 body {word-wrap: break-word;}
@@ -104,9 +105,13 @@ figcaption p{font-size:0.9rem; line-height:25px; padding-bottom:20px}
 
 /* click buttons */
 a {text-decoration:inherit; }
-.click-btn {text-decoration:none; font-size: 1rem; background:var(--colY2); border:1px solid var(--colY2); border-radius:10px; color:var(--colG1); cursor:pointer;
+.click-btn {text-decoration:none; font-size: 1rem; background:var(--colY1); border:1px solid var(--colY1); border-radius:10px; color:var(--colG1); cursor:pointer;
 display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relative; max-width: 70%;box-shadow:0 0 7px 0px rgba(0,0,0,0.3);}
 .click-btn:hover { background:var(--colG1); border:1px solid var(--colG1); color:var(--colY1); transition:.5s }
+
+
+.title-cover {text-decoration:none; font-size: 1rem; background:var(--colG10); border-radius:10px; 
+  display:inline-block; margin:10px; padding:15px; position:relative; max-width: 100%;}
 
 /* flowing cards */
 .card-container {display: flex; flex-wrap: wrap; justify-content: center;}
@@ -135,10 +140,8 @@ display:inline-block; margin:5px 0px 5px 5px; padding:7px 10px; position:relativ
 .content ul { list-style-position: outside; line-height:25px; margin: 2px 15px 50px;}
 
 .bg-img {background-attachment:fixed;background-position:bottom; background-repeat:no-repeat;background-size:cover;position:relative;}
-/* .home-img {background-image:url('images/20240709_224139v2.jpg');min-height:100vh;background-position:bottom;} */
 .home-img {background-image:url('images/Promo - PP092-v2.jpg');min-height:100vh;background-position:center;}
-/* .home-img {background-image:url('images/20230119_164656.jpg');min-height:100vh;background-position:80% 40%;} */
-/* .home-img {background-image:url('images/20240715_165722.jpg');min-height:100vh;background-position:80% 70%;} */
+.home-myimg {background-image:url('myimages/namaskaram.webp');min-height:100vh;background-position:center;}
 
 .pcl-img {background-image:linear-gradient(rgba(80,80,10,0.1), rgba(80,80,10,.8)),url('images/IMG-20230529-WA4.jpg');min-height:100vh;background-position:bottom;}
 .asanas-img {background-image:url('images/Promo - PP131_139_142.jpg');height:50vh;background-position:top;}
