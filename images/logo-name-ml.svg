@@ -5,9 +5,9 @@
    width="350.8mm"
    version="1.1"
    id="svg71367"
-   sodipodi:docname="logo-name.svg"
+   sodipodi:docname="logo-name-ml.svg"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   inkscape:export-filename="logo-name.webp"
+   inkscape:export-filename="logo-name-ml.webp"
    inkscape:export-xdpi="144"
    inkscape:export-ydpi="144"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -25,15 +25,15 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.3136"
-     inkscape:cx="722.3"
-     inkscape:cy="129.1"
+     inkscape:zoom="0.2832"
+     inkscape:cx="690.3"
+     inkscape:cy="280.7"
      inkscape:window-width="1280"
      inkscape:window-height="778"
      inkscape:window-x="-6"
      inkscape:window-y="-6"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g71355">
+     inkscape:current-layer="svg71367">
     <inkscape:grid
        type="xygrid"
        id="grid9024" />
@@ -56,6 +56,13 @@
          d="M7.597.061C5.079-.187 2.656.302-.01 1.788v1.273c2.783-1.63 5.183-2.009 7.482-1.781 2.298.228 4.497 1.081 6.781 1.938 4.567 1.713 9.551 3.458 15.813-.157l-.004-1.273c-6.44 3.709-10.816 1.982-15.371.273-2.278-.854-4.576-1.75-7.094-2z"
          id="path71310" />
     </pattern>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
   </defs>
   <g
      style="opacity:1"
@@ -142,35 +149,63 @@
     <g
        style="font-style:normal;font-weight:400;font-size:50.8px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        id="g71355"
-       transform="translate(1.071,0.6195)">
+       transform="translate(1.071,-4.671)">
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:22.9306px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Medium';letter-spacing:0px;word-spacing:0;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:21.1667px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Medium';letter-spacing:0px;word-spacing:0;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          x="-841.4"
-         y="2778"
+         y="2780"
          aria-label="with Nanda"
          id="text71353"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:22.9306px;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.1667px;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
            x="-841.4"
-           y="2778"
-           id="tspan71351">Classical Hatha Yoga </tspan></text>
+           y="2780"
+           id="tspan71351">ക്ലാസിക്കൽ ഹഠയോഗ</tspan></text>
     </g>
     <g
        style="font-style:normal;font-weight:400;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0;word-spacing:0;fill:#fca700;fill-opacity:1;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        id="g71361"
-       transform="translate(0.85,-2.282)">
+       transform="translate(0.85,-4.872)">
       <text
          xml:space="preserve"
-         style="font-weight:600;font-size:56.4444px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0;word-spacing:0;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;fill:#fca700"
+         style="font-weight:600;font-size:45.5083px;line-height:1.25;font-family:Poppins;-inkscape-font-specification:'Poppins Semi-Bold';letter-spacing:0;word-spacing:0;fill:#fca700;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          x="-779.9"
          y="2773"
          transform="translate(-64.41,-24.26)"
          aria-label="HATHA YOGA"
          id="text71359"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:56.4444px;font-family:'Source Serif Pro';-inkscape-font-specification:'Source Serif Pro Bold';stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;fill:#fca700"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45.5083px;font-family:'Noto Sans Malayalam';-inkscape-font-specification:'Noto Sans Malayalam Bold';fill:#fca700;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
            x="-779.9"
            y="2773"
-           id="tspan71357">Shivoham</tspan></text>
+           id="tspan71357">ശിവോഹം</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:3.88607px;line-height:125%;font-family:'Noto Sans Malayalam';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.079375"
+         x="-552.9"
+         y="2741"
+         id="text1679"><tspan
+           sodipodi:role="line"
+           x="0"
+           y="0"
+           id="tspan1677"
+           style="stroke-width:0.079375"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:400;font-size:3.88607px;font-family:'Noto Sans Malayalam';fill:#000000;stroke-width:0.079375"
+             id="tspan1675" /></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:3.88607px;line-height:125%;font-family:Calibri;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.079375"
+         x="-533.6"
+         y="2741"
+         id="text1685"><tspan
+           sodipodi:role="line"
+           x="-533.6"
+           y="2741"
+           id="tspan1683"
+           style="stroke-width:0.079375"><tspan
+             dx="0"
+             dy="0"
+             style="font-style:normal;font-variant:normal;font-weight:400;font-size:3.88607px;font-family:Calibri;fill:#000000;stroke-width:0.079375"
+             id="tspan1681"> </tspan></tspan></text>
     </g>
     <text
        y="2959"
