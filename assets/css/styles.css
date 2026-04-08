@@ -96,7 +96,7 @@ nav .icon {display:none}
 /* main content */
 .page-content {
   width: 50%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.89);
   margin: 100px auto;
   padding: 100px 50px;
 }
@@ -160,6 +160,7 @@ nav .icon {display:none}
   background-size:cover;
   background-position: top;
 }
+.practice-title p {padding-bottom: 0;}
 .practice-text {
   text-align: left;
   padding: 20px;
