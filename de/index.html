@@ -4,24 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shivoham | Klassisches Hatha Yoga — Zürich, Schweiz</title>
-  <meta name="description" content="Klassisches Hatha Yoga nach Sadhguru mit zertifiziertem Lehrer Nandakumar in Kollbrunn, Zürich. Kurse auf Englisch. Surya Kriya, Yogasanas, Angamardana und mehr." />
-  <meta name="keywords" content="Klassisches Hatha Yoga Zürich, Isha Hatha Yoga Kollbrunn, Yoga Kurse Zürich, Sadhguru Gurukulam zertifizierter Lehrer Zürich, Surya Kriya Zürich, Yogasanas Kollbrunn, Hatha Yoga Englisch" />
+  <meta name="description" content="Klassisches Hatha Yoga nach Sadhguru mit dem zertifizierten Lehrer Nandakumar in Kollbrunn, Zürich. Kurse auf Deutsch und Englisch. Surya Kriya, Yogasanas, Angamardana und mehr." />
+  <meta name="keywords" content="Klassisches Hatha Yoga Zürich, Yoga Winterthur, Hatha Yoga Winterthur, Sadhguru Winterthur, Isha Hatha Yoga Kollbrunn, Isha Hatha Yoga Winterthur, Sadhguru Gurukulam zertifizierter Lehrer Zürich, Surya Kriya Zürich, Yogasanas Kollbrunn, Hatha Yoga Deutsch" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://shivoham.ch/de/" />
-  <link rel="alternate" hreflang="de" href="https://shivoham.ch/de/" />
   <link rel="alternate" hreflang="en" href="https://shivoham.ch/" />
+  <link rel="alternate" hreflang="de" href="https://shivoham.ch/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://shivoham.ch/" />
   <link rel="icon" type="image/x-icon" href="../images/favicon.png">
   <meta property="og:title" content="Shivoham | Klassisches Hatha Yoga in Zürich" />
-  <meta property="og:description" content="Klassisches Hatha Yoga nach Sadhguru. Zertifizierter Lehrer Nandakumar bietet Kurse in Kollbrunn auf Englisch an." />
+  <meta property="og:description" content="Klassisches Hatha Yoga nach Sadhguru. Zertifizierter Lehrer Nandakumar bietet Kurse in Kollbrunn an." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://shivoham.ch/de/" />
+  <meta property="og:locale" content="de_CH" />
+  <meta property="og:locale:alternate" content="en_CH" />
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Shivoham Classical Hatha Yoga",
-    "description": "Klassische Hatha Yoga Kurse nach Sadhguru, angeboten in Kollbrunn, Zürich vom zertifizierten Lehrer Nandakumar.",
+    "name": "Shivoham Klassisches Hatha Yoga",
+    "description": "Klassische Hatha-Yoga-Kurse nach Sadhguru, angeboten in Kollbrunn, Zürich, durch den zertifizierten Lehrer Nandakumar.",
     "url": "https://shivoham.ch/de/",
     "telephone": "+41779818111",
     "email": "nanda@shivoham.ch",
@@ -33,7 +36,8 @@
     },
     "geo": { "@type": "GeoCoordinates", "latitude": "47.458", "longitude": "8.778" },
     "openingHours": "Mo-Su",
-    "sameAs": ["https://wa.me/41779818111","https://t.me/NandaSasidharan"]
+    "sameAs": ["https://wa.me/41779818111","https://t.me/NandaSasidharan"],
+    "inLanguage": "de"
   }
   </script>
 
@@ -46,21 +50,24 @@
 
     :root {
       --white:       #ffffff;
-      --bg:          #f7f6f3;
-      --bg-2:        #efede8;
-      --bg-3:        #e5e2db;
-      --grey-lt:     #c8c4bc;
-      --grey:        #9e9990;
-      --grey-dk:     #6b6660;
-      --text:        #2a2720;
-      --text-mid:    #4a4640;
-      --text-lt:     #7a756e;
-      --yellow:      #b8900a;
-      --yellow-lt:   #d4a718;
-      --yellow-pale: #f5e9c0;
-      --yellow-dim:  rgba(184,144,10,0.18);
-      --border:      #dedad3;
-      --border-acc:  rgba(184,144,10,0.35);
+      --bg:          #f5f2ec;
+      --bg-2:        #ece7de;
+      --bg-3:        #e0d9ce;
+      --grey-lt:     #bfb9ae;
+      --grey:        #8a8278;
+      --grey-dk:     #4e4840;
+      --text:        #1a2420;
+      --text-mid:    #2e3830;
+      --text-lt:     #4a5248;
+      --gold:        #b5934a;
+      --gold-lt:     #cca85e;
+      --gold-pale:   #f0e4c8;
+      --gold-dim:    rgba(181,147,74,0.18);
+      --sage:        #2d4038;
+      --sage-lt:     #3d5449;
+      --sage-pale:   #dce6e0;
+      --border:      #d4cfc6;
+      --border-acc:  rgba(181,147,74,0.40);
       --gap: 6rem;
     }
 
@@ -68,10 +75,10 @@
 
     body {
       font-family: 'Jost', sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.75;
+      line-height: 1.8;
       overflow-x: hidden;
       width: 100%;
       max-width: 100vw;
@@ -89,14 +96,13 @@
     }
     .img-placeholder svg { width: 28px; height: 28px; stroke: var(--grey-lt); fill: none; stroke-width: 1.2; opacity: 0.8; }
     .img-placeholder span { opacity: 0.7; }
-    .img-placeholder::after { content: ''; position: absolute; inset: 0; }
 
     /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 200;
       display: flex; align-items: center; justify-content: space-between;
       padding: 1.1rem clamp(1.25rem, 4vw, 4rem);
-      background: rgba(247,246,243,0.93);
+      background: rgba(245,242,236,0.95);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border);
     }
@@ -106,14 +112,14 @@
       letter-spacing: 0.14em; color: var(--text); text-decoration: none;
       display: flex; align-items: center; gap: 0.55rem;
     }
-    .nav-logo span { color: var(--yellow); }
+    .nav-logo span { color: var(--gold); }
     .nav-links { display: flex; gap: 2.5rem; list-style: none; }
     .nav-links a {
       text-decoration: none; font-size: 0.7rem;
       letter-spacing: 0.22em; text-transform: uppercase;
       color: var(--text-lt); transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--yellow); }
+    .nav-links a:hover { color: var(--gold); }
     .nav-right { display: flex; align-items: center; gap: 1rem; }
     .nav-lang {
       font-size: 0.7rem; letter-spacing: 0.12em;
@@ -121,7 +127,7 @@
       border: 1px solid var(--border);
       padding: 0.3rem 0.85rem; transition: all 0.2s;
     }
-    .nav-lang:hover { border-color: var(--border-acc); color: var(--yellow); background: var(--yellow-pale); }
+    .nav-lang:hover { border-color: var(--border-acc); color: var(--gold); background: var(--gold-pale); }
     .nav-lang-mobile { display: none; }
 
     /* ── HAMBURGER ── */
@@ -157,14 +163,14 @@
       content: '';
       position: absolute; top: 0; right: 0;
       width: 50%; height: 100%;
-      background: var(--bg); z-index: 0;
+      background: var(--sage-pale); z-index: 0;
     }
     .hero-text { position: relative; z-index: 1; }
     .hero-image-wrap { position: relative; z-index: 1; }
 
     .hero-eyebrow {
       font-size: 0.68rem; letter-spacing: 0.32em;
-      text-transform: uppercase; color: var(--yellow);
+      text-transform: uppercase; color: var(--gold);
       margin-bottom: 1.5rem;
       opacity: 0; animation: fadeUp 0.9s 0.2s forwards;
     }
@@ -176,28 +182,28 @@
       margin-bottom: 1.5rem;
       opacity: 0; animation: fadeUp 0.9s 0.4s forwards;
     }
-    .hero h1 em { font-style: italic; color: var(--yellow); }
+    .hero h1 em { font-style: italic; color: var(--gold); }
     .hero-sub {
-      font-size: 1rem; color: var(--text-lt);
+      font-size: 1.05rem; color: var(--text-mid);
       letter-spacing: 0.05em; margin-bottom: 0.5rem;
       opacity: 0; animation: fadeUp 0.9s 0.6s forwards;
     }
     .hero-location {
       font-size: 0.68rem; letter-spacing: 0.2em;
-      text-transform: uppercase; color: var(--grey);
+      text-transform: uppercase; color: var(--grey-dk);
       margin-bottom: 2.5rem;
       opacity: 0; animation: fadeUp 0.9s 0.72s forwards;
     }
     .hero-rule {
-      width: 36px; height: 1px; background: var(--yellow);
+      width: 36px; height: 1px; background: var(--gold);
       margin-bottom: 2.25rem;
       opacity: 0; animation: fadeUp 0.9s 0.82s forwards;
     }
     .hero-quote {
       max-width: 440px;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.1rem; font-style: italic;
-      color: var(--text-mid); line-height: 1.65;
+      font-size: 1.15rem; font-style: italic;
+      color: var(--text-mid); line-height: 1.7;
       margin-bottom: 2.5rem;
       opacity: 0; animation: fadeUp 0.9s 0.95s forwards;
     }
@@ -205,7 +211,7 @@
       display: block; font-style: normal;
       font-family: 'Jost', sans-serif;
       font-size: 0.65rem; letter-spacing: 0.22em;
-      text-transform: uppercase; color: var(--yellow);
+      text-transform: uppercase; color: var(--gold);
       margin-top: 0.65rem;
     }
     .hero-ctas {
@@ -214,6 +220,7 @@
     }
     .hero-img {
       width: 100%; aspect-ratio: 3/4; max-height: 75vh;
+      object-fit: cover;
       opacity: 0; animation: fadeUp 0.9s 0.5s forwards;
     }
 
@@ -225,13 +232,13 @@
     /* ── BUTTONS ── */
     .btn-primary {
       display: inline-block; padding: 0.85rem 2.2rem;
-      background: var(--yellow); color: var(--white);
+      background: var(--sage); color: var(--white);
       text-decoration: none; font-size: 0.7rem;
       letter-spacing: 0.18em; text-transform: uppercase;
-      font-weight: 500; border: 1px solid var(--yellow);
+      font-weight: 500; border: 1px solid var(--sage);
       transition: all 0.25s;
     }
-    .btn-primary:hover { background: var(--yellow-lt); border-color: var(--yellow-lt); }
+    .btn-primary:hover { background: var(--sage-lt); border-color: var(--sage-lt); }
     .btn-outline {
       display: inline-block; padding: 0.85rem 2.2rem;
       background: transparent; color: var(--text);
@@ -239,7 +246,7 @@
       letter-spacing: 0.18em; text-transform: uppercase;
       border: 1px solid var(--border); transition: all 0.25s;
     }
-    .btn-outline:hover { border-color: var(--border-acc); color: var(--yellow); }
+    .btn-outline:hover { border-color: var(--border-acc); color: var(--gold); }
 
     /* ── SHARED ── */
     section { padding: var(--gap) clamp(1.25rem, 4vw, 2rem); }
@@ -247,7 +254,7 @@
     .container-narrow { max-width: 780px; margin: 0 auto; }
     .label {
       font-size: 0.66rem; letter-spacing: 0.32em;
-      text-transform: uppercase; color: var(--yellow);
+      text-transform: uppercase; color: var(--gold);
       display: block; margin-bottom: 0.85rem;
     }
     .title {
@@ -256,33 +263,134 @@
       font-weight: 300; color: var(--text);
       line-height: 1.18; margin-bottom: 1.2rem;
     }
-    .title em { font-style: italic; color: var(--yellow); }
-    .body-text { color: var(--text-lt); font-size: 0.97rem; line-height: 1.9; max-width: 600px; }
-    .rule { width: 44px; height: 1px; background: var(--yellow); border: none; margin: 2rem 0; }
+    .title em { font-style: italic; color: var(--sage); }
+    .body-text { color: var(--text-lt); font-size: 1rem; line-height: 1.95; max-width: 600px; }
+    .rule { width: 44px; height: 1px; background: var(--gold); border: none; margin: 2rem 0; }
+
+    /* ── SECTION DIVIDER ── */
+    .section-divider {
+      display: flex; align-items: center; justify-content: center;
+      padding: 0; height: 1px;
+      background: linear-gradient(to right, transparent, var(--border), transparent);
+      margin: 0;
+    }
 
     /* ── BAND ── */
-    .band { background: var(--text); padding: 4.5rem clamp(1.25rem, 4vw, 2rem); text-align: center; }
+    .band { background: var(--sage); padding: 5rem clamp(1.25rem, 4vw, 2rem); text-align: center; }
     .band p {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.2rem, 2.5vw, 1.75rem);
-      font-weight: 300; color: rgba(247,246,243,0.88);
-      max-width: 840px; margin: 0 auto; line-height: 1.65;
+      font-size: clamp(1.25rem, 2.5vw, 1.9rem);
+      font-weight: 400; color: rgba(245,242,236,0.97);
+      max-width: 840px; margin: 0 auto; line-height: 1.72;
     }
-    .band p em { color: var(--yellow-lt); font-style: italic; }
+    .band p em { color: var(--gold-lt); font-style: italic; }
+    .band-quote {
+      margin-top: 2.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+      font-style: italic;
+      color: rgba(245,242,236,0.82);
+      max-width: 720px;
+      margin-left: auto; margin-right: auto;
+      line-height: 1.72;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 2rem;
+    }
+    .band-quote cite {
+      display: block; font-style: normal;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--gold-lt);
+      margin-top: 0.75rem;
+    }
+
+    /* ── ABOUT-OFFERING blurb ── */
+    .offering {
+      background: var(--bg-2);
+      padding: 4rem clamp(1.25rem, 4vw, 2rem);
+      border-bottom: 1px solid var(--border);
+    }
+    .offering-inner {
+      max-width: 860px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
+      align-items: start;
+    }
+    .offering h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 300; color: var(--text);
+      line-height: 1.25; margin-bottom: 0;
+      grid-column: 1 / -1;
+    }
+    .offering h2 em { font-style: italic; color: var(--sage); }
+    .offering p { font-size: 0.97rem; color: var(--text-lt); line-height: 1.95; }
 
     /* ── BENEFITS ── */
     .benefits { background: var(--white); }
     .benefits-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
-      gap: 1px; background: var(--border);
-      border: 1px solid var(--border); margin-top: 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
     }
-    .benefit-item { background: var(--white); padding: 1.75rem 1.5rem; transition: background 0.25s; }
-    .benefit-item:hover { background: var(--yellow-pale); }
-    .benefit-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--yellow); margin-bottom: 0.9rem; }
-    .benefit-item h4 { font-size: 0.85rem; font-weight: 500; color: var(--text); letter-spacing: 0.04em; margin-bottom: 0.3rem; }
-    .benefit-item p { font-size: 0.8rem; color: var(--text-lt); line-height: 1.65; }
+    .benefit-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 2rem 1.75rem 1.75rem;
+      transition: background 0.25s, border-color 0.25s, transform 0.25s;
+      position: relative;
+    }
+    .benefit-item:hover {
+      background: var(--sage-pale);
+      border-color: rgba(45,64,56,0.25);
+      transform: translateY(-2px);
+    }
+    .benefit-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem; font-weight: 300;
+      color: var(--sage); opacity: 0.18;
+      line-height: 1;
+      margin-bottom: 0.9rem;
+      letter-spacing: -0.02em;
+    }
+    .benefit-item h4 {
+      font-size: 0.9rem; font-weight: 500;
+      color: var(--text); letter-spacing: 0.04em;
+      margin-bottom: 0.4rem;
+    }
+    .benefit-item p { font-size: 0.87rem; color: var(--text-lt); line-height: 1.72; }
+
+    /* ── WHY PRACTICE QUOTE ── */
+    .why-practice-quote {
+      margin-top: 3.5rem;
+      padding: 2.25rem 2.75rem;
+      background: var(--sage);
+      max-width: 820px;
+      position: relative;
+    }
+    .why-practice-quote::before {
+      content: '\201E';
+      position: absolute; top: -0.5rem; left: 1.5rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 6rem; line-height: 1;
+      color: var(--gold-lt); opacity: 0.35;
+    }
+    .why-practice-quote p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      font-style: italic;
+      color: rgba(245,242,236,0.95);
+      line-height: 1.75;
+      margin: 0 0 0.85rem 0;
+      position: relative; z-index: 1;
+    }
+    .why-practice-quote cite {
+      font-style: normal;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--gold-lt);
+      position: relative; z-index: 1;
+    }
 
     /* ── PRACTICES ── */
     .practices { background: var(--bg); }
@@ -300,23 +408,42 @@
       background: var(--white); border: 1px solid var(--border);
       overflow: hidden; transition: box-shadow 0.25s, transform 0.25s;
     }
-    .practice-card:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(42,39,32,0.08); }
-    .practice-card-img { width: 100%; aspect-ratio: 16/9; }
+    .practice-card:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(26,36,32,0.10); }
+    .practice-card-img { width: 100%; aspect-ratio: 16/9; overflow: hidden; }
+    .practice-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .practice-card-body { padding: 1.5rem; }
-    .p-tag { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--yellow); display: block; margin-bottom: 0.6rem; }
+    .p-tag { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.6rem; }
     .practice-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; color: var(--text); margin-bottom: 0.75rem; }
-    .practice-card p { font-size: 0.87rem; color: var(--text-lt); line-height: 1.8; margin-bottom: 1rem; }
-    .p-meta { display: flex; gap: 1.5rem; font-size: 0.7rem; color: var(--grey); border-top: 1px solid var(--border); padding-top: 0.85rem; margin-top: 0.25rem; }
-    .p-meta span::before { content: '- '; color: var(--yellow); }
-    .p-quote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.88rem; color: var(--text-mid); border-left: 2px solid var(--yellow-dim); padding-left: 0.9rem; margin-top: 0.9rem; line-height: 1.6; }
+    .practice-card p { font-size: 0.9rem; color: var(--text-lt); line-height: 1.85; margin-bottom: 1rem; }
+    .p-meta { display: flex; gap: 1.5rem; font-size: 0.72rem; color: var(--grey-dk); border-top: 1px solid var(--border); padding-top: 0.85rem; margin-top: 0.25rem; }
+    .p-meta span::before { content: '— '; color: var(--gold); }
+    .p-quote {
+      font-family: 'Cormorant Garamond', serif; font-style: italic;
+      font-size: 0.92rem; color: var(--text-mid);
+      border-left: 2px solid var(--gold-dim);
+      padding-left: 0.9rem; margin-top: 0.9rem; line-height: 1.65;
+    }
 
     /* ── CLASSES ── */
-    .classes-section { background: var(--white); }
+    .classes-section { background: var(--bg-2); }
     .classes-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .classes-table { margin-top: 0.5rem; border: 1px solid var(--border); overflow: hidden; min-width: 640px; }
+    .classes-table { margin-top: 0.5rem; border: 1px solid var(--border); overflow: hidden; min-width: 720px; }
+    .class-row-header {
+      display: grid;
+      grid-template-columns: 1.5fr 1.7fr 1.1fr 1.6fr 0.65fr 0.9fr auto;
+      align-items: center; gap: 0;
+      padding: 0.75rem 1.5rem;
+      background: var(--sage);
+      border-bottom: 2px solid var(--gold);
+    }
+    .class-row-header span {
+      font-size: 0.6rem; letter-spacing: 0.22em;
+      text-transform: uppercase; color: rgba(245,242,236,0.65);
+      font-weight: 500;
+    }
     .class-row {
       display: grid;
-      grid-template-columns: 1.5fr 1.7fr 1.2fr 1.9fr 0.75fr auto;
+      grid-template-columns: 1.5fr 1.7fr 1.1fr 1.6fr 0.65fr 0.9fr auto;
       align-items: center; gap: 0;
       padding: 1.15rem 1.5rem;
       border-bottom: 1px solid var(--border);
@@ -324,22 +451,31 @@
     }
     .class-row:last-child { border-bottom: none; }
     .class-row:hover { background: var(--bg); }
+    .class-cost { display: flex; flex-direction: column; gap: 0.1rem; }
+    .class-cost strong {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 400; color: var(--text);
+    }
+    .class-cost small {
+      font-size: 0.62rem; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--grey);
+    }
     .class-practice { display: flex; flex-direction: column; gap: 0.2rem; }
     .class-practice strong { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; color: var(--text); }
-    .c-tag { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--yellow); }
+    .c-tag { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
     .class-detail { display: flex; align-items: center; gap: 0.4rem; font-size: 0.78rem; color: var(--text-lt); padding-right: 0.75rem; }
-    .class-detail svg { width: 13px; height: 13px; stroke: var(--yellow); fill: none; stroke-width: 1.5; flex-shrink: 0; opacity: 0.75; }
+    .class-detail svg { width: 13px; height: 13px; stroke: var(--gold); fill: none; stroke-width: 1.5; flex-shrink: 0; opacity: 0.75; }
     .class-register {
       display: inline-block; padding: 0.4rem 1rem;
-      background: transparent; color: var(--yellow);
+      background: transparent; color: var(--sage);
       text-decoration: none; font-size: 0.66rem;
       letter-spacing: 0.16em; text-transform: uppercase;
-      border: 1px solid var(--border-acc); white-space: nowrap;
+      border: 1px solid rgba(45,64,56,0.4); white-space: nowrap;
       transition: all 0.2s;
     }
-    .class-register:hover { background: var(--yellow); color: var(--white); border-color: var(--yellow); }
-    .host-note { font-size: 0.78rem; color: var(--text-lt); margin-top: 1.2rem; }
-    .host-note a { color: var(--yellow); text-decoration: none; border-bottom: 1px solid var(--yellow-dim); }
+    .class-register:hover { background: var(--sage); color: var(--white); border-color: var(--sage); }
+    .host-note { font-size: 0.85rem; color: var(--text-lt); margin-top: 1.5rem; }
+    .host-note a { color: var(--sage); text-decoration: none; border-bottom: 1px solid rgba(45,64,56,0.3); }
     .contact-methods { display: flex; gap: 0.9rem; flex-wrap: wrap; margin-top: 1.5rem; }
     .contact-btn {
       display: inline-flex; align-items: center; gap: 0.45rem;
@@ -347,36 +483,81 @@
       font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
       border: 1px solid var(--border); color: var(--text-lt); transition: all 0.22s;
     }
-    .contact-btn:hover { border-color: var(--border-acc); color: var(--yellow); }
-    .contact-btn.wa { background: #25d366; border-color: #25d366; color: #fff; }
-    .contact-btn.wa:hover { background: #1da851; border-color: #1da851; }
+    .contact-btn:hover { border-color: var(--border-acc); color: var(--gold); }
+    .contact-btn.wa { background: var(--sage); border-color: var(--sage); color: #fff; }
+    .contact-btn.wa:hover { background: var(--sage-lt); border-color: var(--sage-lt); }
     .contact-phone { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--text); letter-spacing: 0.08em; margin-top: 2.5rem; }
+
+    /* ── NO CLASSES STATE ── */
+    .no-classes-state {
+      margin-top: 1.5rem;
+      padding: 2.5rem 2rem;
+      border: 1px dashed var(--border);
+      background: var(--bg);
+      max-width: 540px;
+    }
+    .no-classes-state p {
+      font-size: 0.95rem; color: var(--text-lt);
+      line-height: 1.8; margin-bottom: 1.2rem;
+    }
+
+    /* ── TESTIMONIAL ── */
+    .testimonials { background: var(--white); }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .testimonial-card {
+      padding: 2rem 2rem 1.75rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: '\201E';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4rem; line-height: 1;
+      color: var(--sage); opacity: 0.2;
+      position: absolute; top: 0.75rem; left: 1.25rem;
+    }
+    .testimonial-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem; font-style: italic;
+      color: var(--text-mid); line-height: 1.72;
+      margin-bottom: 1.25rem;
+      padding-top: 1.5rem;
+    }
+    .testimonial-author { display: flex; flex-direction: column; gap: 0.15rem; }
+    .testimonial-author strong { font-size: 0.78rem; font-weight: 500; color: var(--text); letter-spacing: 0.06em; }
+    .testimonial-author span { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
 
     /* ── ABOUT ── */
     .about { background: var(--bg-2); }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-top: 3rem; }
-    .about-person-img { width: 60%; aspect-ratio: 1/1; margin-bottom: 1.5rem; }
+    .about-person-img { width: 60%; aspect-ratio: 4/3; margin-bottom: 1.5rem; object-fit: cover; }
     .about-person h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 400; color: var(--text); margin-bottom: 0.2rem; }
-    .about-person .role { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--yellow); margin-bottom: 1rem; }
-    .about-person p { font-size: 0.9rem; color: var(--text-lt); line-height: 1.9; margin-bottom: 0.9rem; }
+    .about-person .role { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block; }
+    .about-person p { font-size: 0.93rem; color: var(--text-lt); line-height: 1.95; margin-bottom: 0.9rem; }
     .about-cert {
       display: inline-flex; align-items: center; gap: 0.45rem;
       font-size: 0.7rem; letter-spacing: 0.1em;
       color: var(--text-lt); border: 1px solid var(--border);
       padding: 0.4rem 0.9rem; margin-top: 0.5rem;
     }
-    .about-cert::before { content: '◈'; color: var(--yellow); font-size: 0.6rem; }
+    .about-cert::before { content: '◈'; color: var(--gold); font-size: 0.6rem; }
     .about-links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
     .about-links a { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-lt); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
-    .about-links a:hover { color: var(--yellow); border-color: var(--yellow-dim); }
+    .about-links a:hover { color: var(--gold); border-color: var(--gold-dim); }
 
     /* ── FOOTER ── */
-    footer { background: var(--text); padding: 3.5rem clamp(1.25rem, 4vw, 2rem); text-align: center; }
-    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; letter-spacing: 0.16em; color: rgba(247,246,243,0.9); margin-bottom: 0.75rem; }
-    .footer-logo span { color: var(--yellow-lt); }
-    footer p { font-size: 0.75rem; color: rgba(247,246,243,0.4); letter-spacing: 0.04em; margin-bottom: 0.3rem; }
-    footer a { color: rgba(247,246,243,0.45); text-decoration: none; transition: color 0.2s; }
-    footer a:hover { color: var(--yellow-lt); }
+    footer { background: var(--sage); padding: 3.5rem clamp(1.25rem, 4vw, 2rem); text-align: center; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; letter-spacing: 0.16em; color: rgba(245,242,236,0.92); margin-bottom: 0.75rem; }
+    .footer-logo span { color: var(--gold-lt); }
+    footer p { font-size: 0.78rem; color: rgba(245,242,236,0.58); letter-spacing: 0.04em; margin-bottom: 0.3rem; }
+    footer a { color: rgba(245,242,236,0.65); text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: var(--gold-lt); }
 
     /* ── REVEAL ── */
     .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
@@ -389,12 +570,14 @@
       :root { --gap: 4rem; }
       .hero { grid-template-columns: 1fr; padding: 5.5rem 1.5rem 3rem; gap: 2rem; min-height: auto; }
       .hero::before { display: none; }
-      .hero-img { aspect-ratio: 16/9; max-height: 260px; }
+      .hero-img { aspect-ratio: 4/3; max-height: 380px; }
       .practices-intro { grid-template-columns: 1fr; gap: 2rem; }
       .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .offering-inner { grid-template-columns: 1fr; }
 
       .classes-table-wrap { overflow-x: visible; }
       .classes-table { min-width: 0; border: none; }
+      .class-row-header { display: none; }
       .class-row {
         display: flex; flex-direction: column; align-items: flex-start;
         gap: 0.5rem; padding: 1.25rem 1rem;
@@ -421,7 +604,7 @@
         display: flex;
         flex-direction: column;
         position: fixed; top: 0; left: 0; right: 0;
-        background: rgba(247,246,243,0.98);
+        background: rgba(245,242,236,0.98);
         backdrop-filter: blur(16px);
         padding: 5rem 2rem 2.5rem;
         gap: 0; list-style: none;
@@ -429,13 +612,13 @@
         transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
         z-index: 250;
         border-bottom: 1px solid var(--border);
-        box-shadow: 0 8px 32px rgba(42,39,32,0.1);
+        box-shadow: 0 8px 32px rgba(26,36,32,0.1);
       }
       .nav-links.open { transform: translateY(0); }
       .nav-links li { border-bottom: 1px solid var(--border); }
       .nav-links li:last-child { border-bottom: none; }
       .nav-links a { display: block; padding: 1rem 0; font-size: 0.88rem; letter-spacing: 0.16em; color: var(--text); }
-      .nav-links a:hover { color: var(--yellow); }
+      .nav-links a:hover { color: var(--gold); }
 
       .hero {
         grid-template-columns: 1fr;
@@ -447,26 +630,22 @@
       .hero-text { display: flex; flex-direction: column; align-items: center; }
       .hero h1 { font-size: clamp(2.4rem, 11vw, 3.2rem); }
       .hero-rule { margin-left: auto; margin-right: auto; }
-
+      .hero-img { aspect-ratio: 4/3; max-height: 300px; }
       .hero-quote { font-size: 1rem; max-width: 100%; padding: 0 0.25rem; word-break: break-word; }
-
       .hero-ctas { flex-direction: column; width: 100%; align-items: stretch; }
       .btn-primary, .btn-outline { width: 100%; text-align: center; padding: 0.9rem 1rem; }
-
-      .hero-img { aspect-ratio: 16/9; max-height: 220px; }
 
       section { padding: var(--gap) 1.25rem; }
       .band { padding: 3rem 1.25rem; }
       .title { font-size: clamp(1.75rem, 7vw, 2.5rem); }
-
-      .benefits-grid { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; gap: 1rem; }
       .practices-grid { grid-template-columns: 1fr; gap: 1rem; }
-
+      .testimonials-grid { grid-template-columns: 1fr; }
       .contact-methods { flex-direction: column; }
       .contact-btn { justify-content: center; text-align: center; }
-
-      .about-person-img { aspect-ratio: 4/3; }
-
+      .about-person-img { width: 100%; aspect-ratio: 4/3; }
+      .offering-inner { gap: 1.5rem; }
+      .why-practice-quote { padding: 1.75rem 1.5rem; }
       footer { padding: 2.5rem 1.25rem; }
     }
   </style>
@@ -475,9 +654,9 @@
 
 <!-- NAV -->
 <nav id="main-nav">
-  <a href="#" class="nav-logo"><img src="../images/logo.png" alt="" height="40px"> <span>Shivoham</span></a>
+  <a href="#" class="nav-logo"> <img src="../images/logo.png" alt="" height="40px"> <span>Shivoham</span></a>
   <ul class="nav-links" id="nav-links">
-    <li><a href="#about">Über uns</a></li>
+    <li><a href="#">Über uns</a></li>
     <li><a href="#practices">Praktiken</a></li>
     <li><a href="#classes">Kurse</a></li>
     <li><a href="#contact">Kontakt</a></li>
@@ -497,20 +676,20 @@
     <p class="hero-eyebrow">Sadhguru Gurukulam Zertifiziert · Zürich, Schweiz</p>
     <h1>Klassisches<br /><em>Hatha Yoga</em></h1>
     <p class="hero-sub">Für Gesundheit, Freude und innere Transformation</p>
-    <p class="hero-location">Kollbrunn · Zürich · Englisch</p>
+    <p class="hero-location">Kollbrunn · Zürich · Auf Englisch</p>
     <div class="hero-rule"></div>
     <blockquote class="hero-quote">
       Hatha Yoga ist die Wissenschaft, den Körper zu nutzen, um sich auf die höchste Möglichkeit vorzubereiten.
       <cite>— Sadhguru</cite>
     </blockquote>
     <div class="hero-ctas">
-      <a href="#classes" class="btn-primary">Kurs besuchen</a>
+      <a href="#classes" class="btn-primary">Kurs belegen</a>
       <a href="#practices" class="btn-outline">Praktiken entdecken</a>
     </div>
   </div>
   <div class="hero-image-wrap">
     <div class="img-placeholder hero-img">
-      <img src="../images/hero-image.webp" alt="" width="100%">
+      <img src="../images/hero-image.webp" alt="Hatha-Yoga-Haltung" width="100%" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div>
   </div>
 </section>
@@ -518,31 +697,80 @@
 <!-- BAND -->
 <div class="band">
   <p>
-    Eine seltene Gelegenheit, Hatha Yoga in seiner <em>klassischen, unverfälschten Form</em> zu empfangen —
-    strukturiert von Sadhguru und übertragen von einem zertifizierten Lehrer, damit Sie
-    unabhängig, im Privaten, mit vollem Bewusstsein praktizieren können.
+    Hatha Yoga in seiner <em>ursprünglichen, unverdünnten Form.</em> <br>
+    <em>Als Technologie,</em> nicht als Philosophie oder Glaubenssystem. <br>
+    <em>Mach es zu deinem</em> und verwandle dich.
   </p>
+  <blockquote class="band-quote">
+    „Wir lehren Hatha Yoga als transformativen Prozess. Die Transformation findet nicht nur auf der Ebene des Körpers statt, sondern verändert dein ganzes Wesen."
+    <cite>— Sadhguru</cite>
+  </blockquote>
+</div>
+
+<!-- ABOUT THIS OFFERING -->
+<div class="offering reveal">
+  <div class="offering-inner">
+    <h2>Was dieses <em>Angebot</em> ist</h2>
+    <p>Shivoham bringt Klassisches Hatha Yoga — nach Sadhguru — nach Kollbrunn, Zürich. Dies sind keine Fitnesskurse oder Abwandlungen. Es sind authentische, klassische Praktiken, die in exakt der Form weitergegeben werden, für die sie entwickelt wurden — durch einen Lehrer, der direkt von Sadhguru Gurukulam zertifiziert wurde.</p>
+    <p>Die Kurse sind klein, werden auf Englisch unterrichtet und finden in einer ruhigen Umgebung statt, die echtes Lernen ermöglicht. Sobald du eine Praxis erhalten hast, gehört sie dir für immer — ein persönliches Werkzeug, das du täglich und eigenständig in deinem eigenen Raum anwenden kannst.</p>
+  </div>
 </div>
 
 <!-- BENEFITS -->
 <section class="benefits" id="benefits">
   <div class="container">
     <div class="reveal">
-      <span class="label">Warum praktizieren</span>
+      <span class="label">Warum üben</span>
       <h2 class="title">Eine vollständige Wissenschaft von<br /><em>Körper &amp; Sein</em></h2>
-      <p class="body-text">Diese Praktiken erfordern kein Equipment und keine Vorerfahrung. Ob Sie körperliche Vitalität, mentale Klarheit oder eine tiefere Verbindung zum Leben suchen — Klassisches Hatha Yoga bietet einen systematischen Weg für jede Dimension Ihres Wohlbefindens.</p>
+      <p class="body-text">Diese Praktiken erfordern keine Ausrüstung und keine Vorerfahrung. Ob du körperliche Vitalität, geistige Klarheit oder eine tiefere Verbindung mit dem Leben suchst — Klassisches Hatha Yoga bietet einen systematischen Weg für jede Dimension deines Wohlbefindens.</p>
     </div>
     <hr class="rule" />
     <div class="benefits-grid reveal">
-      <div class="benefit-item"><div class="benefit-dot"></div><h4>Kardiovaskuläre Gesundheit</h4><p>Verbesserte Herzeffizienz und normalisierter Blutdruck.</p></div>
-      <div class="benefit-item"><div class="benefit-dot"></div><h4>Mentale Klarheit</h4><p>Gesteigerte Konzentration, reduzierte Angst und Depression.</p></div>
-      <div class="benefit-item"><div class="benefit-dot"></div><h4>Balance des Nervensystems</h4><p>Regulierung des autonomen Nervensystems für tiefe Ruhe.</p></div>
-      <div class="benefit-item"><div class="benefit-dot"></div><h4>Energie &amp; Vitalität</h4><p>Gesteigerter Prana-Fluss und nachhaltige körperliche Energie.</p></div>
-      <div class="benefit-item"><div class="benefit-dot"></div><h4>Flexibilität &amp; Kraft</h4><p>Verbesserte Gelenkgesundheit, Haltung und Muskelkraft.</p></div>
-      <div class="benefit-item"><div class="benefit-dot"></div><h4>Emotionales Wohlbefinden</h4><p>Gehobene Stimmung und dauerhaftes inneres Gleichgewicht.</p></div>
-      <div class="benefit-item"><div class="benefit-dot"></div><h4>Gewichtsnormalisierung</h4><p>Metabolisches Gleichgewicht und gesunde Körperzusammensetzung.</p></div>
-      <div class="benefit-item"><div class="benefit-dot"></div><h4>Endokrine Funktion</h4><p>Hormonelle Balance zur Unterstützung von Immunität und Gesamtgesundheit.</p></div>
+      <div class="benefit-item">
+        <div class="benefit-num">01</div>
+        <h4>Herz-Kreislauf-Gesundheit</h4>
+        <p>Verbesserte Herzleistung und normalisierter Blutdruck.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">02</div>
+        <h4>Geistige Klarheit</h4>
+        <p>Gesteigerte Konzentration, weniger Angst und Depression.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">03</div>
+        <h4>Balance des Nervensystems</h4>
+        <p>Regulierung des autonomen Nervensystems für tiefe Ruhe.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">04</div>
+        <h4>Energie &amp; Vitalität</h4>
+        <p>Gesteigerter Pranafluss und nachhaltige körperliche Energie.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">05</div>
+        <h4>Flexibilität &amp; Kraft</h4>
+        <p>Verbesserte Gelenkgesundheit, Haltung und Muskelkraft.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">06</div>
+        <h4>Emotionales Wohlbefinden</h4>
+        <p>Gehobene Stimmung und dauerhafte innere Balance.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">07</div>
+        <h4>Gewichtsnormalisierung</h4>
+        <p>Metabolisches Gleichgewicht und gesunde Körperzusammensetzung.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">08</div>
+        <h4>Endokrine Funktion</h4>
+        <p>Hormonelles Gleichgewicht zur Unterstützung von Immunsystem und Gesundheit.</p>
+      </div>
     </div>
+    <blockquote class="why-practice-quote reveal">
+      <p>„Deine körperliche Gesundheit, dein psychisches Wohlbefinden und deine spirituelle Möglichkeit hängen davon ab, wie gut du mit der Existenz ausgerichtet bist. Im Wesentlichen dient Hatha Yoga dazu, diese Ausrichtung herzustellen."</p>
+      <cite>— Sadhguru</cite>
+    </blockquote>
   </div>
 </section>
 
@@ -553,7 +781,7 @@
       <div>
         <span class="label">Die Praktiken</span>
         <h2 class="title">Sechs klassische <em>yogische Formen</em></h2>
-        <p class="body-text">Jede Praktik ist ein vollständiges, in sich geschlossenes System. Zusammen bieten sie einen progressiven Weg — von der Aktivierung des physischen Körpers bis zur Arbeit mit feineren Dimensionen von Energie und Bewusstsein. Kein Equipment oder Vorerfahrung erforderlich.</p>
+        <p class="body-text">Jede Praxis ist ein vollständiges, in sich geschlossenes System. Zusammen bieten sie einen progressiven Weg — von der Aktivierung des physischen Körpers bis hin zur Arbeit mit subtileren Dimensionen von Energie und Bewusstsein. Keine Ausrüstung oder Vorerfahrung erforderlich.</p>
       </div>
     </div>
     <div class="practices-grid">
@@ -562,10 +790,10 @@
           <img src="../images/Promo - PP115-2000px.webp" alt="Upa-Yoga Bild" width="100%">
         </div>
         <div class="practice-card-body">
-          <span class="p-tag">Grundlage · Anfänger</span>
+          <span class="p-tag">Grundlage · Einsteiger</span>
           <h3>Upa-Yoga</h3>
-          <p>Zehn einfache, aber kraftvolle Praktiken, die Gelenke, Muskeln und das Energiesystem aktivieren, angesammelte Spannungen lösen und dem gesamten System Leichtigkeit bringen.</p>
-          <div class="p-meta"><span>4–5 Std. zum Erlernen</span><span>~30 Min. Praxis</span></div>
+          <p>Zehn einfache, aber wirkungsvolle Praktiken, die Gelenke, Muskeln und das Energiesystem aktivieren, angestaute Spannungen lösen und Leichtigkeit ins gesamte System bringen.</p>
+          <div class="p-meta"><span>4–5 Std. Lernzeit</span><span>~30 Min. Praxis</span></div>
         </div>
       </article>
       <article class="practice-card reveal">
@@ -575,9 +803,9 @@
         <div class="practice-card-body">
           <span class="p-tag">Flexibilität · Fitness</span>
           <h3>Angamardana</h3>
-          <p>Eine Reihe von 31 Prozessen zur Belebung des Körpers und zur Förderung von körperlicher und geistiger Höchstleistung — vollständig ohne Equipment.</p>
-          <blockquote class="p-quote">Angamardana ist ein wunderbarer Weg, den menschlichen Organismus auf eine höhere Möglichkeit vorzubereiten. Es ist einer der einfachsten und kraftvollsten Wege, Fitness zu erlangen, da es kein Equipment benötigt. — Sadhguru</blockquote>
-          <div class="p-meta"><span>11–14 Std. zum Erlernen</span><span>~40 Min. Praxis</span></div>
+          <p>Eine Serie von 31 Prozessen, die den Körper beleben und Spitzenfitness auf körperlicher und geistiger Ebene fördern — ganz ohne Hilfsmittel.</p>
+          <blockquote class="p-quote">Angamardana ist eine wunderbare Weise, den menschlichen Mechanismus auf eine höhere Möglichkeit vorzubereiten. Vor allem ist es eine der einfachsten und kraftvollsten Methoden, Fitness zu erlangen, da keine Ausrüstung oder externe Unterstützung benötigt wird. — Sadhguru</blockquote>
+          <div class="p-meta"><span>11–14 Std. Lernzeit</span><span>~40 Min. Praxis</span></div>
         </div>
       </article>
       <article class="practice-card reveal">
@@ -587,8 +815,8 @@
         <div class="practice-card-body">
           <span class="p-tag">Kraft · Bänder</span>
           <h3>Surya Shakti</h3>
-          <p>Eine 18-schrittige Sonnengruß-Sequenz, die das System energetisiert und die Bänder stärkt, welche das Skelett- und Muskelsystem verbinden.</p>
-          <div class="p-meta"><span>3–4 Std. zum Erlernen</span><span>1–3 Min./Zyklus</span></div>
+          <p>Eine 18-schrittige Sonnengruß-Sequenz, die das System energetisiert und die Bänder des Skelett- und Muskelapparates stärkt.</p>
+          <div class="p-meta"><span>3–4 Std. Lernzeit</span><span>1–3 Min./Zyklus</span></div>
         </div>
       </article>
       <article class="practice-card reveal">
@@ -598,9 +826,9 @@
         <div class="practice-card-body">
           <span class="p-tag">Energie · Wohlbefinden</span>
           <h3>Surya Kriya</h3>
-          <p>Eine kraftvolle 21-schrittige yogische Praktik von großem Altertum, als ganzheitlicher Prozess für Gesundheit und inneres Wohlbefinden konzipiert — mit tiefen kumulativen Wirkungen.</p>
-          <blockquote class="p-quote">Man sollte Surya Kriya mit Hingabe und Ehrfurcht angehen — es ist ein kraftvoller Prozess. Man kann es nur gegen Rückenschmerzen anwenden, oder man kann es nutzen, um sich absolut zu transformieren. — Sadhguru</blockquote>
-          <div class="p-meta"><span>6–8 Std. zum Erlernen</span><span>~20 Min./Zyklus</span></div>
+          <p>Eine kraftvolle, 21-schrittige yogische Praxis von enormer Überlieferung, die als ganzheitlicher Prozess für Gesundheit und inneres Wohlbefinden konzipiert ist — mit tiefgreifenden kumulativen Wirkungen.</p>
+          <blockquote class="p-quote">Surya Kriya sollte man mit Hingabe und Ehrerbietung begegnen — es ist ein kraftvoller Prozess. Du kannst es einfach tun, um Rückenschmerzen zu lindern, oder du kannst es nutzen, um dich vollständig zu transformieren. Es hat dieses Potenzial. — Sadhguru</blockquote>
+          <div class="p-meta"><span>6–8 Std. Lernzeit</span><span>~20 Min./Zyklus</span></div>
         </div>
       </article>
       <article class="practice-card reveal">
@@ -608,10 +836,10 @@
           <img src="../images/Promo - PP285-2000px.webp" alt="Yogasanas Bild" width="100%">
         </div>
         <div class="practice-card-body">
-          <span class="p-tag">Haltungen · Bewusstsein</span>
+          <span class="p-tag">Körperhaltungen · Bewusstsein</span>
           <h3>Yogasanas</h3>
-          <p>Ein klassischer Satz kraftvoller Haltungen, durch die man das Bewusstsein erhöhen und mit der Energiestruktur des Körpers arbeiten kann.</p>
-          <div class="p-meta"><span>10–12 Std. zum Erlernen</span><span>1–1,5 Std. Praxis</span></div>
+          <p>Ein klassischer Satz kraftvoller Körperhaltungen, durch die man das Bewusstsein erheben und mit der Energiestruktur des Körpers arbeiten kann.</p>
+          <div class="p-meta"><span>10–12 Std. Lernzeit</span><span>1–1,5 Std. Praxis</span></div>
         </div>
       </article>
       <article class="practice-card reveal">
@@ -621,9 +849,9 @@
         <div class="practice-card-body">
           <span class="p-tag">Reinigung · Elemente</span>
           <h3>Bhuta Shuddhi</h3>
-          <p>Eine tägliche Praxis zur Reinigung der fünf Elemente im Körper — wirkt an der Wurzel von Ungleichgewichten, die zu Krankheit führen.</p>
-          <blockquote class="p-quote">Bhuta Shuddhi bedeutet, alles loszulassen, was man aufgebaut hat, damit die Schöpfung des Schöpfers in einem aufsteigen und erstrahlen kann. — Sadhguru</blockquote>
-          <div class="p-meta"><span>1,5 Std. zum Erlernen</span><span>10 Min. Praxis</span></div>
+          <p>Eine tägliche Praxis zur Reinigung der fünf Elemente im Körper — sie wirkt an der Wurzel von Ungleichgewichten, die zu Krankheiten führen.</p>
+          <blockquote class="p-quote">Bhuta Shuddhi bedeutet, alles zu entfernen, was du aufgebaut hast, damit die Schöpfung des Schöpfers in dir aufsteigen und leuchten kann. — Sadhguru</blockquote>
+          <div class="p-meta"><span>1,5 Std. Lernzeit</span><span>10 Min. Praxis</span></div>
         </div>
       </article>
     </div>
@@ -634,17 +862,34 @@
 <section class="classes-section" id="classes">
   <div class="container reveal">
     <span class="label">Kommende Kurse</span>
-    <h2 class="title">Bereit anzufangen?</h2>
-    <p class="body-text" style="margin-bottom:2.5rem;">Kurse finden in Kollbrunn statt und können auch an Ihrem bevorzugten Ort abgehalten werden. Unterrichtet auf Englisch.</p>
+    <h2 class="title">Bereit, anzufangen?</h2>
+    <p class="body-text" style="margin-bottom:2rem;">Kurse finden in Kollbrunn statt und können auch an deinem Wunschort abgehalten werden. Unterrichtet wird auf Englisch.</p>
+
+    <div class="no-classes-state">
+      <p>Zurzeit sind keine Kurse geplant. Neue Termine werden regelmässig hinzugefügt — melde dich per WhatsApp, Telegram oder E-Mail, um benachrichtigt zu werden, sobald die nächste Session bekannt gegeben wird, oder um einen Kurs an deinem bevorzugten Ort zu vereinbaren.</p>
+      <a href="https://wa.me/41779818111" class="btn-primary" target="_blank" rel="noopener" style="font-size:0.68rem;">Kontakt aufnehmen</a>
+    </div>
+
     <!-- <div class="classes-table-wrap">
       <div class="classes-table">
+        <div class="class-row-header">
+          <span>Praxis</span>
+          <span>Datum</span>
+          <span>Uhrzeit</span>
+          <span>Ort</span>
+          <span>Einheiten</span>
+          <span>Kosten</span>
+          <span>Anmeldung</span>
+        </div>
         <div class="class-row">
-          <div class="class-practice"><span class="c-tag">Anfänger</span><strong>Upa-Yoga</strong></div>
+          <div class="class-practice"><span class="c-tag">Einsteiger</span><strong>Upa-Yoga</strong></div>
           <div class="class-detail"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>7. Juni 2026 · Sa &amp; So</div>
           <div class="class-detail"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>7:00 – 9:30 Uhr</div>
           <div class="class-detail"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>Kollbrunn, Zürich</div>
           <div class="class-detail">2 Einheiten</div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url&entry.956495107=Upa-Yoga&entry.1383122517=7+June+2026" class="class-register" target="_blank" rel="noopener">Anmelden</a>
+          <div class="class-cost"><strong>CHF 120</strong><small>pro Person</small></div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url&entry.956495107=Upa-Yoga&entry.1383122517=7+June+2026"
+             class="class-register" target="_blank" rel="noopener">Anmelden</a>
         </div>
         <div class="class-row">
           <div class="class-practice"><span class="c-tag">Energie</span><strong>Surya Kriya</strong></div>
@@ -652,7 +897,9 @@
           <div class="class-detail"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>6:30 – 10:30 Uhr</div>
           <div class="class-detail"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>Kollbrunn, Zürich</div>
           <div class="class-detail">2 Einheiten</div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url&entry.956495107=Surya+Kriya&entry.1383122517=21-22+June+2026" class="class-register" target="_blank" rel="noopener">Anmelden</a>
+          <div class="class-cost"><strong>CHF 180</strong><small>pro Person</small></div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url&entry.956495107=Surya+Kriya&entry.1383122517=21-22+June+2026"
+             class="class-register" target="_blank" rel="noopener">Anmelden</a>
         </div>
         <div class="class-row">
           <div class="class-practice"><span class="c-tag">Kraft</span><strong>Angamardana</strong></div>
@@ -660,7 +907,9 @@
           <div class="class-detail"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>6:00 – 10:00 Uhr</div>
           <div class="class-detail"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>Kollbrunn, Zürich</div>
           <div class="class-detail">3 Einheiten</div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url&entry.956495107=Angamardana&entry.1383122517=5-7+July+2026" class="class-register" target="_blank" rel="noopener">Anmelden</a>
+          <div class="class-cost"><strong>CHF 240</strong><small>pro Person</small></div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url&entry.956495107=Angamardana&entry.1383122517=5-7+July+2026"
+             class="class-register" target="_blank" rel="noopener">Anmelden</a>
         </div>
         <div class="class-row">
           <div class="class-practice"><span class="c-tag">Haltungen</span><strong>Yogasanas</strong></div>
@@ -668,7 +917,9 @@
           <div class="class-detail"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>6:00 – 12:00 Uhr</div>
           <div class="class-detail"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>Kollbrunn, Zürich</div>
           <div class="class-detail">4 Einheiten</div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url&entry.956495107=Yogasanas&entry.1383122517=26-27+July+2026" class="class-register" target="_blank" rel="noopener">Anmelden</a>
+          <div class="class-cost"><strong>CHF 320</strong><small>pro Person</small></div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url&entry.956495107=Yogasanas&entry.1383122517=26-27+July+2026"
+             class="class-register" target="_blank" rel="noopener">Anmelden</a>
         </div>
         <div class="class-row">
           <div class="class-practice"><span class="c-tag">Reinigung</span><strong>Bhuta Shuddhi</strong></div>
@@ -676,11 +927,14 @@
           <div class="class-detail"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>8:00 – 10:00 Uhr</div>
           <div class="class-detail"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>Kollbrunn, Zürich</div>
           <div class="class-detail">1 Einheit</div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url&entry.956495107=Bhuta+Shuddhi&entry.1383122517=9+August+2026" class="class-register" target="_blank" rel="noopener">Anmelden</a>
+          <div class="class-cost"><strong>CHF 80</strong><small>pro Person</small></div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url&entry.956495107=Bhuta+Shuddhi&entry.1383122517=9+August+2026"
+             class="class-register" target="_blank" rel="noopener">Anmelden</a>
         </div>
       </div>
     </div> -->
-    <p class="host-note">Möchten Sie einen Kurs an Ihrem Standort veranstalten? <a href="mailto:nanda@shivoham.ch">Kontaktieren Sie uns</a></p>
+
+    <!-- <p class="host-note" style="margin-top:2.5rem;">Möchtest du einen Kurs an deinem Ort veranstalten? <a href="mailto:nanda@shivoham.ch">Melde dich bei uns</a></p> -->
     <p class="contact-phone">+41 77 981 81 11</p>
     <div class="contact-methods">
       <a href="https://wa.me/41779818111" class="contact-btn wa" target="_blank" rel="noopener">WhatsApp</a>
@@ -690,23 +944,149 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <div class="reveal">
+      <span class="label">Was Teilnehmer sagen</span>
+      <h2 class="title">Stimmen aus der <em>Praxis</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <p class="testimonial-text">Ich habe bei Nandakumar einen 2-tägigen Intensivkurs für Surya Kriya gemacht, der mir sehr viel Spass gemacht und ich habe viel gelernt. Die Asanas werden Schritt für Schritt gelehrt, was es uns leicht macht, ihnen zu folgen. Es gibt genügend Wiederholungen, um unsere Fehler zu korrigieren, und er beantwortet geduldig alle unsere Fragen. Er ist selbst von der Isha-Yoga-Schule ausgebildet worden, und wenn man Yoga auf die richtige Art und Weise mit der richtigen Atemtechnik lernen möchte, gehört sein Kurs zu den besten, die es gibt. Sein Engagement für Yoga zeigt sich deutlich in der Leichtigkeit, mit der er die Asanas ausführt. Insgesamt kann ich Nandakumar sehr empfehlen, um Hatha Yoga zu lernen.</p>
+        <div class="testimonial-author">
+          <strong>N. Rameshan</strong>
+          <span>Surya Kriya · Zürich</span>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <p class="testimonial-text">Ich kann Nandas Hatha-Yoga-Kurse wärmstens empfehlen, wenn Sie auf der Suche nach einer authentischen Hatha-Yoga-Erfahrung sind. Ich hatte die Gelegenheit, an einem Surya-Kriya- und einem Yogasanas-Kurs teilzunehmen. Schon vom ersten Tag an verspürte ich ein Gefühl der Ruhe und Achtsamkeit, da wir den Tag mit einer Andacht begannen. Nanda beantwortete geduldig alle meine Fragen auf äußerst einfache und elegante Weise. Die Yoga-Kurse sind gut strukturiert, es wird auf jedes Detail geachtet und das Gelernte durch Wiederholungen vertieft.  Gruppenkurse machen Spaß und sind spannend, und dabei können wir einige dieser alten Techniken für Gesundheit und Wohlbefinden mit nach Hause nehmen.</p>
+        <div class="testimonial-author">
+          <strong>M. Pratap</strong>
+          <span>Surya Kriya, Yogasana · Zurich</span>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <p class="testimonial-text">Ich hatte die wunderbare Gelegenheit, an zwei Kursen bei Nanda teilzunehmen - Surya Kriya und Yogasanas - und beide Erfahrungen waren wirklich bereichernd.
+        <br>
+        Surya Kriya war ein eintägiger Kurs, während Yogasanas sich über etwa vier Tage erstreckte. Jede Sitzung wurde sorgfältig angeleitet, und ich fühlte mich während des gesamten Lernprozesses gut unterstützt. Was mir am meisten auffiel, war die Atmosphäre, die Nanda schuf. Die Atmosphäre war friedlich, konzentriert und einladend - ideal, um die eigene Praxis zu vertiefen. Die Teilnahme an einem Gruppenkurs verlieh dem Erlebnis eine besondere Energie und ermöglichte es mir, mich mit anderen auf demselben Weg verbunden und von ihnen inspiriert zu fühlen.
+        <br>
+        Ich habe den Prozess wirklich genossen und nach jeder Sitzung ein Gefühl innerer Stille und Klarheit verspürt. Ich kann diese Kurse jedem wärmstens empfehlen, der klassisches Hatha-Yoga in einer unterstützenden und motivierenden Umgebung entdecken möchte. Vielen Dank, Nanda, für diese wundervolle Einführung in diese wirkungsvollen Übungen!</p>
+        <div class="testimonial-author">
+          <strong>B. Sadeghian</strong>
+          <span>Surya Kriya, Yogasana · Zurich</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <div class="reveal">
+      <span class="label">Galerie</span>
+      <h2 class="title">Einblicke aus den <em>Kursen</em></h2>
+      <p class="body-text" style="margin-bottom:2.5rem;">Ein Blick in unsere Kurse und den Raum, in dem diese Praktiken weitergegeben werden.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item gallery-item--tall">
+        <div class="img-placeholder gallery-img">
+          <img src="../images/gallery-1.webp" alt="Kurs in Aktion" onerror="this.style.display='none'">
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="img-placeholder gallery-img">
+          <img src="../images/gallery-2.webp" alt="Surya Kriya Kurs" onerror="this.style.display='none'">
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="img-placeholder gallery-img">
+          <img src="../images/gallery-3.webp" alt="Angamardana Kurs" onerror="this.style.display='none'">
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="img-placeholder gallery-img">
+          <img src="../images/gallery-4.webp" alt="Yogasanas Praxis" onerror="this.style.display='none'">
+        </div>
+      </div>
+      <div class="gallery-item gallery-item--wide">
+        <div class="img-placeholder gallery-img">
+          <img src="../images/gallery-5.webp" alt="Gruppenpraxis" onerror="this.style.display='none'">
+        </div>
+      </div>
+      <div class="gallery-item">
+        <div class="img-placeholder gallery-img">
+          <img src="../images/gallery-6.webp" alt="Der Übungsraum" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .gallery-section { background: var(--bg-2); }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 260px 260px;
+    gap: 0.75rem;
+  }
+  .gallery-item--tall { grid-row: span 2; }
+  .gallery-item--wide { grid-column: span 2; }
+  .gallery-img {
+    width: 100%; height: 100%;
+    overflow: hidden; position: relative;
+    cursor: pointer;
+  }
+  .gallery-img img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.5s ease;
+  }
+  .gallery-img:hover img { transform: scale(1.04); }
+  .gallery-img svg, .gallery-img span { position: relative; z-index: 1; }
+  @media (max-width: 600px) {
+    .gallery-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    .gallery-item--tall { grid-row: span 1; }
+    .gallery-item--wide { grid-column: span 2; }
+    .gallery-img { height: 180px; }
+  }
+</style>
+
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="container">
     <div class="reveal">
       <span class="label">Über uns</span>
-      <h2 class="title">Der <em>Lehrer</em> und die Tradition</h2>
+      <h2 class="title">Die <em>Quelle</em> und der Lehrer</h2>
     </div>
-    <div class="about-grid">
-      <div class="reveal">
+    <div class="about-stack">
+      <div class="about-card reveal">
         <div class="img-placeholder about-person-img">
-          <img src="../images/nanda1.jpg" alt="Foto — Nandakumar" width="100%">
+          <img src="../images/sg-1.jpg" alt="Foto — Sadhguru" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="about-person">
+          <h3>Sadhguru</h3>
+          <span class="role">Yogi, Mystiker &amp; Gründer der Isha Foundation</span>
+          <p>Die hier angebotenen Praktiken wurden von Sadhguru strukturiert.</p>
+          <p>Sadhguru ist ein Yogi, Mystiker und Visionär sowie eine bedeutende spirituelle Persönlichkeit. Als Autor, Dichter und international renommierter Redner provoziert Sadhgurus Witz und durchdringende Logik unsere Wahrnehmung des Lebens und weitet sie.</p>
+          <p>Sadhguru ist auch der Gründer der Isha Foundation, einer gemeinnützigen Organisation, die sich seit über drei Jahrzehnten dem Wohlbefinden des Einzelnen und der Welt widmet. Die Isha Foundation fördert keine bestimmte Ideologie, Religion oder Rasse, sondern vermittelt innere Wissenschaften von universeller Bedeutung.</p>
+          <a href="https://isha.sadhguru.org" target="_blank" rel="noopener" class="about-cert" style="text-decoration:none;">Isha Foundation</a>
+        </div>
+      </div>
+      <div class="about-divider"></div>
+      <div class="about-card reveal">
+        <div class="img-placeholder about-person-img">
+          <img src="../images/nanda1.jpg" alt="Foto — Nandakumar" style="width:100%;height:100%;object-fit:cover;display:block;">
         </div>
         <div class="about-person">
           <h3>Nandakumar</h3>
-          <p class="role">Klassischer Hatha Yoga Lehrer</p>
-          <p>Nandakumar ist ein vom Sadhguru Gurukulam zertifizierter Klassischer Hatha Yoga Lehrer. Er bietet diese Praktiken mit der Präzision und Sorgfalt an, die eine klassische Übertragung erfordert, und stellt sicher, dass jeder Schüler die volle Tiefe der Praxis erhält.</p>
-          <img src="../images/SG_Logo5.png" alt="" width="50%"><br>
+          <span class="role">Lehrer für Klassisches Hatha Yoga</span>
+          <p>Nandakumar ist ein von Sadhguru Gurukulam zertifizierter Lehrer für Klassisches Hatha Yoga. Er vermittelt diese Praktiken mit der Präzision und Sorgfalt, die eine klassische Weitergabe erfordert, und stellt sicher, dass jeder Schüler die volle Tiefe der Praxis empfängt.</p>
+          <img src="../images/SG_Logo5.png" alt="" height="60px"><br>
           <span class="about-cert">Sadhguru Gurukulam Zertifizierter Lehrer</span>
           <div class="about-links">
             <a href="mailto:nanda@shivoham.ch">nanda@shivoham.ch</a>
@@ -715,28 +1095,46 @@
           </div>
         </div>
       </div>
-      <div class="reveal">
-        <div class="img-placeholder about-person-img">
-          <img src="../images/sg-1.jpg" alt="Foto — Sadhguru" width="100%">
-        </div>
-        <div class="about-person">
-          <h3>Sadhguru</h3>
-          <p class="role">Yogi, Mystiker &amp; Gründer der Isha Foundation</p>
-          <p>Die hier angebotenen Praktiken sind von Sadhguru strukturiert.</p>
-          <p>Sadhguru ist ein Yogi, Mystiker und Visionär sowie eine bedeutende spirituelle Persönlichkeit. Als Autor, Dichter und international renommierter Redner regen Sadhgurus Witz und durchdringende Logik unsere Wahrnehmung des Lebens an und erweitern sie.</p>
-          <p>Sadhguru ist auch der Gründer der Isha Foundation, einer gemeinnützigen Organisation, die sich seit über drei Jahrzehnten dem Wohlbefinden des Einzelnen und der Welt widmet. Die Isha Foundation fördert keine bestimmte Ideologie, Religion oder Rasse, sondern vermittelt innere Wissenschaften von universellem Anklang.</p>
-          <a href="https://isha.sadhguru.org" target="_blank" rel="noopener" class="about-cert" style="text-decoration:none;">Isha Foundation</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
+
+<style>
+  .about-stack { display: flex; flex-direction: column; gap: 0; margin-top: 3rem; }
+  .about-card {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 3rem;
+    align-items: start;
+    padding: 3rem 0;
+  }
+  .about-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+  }
+  .about-person-img {
+    width: 260px !important;
+    aspect-ratio: 1 / 1 !important;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  @media (max-width: 700px) {
+    .about-card {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .about-person-img {
+      width: 180px !important;
+    }
+  }
+</style>
 
 <!-- FOOTER -->
 <footer id="contact">
   <div class="footer-logo">
     <img src="../images/logo.png" alt="" width="40px"><br>
-    Shivo<span>ham</span></div>
+    Shivo<span>ham</span>
+  </div>
   <p>Klassisches Hatha Yoga · Kollbrunn, Zürich, Schweiz</p>
   <p style="margin-top:1rem;">
     <a href="mailto:nanda@shivoham.ch">nanda@shivoham.ch</a> &nbsp;·&nbsp;
@@ -755,9 +1153,9 @@
 </footer>
 
 <!-- COOKIE BANNER -->
-<div id="cookie-banner" style="display:none;" role="dialog" aria-label="Cookie notice">
-  <p>Diese Website verwendet Cookies, um sicherzustellen, dass Sie das bestmögliche Erlebnis erhalten. Indem Sie weiter surfen, stimmen Sie unserer Verwendung von Cookies zu.</p>
-  <button id="cookie-close" aria-label="Close cookie notice">Habe es</button>
+<div id="cookie-banner" style="display:none;" role="dialog" aria-label="Cookie-Hinweis">
+  <p>Diese Website verwendet Cookies, um Ihnen das beste Erlebnis zu bieten. Durch die weitere Nutzung stimmen Sie unserer Verwendung von Cookies zu.</p>
+  <button id="cookie-close" aria-label="Cookie-Hinweis schliessen">Verstanden</button>
 </div>
 
 <style>
@@ -765,14 +1163,14 @@
     position: fixed; bottom: 1.5rem; left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
-    background: var(--text);
-    color: rgba(247,246,243,0.82);
+    background: var(--sage);
+    color: rgba(245,242,236,0.9);
     padding: 1rem 1.4rem;
     display: flex; align-items: center; gap: 1.4rem;
     flex-wrap: wrap;
     max-width: min(680px, calc(100vw - 2rem));
     width: 100%;
-    border-top: 2px solid var(--yellow);
+    border-top: 2px solid var(--gold);
     box-shadow: 0 8px 32px rgba(0,0,0,0.22);
     animation: cookieSlideUp 0.4s ease forwards;
   }
@@ -782,13 +1180,13 @@
   }
   #cookie-banner p {
     font-size: 0.78rem; line-height: 1.6;
-    color: rgba(247,246,243,0.72);
+    color: rgba(245,242,236,0.78);
     letter-spacing: 0.02em;
     flex: 1; min-width: 200px;
     margin: 0;
   }
   #cookie-close {
-    background: var(--yellow); color: var(--white);
+    background: var(--gold); color: var(--white);
     border: none; cursor: pointer;
     padding: 0.5rem 1.35rem;
     font-family: 'Jost', sans-serif;
@@ -798,11 +1196,10 @@
     transition: background 0.2s;
     flex-shrink: 0;
   }
-  #cookie-close:hover { background: var(--yellow-lt); }
+  #cookie-close:hover { background: var(--gold-lt); }
 </style>
 
 <script>
-  // Cookie banner
   (function() {
     if (!localStorage.getItem('cookieAccepted')) {
       document.getElementById('cookie-banner').style.display = 'flex';
@@ -818,7 +1215,6 @@
 </script>
 
 <script>
-  // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
@@ -830,7 +1226,6 @@
   }, { threshold: 0.1 });
   reveals.forEach(el => io.observe(el));
 
-  // Hamburger
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('nav-links');
   hamburger.addEventListener('click', () => {
