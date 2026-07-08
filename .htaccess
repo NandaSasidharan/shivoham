@@ -1,0 +1,49 @@
+# =============================================
+# .htaccess for shivoham.ch
+# =============================================
+
+RewriteEngine On
+
+# Force HTTPS (recommended)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+
+# =============================================
+# SPECIFIC FOLDER REDIRECTS
+# =============================================
+
+# 1. /de/ and all subpages → /de/
+RewriteRule ^de(/.*)?$ /de/ [R=301,L]
+
+# 2. All these folders → homepage (/)
+RewriteRule ^(ml|about|programs|yogic-practices|support|yoga|contact|sadhguru|retreat)(/.*)?$ / [R=301,L]
+
+# =============================================
+# OPTIONAL: Clean URL rules (recommended)
+# =============================================
+
+# Remove trailing slash on homepage (optional)
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Remove .html extension (if you use it)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+# Directory index fallback
+Options -Indexes
+
+# =============================================
+# Security & Performance
+# =============================================
+
+# Prevent hotlinking of images (optional)
+# RewriteCond %{HTTP_REFERER} !^$
+# RewriteCond %{HTTP_REFERER} !^https://(www\.)?shivoham\.ch/ [NC]
+# RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
+
+# Block access to .htaccess and sensitive files
+<Files ".htaccess">
+    Order allow,deny
+    Deny from all
+</Files>
