@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="52.4mm"
+   height="52.51mm"
+   viewBox="0 0 52.4 52.51"
+   version="1.1"
+   id="svg14397"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="logo-line-white.svg"
+   inkscape:export-filename="logo-line-white.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14399"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.837"
+     inkscape:cx="37.36"
+     inkscape:cy="104"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g29705">
+    <inkscape:grid
+       type="xygrid"
+       id="grid20922"
+       originx="-0.775"
+       originy="-92.14" />
+  </sodipodi:namedview>
+  <defs
+     id="defs14394" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.775,-92.14)">
+    <g
+       id="g29705"
+       transform="translate(0.85,1)">
+      <path
+         id="path14518-6"
+         style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 26.17,92.39 a 25,25 0 0 0 -24.992,25.01 25,25 0 0 0 24.992,25 25,25 0 0 0 24.9,-25 25,25 0 0 0 -24.9,-25.01 z m -0.1,10.01 a 2.96,3.82 0 0 1 2.9,3.8 2.96,3.82 0 0 1 -2.9,3.8 2.96,3.82 0 0 1 -3,-3.8 2.96,3.82 0 0 1 3,-3.8 z m 0,9 a 4.75,9.06 0 0 1 4.7,9.1 4.75,9.06 0 0 1 -2,7.4 c 2.2,-1 4.4,-1.5 6.3,-1.5 3.8,0 6.6,1.6 6.6,3.3 0,3 -8.3,5.5 -15.5,0 v 0 c 0,0 0,0 -0.1,-0.1 0,0.1 0,0.1 -0.1,0.1 -2.2,1.6 -4.4,2.6 -6.6,2.9 -4.8,0.9 -8.89,-0.8 -8.89,-2.9 0,-2.6 6.39,-4.8 12.79,-1.7 a 4.75,9.06 0 0 1 -2.1,-7.5 4.75,9.06 0 0 1 4.8,-9.1 z" />
+    </g>
+  </g>
+</svg>
