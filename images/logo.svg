@@ -28,7 +28,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.365"
-     inkscape:cx="-106.6"
+     inkscape:cx="-120.5"
      inkscape:cy="167"
      inkscape:window-width="1920"
      inkscape:window-height="1046"
@@ -55,7 +55,10 @@
       <path
          id="path14518"
          style="fill:#c8995f;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.500017;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-         d="m 97.28,101.7 a 25,25 0 0 1 0.18,0 v 10 a 2.96,3.82 0 0 0 -0.1,0 2.96,3.82 0 0 0 -2.92,3.8 2.96,3.82 0 0 0 2.92,3.8 2.96,3.82 0 0 0 0.1,0 v 1.4 h -0.1 a 4.75,9.06 0 0 0 -4.72,9.1 4.75,9.06 0 0 0 2,7.4 c -2.2,-1 -4.4,-1.5 -6.3,-1.5 -3.8,0 -6.6,1.6 -6.6,3.3 0,3 8.3,5.5 15.56,0 l 0.1,-0.1 c 0,0.1 0,0.1 0,0.1 v 12.7 a 25,25 0 0 1 -0.18,0 25,25 0 0 1 -24.92,-25 25,25 0 0 1 24.92,-25 z" />
+         d="m 97.28,101.7 a 25,25 0 0 1 0.18,0 v 10 a 2.96,3.82 0 0 0 -0.1,0 2.96,3.82 0 0 0 -2.92,3.8 2.96,3.82 0 0 0 2.92,3.8 2.96,3.82 0 0 0 0.1,0 v 1.4 h -0.1 a 4.75,9.06 0 0 0 -4.72,9.1 4.75,9.06 0 0 0 2,7.4 c -2.2,-1 -4.4,-1.5 -6.3,-1.5 -3.8,0 -6.6,1.6 -6.6,3.3 0,3 8.3,5.5 15.56,0 l 0.1,-0.1 c 0,0.1 0,0.1 0,0.1 v 12.7 a 25,25 0 0 1 -0.18,0 25,25 0 0 1 -24.92,-25 25,25 0 0 1 24.92,-25 z"
+         inkscape:export-filename=".\path14518.png"
+         inkscape:export-xdpi="400"
+         inkscape:export-ydpi="400" />
       <path
          id="path14518-3"
          style="fill:#9a86a8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.500017;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
