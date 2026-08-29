@@ -116,6 +116,80 @@
   </blockquote>
 </div>
 
+
+<!-- VIDEO -->
+<section class="video-section" id="video">
+  <div class="container reveal">
+    <span class="label">Why Yoga?</span>
+    <h2 class="title"><em>In</em> is the only way out.</h2>
+
+    <!--
+      Toggle data-mode below to switch source: "youtube" or "local".
+      YOUTUBE: set data-youtube-id to the video ID (the part after v= in the URL).
+      LOCAL:   set data-local-src to your video file path, and data-local-poster
+               to a poster image (e.g. an exported first frame).
+      Nothing is downloaded until the visitor clicks play — the poster image
+      (a single small file) is the only network cost on page load.
+    -->
+    <div class="video-facade"
+         id="video-facade"
+         data-mode="youtube"
+         data-youtube-id="iqFu1awvhws"
+         data-local-src="/videos/in-is-the-only-way-out.mp4"
+         data-local-poster="/images/video-poster.webp"
+         role="button" tabindex="0"
+         aria-label="Play video: In is the only way out">
+      <img class="video-poster" id="video-poster" loading="lazy" alt="">
+      <button type="button" class="video-play" aria-hidden="true" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const facade = document.getElementById('video-facade');
+    const poster = document.getElementById('video-poster');
+    if (!facade || !poster) return;
+
+    const mode = facade.dataset.mode; // "youtube" or "local"
+
+    // Set the poster image without loading anything else yet.
+    if (mode === 'local') {
+      poster.src = facade.dataset.localPoster;
+    } else {
+      poster.src = 'https://img.youtube.com/vi/' + facade.dataset.youtubeId + '/hqdefault.jpg';
+    }
+
+    function loadVideo() {
+      facade.innerHTML = '';
+      if (mode === 'local') {
+        const video = document.createElement('video');
+        video.src = facade.dataset.localSrc;
+        video.controls = true;
+        video.autoplay = true;
+        video.playsInline = true;
+        facade.appendChild(video);
+      } else {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + facade.dataset.youtubeId + '?autoplay=1&rel=0';
+        iframe.title = 'In is the only way out';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        facade.appendChild(iframe);
+      }
+      facade.removeEventListener('click', loadVideo);
+      facade.removeEventListener('keydown', onKey);
+    }
+    function onKey(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadVideo(); }
+    }
+    facade.addEventListener('click', loadVideo);
+    facade.addEventListener('keydown', onKey);
+  })();
+</script>
+
 <!-- WELCOME -->
 <section class="welcome-section" id="welcome">
   <div class="container reveal">
@@ -198,9 +272,9 @@
             <circle cx="20" cy="28" r="2.6" fill="var(--orange)"/>
           </svg>
           <span class="cat-num">Step Two</span>
-          <h3>Strong, Flexible and Energetic</h3>
-          <p>These practices slowly bring you there. </p>
-          <!-- <p>How dynamic or still I can be is determined by how well I keep my spine.</p> -->
+          <h3>Strengthen the system.</h3>
+          <!-- <p>These practices slowly bring you there. </p> -->
+          <p>How dynamic or still I can be is determined by how well I keep my spine.</p>
         </div>
         <article class="practice-card reveal">
           <div class="img-placeholder practice-card-img">
@@ -680,7 +754,7 @@
     <a href="https://t.me/NandaSasidharan" target="_blank" rel="noopener">Telegram</a>
   </p>
   <p style="margin-top:0.4rem;">
-    <a href="https://www.instagram.com/nanda_sasidharan/" target="_blank" rel="noopener" class="footer-instagram">
+    <a href="https://www.instagram.com/shivoham_ch/" target="_blank" rel="noopener" class="footer-instagram">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px; margin-right:0.3rem;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>Instagram
     </a>
   </p>
