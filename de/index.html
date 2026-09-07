@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shivoham | Technologien für innere Balance — Klassisches Hatha Yoga, Zürich</title>
+  <title>Shivoham | Klassisches Hatha Yoga für innere Balance | Zürich</title>
   <meta name="description" content="Shivoham: Technologien für innere Balance. Klassisches Hatha Yoga nach der Struktur von Sadhguru, unterrichtet von der zertifizierten Lehrerin Nanda in Kollbrunn, Zürich. Drei Schritte — Reinigung und Aktivierung, Stärkung des Systems, Innere Balance. Kurse auf Englisch." />
-  <meta name="keywords" content="Isha Hatha Yoga, Isha Hatha Yoga Lehrer, Klassisches Hatha Yoga Zürich, Yoga Kollbrunn, Yoga Zürich, Yoga zuhause, Yoga Winterthur, Hatha Yoga Winterthur, Sadhguru Winterthur, Isha Hatha Yoga Kollbrunn, Isha Hatha Yoga Winterthur, Isha Hatha Yoga Zürich, Isha Hatha Yoga Lehrer Zürich, Surya Kriya Zürich, Yogasanas Kollbrunn, Hatha Yoga Englisch, Surya Shakti, Upa Yoga, Angamardana" />
+  <meta name="keywords" content="Isha Hatha Yoga Lehrer, Isha Yoga Zürich, Isha Hatha Yoga Zürich, Sadhguru Yoga Zürich, Isha Yoga Winterthur, Isha Hatha Yoga Winterthur, Sadhguru Yoga Winterthur, Yoga Kollbrunn, Yoga Zell, Hatha Yoga Kollbrunn, Hatha Yoga Zell, Klassisches Hatha Yoga, Wie man Balance findet, Sadhguru Schweiz, Hatha Yoga auf Englisch" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://shivoham.ch/de/" />
   <link rel="alternate" hreflang="en" href="https://shivoham.ch/" />
   <link rel="alternate" hreflang="de" href="https://shivoham.ch/de/" />
   <link rel="alternate" hreflang="x-default" href="https://shivoham.ch/" />
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-  <meta property="og:title" content="Shivoham | Technologien für innere Balance" />
+  <meta property="og:title" content="Shivoham | Klassisches Hatha Yoga für innere Balance" />
   <meta property="og:description" content="Klassisches Hatha Yoga nach der Struktur von Sadhguru. Drei Schritte zur Balance — unterrichtet von der zertifizierten Lehrerin Nanda in Kollbrunn, Zürich, auf Englisch." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="de_CH" />
@@ -47,9 +47,9 @@
       "addressCountry": "CH"
     },
     "areaServed": [
-      { "@type": "City", "name": "Kollbrunn" },
-      { "@type": "City", "name": "Winterthur" },
-      { "@type": "City", "name": "Zurich" }
+    { "@type": "City", "name": "Zurich" }
+    { "@type": "City", "name": "Winterthur" },
+    { "@type": "City", "name": "Kollbrunn" },
     ],
     "geo": { "@type": "GeoCoordinates", "latitude": "47.458", "longitude": "8.778" },
     "openingHours": "Mo-Su",
@@ -100,13 +100,13 @@
       <cite>— Sadhguru</cite>
     </blockquote>
     <div class="hero-ctas">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFp_A1N3_kAxOEvoYqfNoiFbez8gVqYoOW-F76Ag1zfbTNw/viewform?usp=header" class="btn-primary" target="_blank" rel="noopener">Zum Einführungswebinar</a>
-      <a href="#classes" class="btn-outline">Programme ansehen</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFp_A1N3_kAxOEvoYqfNoiFbez8gVqYoOW-F76Ag1zfbTNw/viewform?usp=header" class="btn-primary" target="_blank" rel="noopener">Online starten</a>
+      <a href="#classes" class="btn-outline">Kommende Programme</a>
     </div>
   </div>
   <!-- <div class="hero-image-wrap"> -->
     <div class="img-placeholder hero-img">
-      <img src="/images/hero-image.webp" alt="Hatha-Yoga-Haltung" width="100%" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img src="/images/hero-image.webp" alt="Isha Hatha Yoga, Surya Kriya posture, Zürich" width="100%" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div>
   <!-- </div> -->
 </section>
@@ -119,7 +119,7 @@
      <!-- <em>Make them yours.</em> -->
   </p>
   <blockquote class="band-quote">
-    Hatha-Yoga dehnt nicht nur meine Muskeln. Es versetzt mich in einen Zustand, in dem äußere Umstände meine innere Freude nicht trüben.
+    Hatha-Yoga ist keine sportliche Betätigung. Es hilft mir, ein inneres Gleichgewicht zu finden, in dem äußere Umstände meine Freude nicht trüben.
     <!-- <cite>— Nanda</cite> -->
   </blockquote>
 </div>
@@ -143,7 +143,7 @@
          data-mode="youtube"
          data-youtube-id="iqFu1awvhws"
          data-local-src="/videos/in-is-the-only-way-out.mp4"
-         data-local-poster="/images/video-poster.webp"
+         data-local-poster="/images/video-cover.webp"
          role="button" tabindex="0"
          aria-label="Play video: In is the only way out">
       <img class="video-poster" id="video-poster" loading="lazy" alt="">
@@ -166,7 +166,8 @@
     if (mode === 'local') {
       poster.src = facade.dataset.localPoster;
     } else {
-      poster.src = 'https://img.youtube.com/vi/' + facade.dataset.youtubeId + '/hqdefault.jpg';
+      poster.src = facade.dataset.localPoster;
+      // poster.src = 'https://img.youtube.com/vi/' + facade.dataset.youtubeId + '/hqdefault.jpg';
     }
 
     function loadVideo() {
@@ -228,9 +229,9 @@
   <div class="container">
     <div class="practices-intro reveal">
       <div>
-        <h2 class="title">Yoga-Übungen</h2>
+        <h2 class="title">Hatha Yoga Methoden</h2>
         <p class="label"><em>Zeit</em> für mich.</p>
-        <p class="body-text">Sechs Hauptübungen, die jeweils für sich allein vollständig sind. Angeordnet in drei Schritten — das System reinigen und aktivieren, die Struktur stärken und Balance bringen. Keine Vorerfahrung nötig, um eine davon zu erlernen.</p>
+        <p class="body-text">Sechs Hauptmethoden, die jeweils für sich allein vollständig sind. Angeordnet in drei Schritten — das System reinigen und aktivieren, die Struktur stärken und Balance bringen. Keine Vorerfahrung nötig, um eine davon zu erlernen.</p>
       </div>
     </div>
 
@@ -597,7 +598,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <!-- <div class="faq-item">
         <button class="faq-question" aria-expanded="false" aria-controls="faq-a8" id="faq-q8">
           <span>Sind diese Kurse teuer?</span>
           <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" /></svg>
@@ -609,7 +610,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>

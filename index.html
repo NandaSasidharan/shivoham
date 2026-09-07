@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shivoham | Technologies for Inner Balance — Classical Hatha Yoga, Zurich</title>
-  <meta name="description" content="Shivoham: Technologies for Inner Balance. Classical Hatha Yoga as structured by Sadhguru, taught by certified teacher Nanda in Kollbrunn, Zurich. Three steps — Cleanse and Activate, Strengthen the System, Inner Balance. Classes in English." />
-  <meta name="keywords" content="Isha Hatha Yoga, Isha Hatha Yoga teacher, Classical Hatha Yoga Zurich, Yoga Kollbrunn, Yoga Zurich, Yoga at home, Yoga Winterthur, Hatha Yoga Winterthur, Sadhguru Winterthur, Isha Hatha Yoga Kollbrunn,  Isha Hatha Yoga Winterthur, Isha Hatha Yoga Zurich, Sadhguru Gurukulam certified teacher Zurich, Surya Kriya Zurich, Yogasanas Kollbrunn, Hatha Yoga English, Surya Shakti, Upa Yoga, Angamardana" />
+  <title>Shivoham | Classical Hatha Yoga for Inner Balance | Zurich</title>
+  <meta name="description" content="Shivoham: Technologies for Inner Balance. Classical Hatha Yoga as structured by Sadhguru, taught by certified teacher Nanda in Kollbrunn, Zurich. Three steps — Cleanse and Activate, Strengthen the System, Bring Balance." />
+  <meta name="keywords" content="Isha Hatha Yoga teacher, Isha Yoga Zurich, Isha Hatha Yoga Zurich, Sadhguru Yoga Zurich, Isha Yoga Winterthur, Isha Hatha Yoga Winterthur, Sadhguru Yoga Winterthur, Yoga Kollbrunn, Yoga Zell, Hatha Yoga Kollbrunn, Hatha Yoga Zell, Classical Hatha Yoga, How to find Balance, Sadhguru Switzerland, Hatha Yoga English" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://shivoham.ch/" />
   <link rel="alternate" hreflang="en" href="https://shivoham.ch/" />
   <link rel="alternate" hreflang="de" href="https://shivoham.ch/de/" />
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-  <meta property="og:title" content="Shivoham | Technologies for Inner Balance" />
+  <meta property="og:title" content="Shivoham | Classical Hatha Yoga for Inner Balance" />
   <meta property="og:description" content="Classical Hatha Yoga as structured by Sadhguru. Three steps toward balance — taught by certified teacher Nanda in Kollbrunn, Zurich, in English." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://shivoham.ch/" />
@@ -44,9 +44,9 @@
       "addressCountry": "CH"
     },
     "areaServed": [
-      { "@type": "City", "name": "Kollbrunn" },
-      { "@type": "City", "name": "Winterthur" },
-      { "@type": "City", "name": "Zurich" }
+    { "@type": "City", "name": "Zurich" }
+    { "@type": "City", "name": "Winterthur" },
+    { "@type": "City", "name": "Kollbrunn" },
     ],
     "geo": { "@type": "GeoCoordinates", "latitude": "47.458", "longitude": "8.778" },
     "openingHours": "Mo-Su",
@@ -97,13 +97,13 @@
       <cite>— Sadhguru</cite>
     </blockquote>
     <div class="hero-ctas">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFp_A1N3_kAxOEvoYqfNoiFbez8gVqYoOW-F76Ag1zfbTNw/viewform?usp=header" class="btn-primary" target="_blank" rel="noopener">Join Introduction Webinar</a>
-      <a href="#classes" class="btn-outline">See Programs</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFp_A1N3_kAxOEvoYqfNoiFbez8gVqYoOW-F76Ag1zfbTNw/viewform?usp=header" class="btn-primary" target="_blank" rel="noopener">Join online class</a>
+      <a href="#classes" class="btn-outline">Upcoming Programs</a>
     </div>
   </div>
   <!-- <div class="hero-image-wrap"> -->
     <div class="img-placeholder hero-img">
-      <img src="/images/hero-image.webp" alt="Hatha Yoga posture" width="100%" style="width:100%;height:100%;object-fit:cover;display:block;">
+      <img src="/images/hero-image.webp" alt="Isha Hatha Yoga, Surya Kriya posture, Zurich" width="100%" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div>
   <!-- </div> -->
 </section>
@@ -116,7 +116,7 @@
      <!-- <em>Make them yours.</em> -->
   </p>
   <blockquote class="band-quote">
-    Hatha Yoga not just stretches my muscles. It brings me to a state where outside situations do not disturb my inner joy.
+   Hatha Yoga is not an exercise. It helps me build an inner balance, where outside situations do not disturb my joy.
     <!-- <cite>— Nanda</cite> -->
   </blockquote>
 </div>
@@ -141,7 +141,7 @@
          data-mode="youtube"
          data-youtube-id="iqFu1awvhws"
          data-local-src="/videos/in-is-the-only-way-out.mp4"
-         data-local-poster="/images/video-poster.webp"
+         data-local-poster="/images/video-cover.webp"
          role="button" tabindex="0"
          aria-label="Play video: In is the only way out">
       <img class="video-poster" id="video-poster" loading="lazy" alt="">
@@ -164,7 +164,8 @@
     if (mode === 'local') {
       poster.src = facade.dataset.localPoster;
     } else {
-      poster.src = 'https://img.youtube.com/vi/' + facade.dataset.youtubeId + '/hqdefault.jpg';
+      poster.src = facade.dataset.localPoster;
+      // poster.src = 'https://img.youtube.com/vi/' + facade.dataset.youtubeId + '/hqdefault.jpg';
     }
 
     function loadVideo() {
@@ -226,9 +227,9 @@
   <div class="container">
     <div class="practices-intro reveal">
       <div>
-        <h2 class="title">Yoga practices</h2>
+        <h2 class="title">Hatha Yoga methods</h2>
         <p class="label"><em>Time</em> for myself.</p>
-        <p class="body-text">Six main practices, each complete by themselves. Based on their first impression, arranged in three steps — cleanse and activate the system, strengthen the structure, and bring balance. No prior experience needed to learn any of them.</p>
+        <p class="body-text">Six main methods, each complete by themselves and balanced. Based on their first impression, arranged in three steps — cleanse and activate the system, strengthen the structure, and bring balance. No prior experience needed to learn any of them.</p>
       </div>
     </div>
 
@@ -598,7 +599,7 @@
         </div>
       </div>
 
-      <div class="faq-item">
+      <!-- <div class="faq-item">
         <button class="faq-question" aria-expanded="false" aria-controls="faq-a8" id="faq-q8">
           <span>Are these classes expensive?</span>
           <svg class="faq-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" /></svg>
@@ -610,7 +611,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
