@@ -447,7 +447,7 @@
     .classes-table { margin-top: 0.5rem; border: 1px solid var(--border); overflow: hidden; min-width: 720px; }
     .class-row-header {
       display: grid;
-      grid-template-columns: 1.5fr 1.7fr 1.1fr 1.6fr 0.65fr 0.9fr auto;
+      grid-template-columns: 1.5fr 1.5fr 1.5fr 1.2fr 1.0fr 0.8fr 1.0fr;
       align-items: center; gap: 0;
       padding: 0.75rem 1.5rem;
       background: var(--twilight-deep);
@@ -460,7 +460,7 @@
     }
     .class-row {
       display: grid;
-      grid-template-columns: 1.5fr 1.7fr 1.1fr 1.6fr 0.65fr 0.9fr auto;
+      grid-template-columns: 1.5fr 1.5fr 1.5fr 1.2fr 1.0fr 0.8fr 1.0fr;
       align-items: center; gap: 0;
       padding: 1.15rem 1.5rem;
       border-bottom: 1px solid var(--border);
@@ -488,6 +488,7 @@
       display: inline-block; padding: 0.4rem 1rem;
       background: transparent; color: var(--violet);
       text-decoration: none; font-size: 0.66rem;
+      text-align: center;
       letter-spacing: 0.16em; text-transform: uppercase;
       border: 1px solid rgba(45,64,56,0.4); white-space: nowrap;
       transition: all 0.2s;
