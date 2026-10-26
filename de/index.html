@@ -60,7 +60,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/site.css?v=1.1" />
+  <link rel="stylesheet" href="/assets/site.css?v=1.2" />
 </head>
 <body>
 <script>document.body.classList.add('loaded');</script>
@@ -72,11 +72,11 @@
     <span class="syl-shiv">Shivoham</span>
   </a>
   <ul class="nav-links" id="nav-links">
-    <li><a href="#about">Über uns</a></li>
-    <li><a href="#yoga">Yoga</a></li>
-    <li><a href="#classes">Programme</a></li>
+    <li><a href="#classes">Workshops</a></li>
+    <li><a href="#yoga">Praktiken</a></li>
+    <li><a href="#why">Warum Hatha-Yoga?</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#contact">Kontakt</a></li>
+    <li><a href="#about">Über uns</a></li>
     <li class="nav-lang-mobile"><a href="/">English</a></li>
   </ul>
   <div class="nav-right">
@@ -88,20 +88,17 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero" id="about" aria-label="Introduction">
+<section class="hero" id="home" aria-label="Introduction">
   <div class="hero-text">
-    <h1 class="hero-title">Klassisches Hatha Yoga Für innere Balance | Zürich</h1>
-    <p class="hero-label" style="font-size: clamp(2.3rem, 4vw, 5rem);">Balance findet man nicht, <em>man schafft sie.</em></p>
-    <p class="hero-sub">Um mein Bestes zu geben, ist innere Balance unerlässlich.</p>
+    <p class="hero-label">Isha Sadhguru Gurukulam zertifiziert</p>
+    <h1 class="hero-title">Klassisches <br> <em>Hatha</em> Yoga</h1>
+    <p class="hero-sub">Denn wir alle brauchen die Freiheit eines gesunden Körpers, eines klaren Geistes, freudvoller Gefühle und übersprudelnder Energien.</p>
     <p class="hero-location">Kollbrunn, Winterthur & Zürich </p>
     <div class="hero-rule"></div>
-    <blockquote class="hero-quote">
-      Hatha Yoga ist die Wissenschaft, den Körper zu nutzen, um sich auf die höchste Möglichkeit vorzubereiten.
-      <cite>— Sadhguru</cite>
-    </blockquote>
+    
     <div class="hero-ctas">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFp_A1N3_kAxOEvoYqfNoiFbez8gVqYoOW-F76Ag1zfbTNw/viewform?usp=header" class="btn-primary" target="_blank" rel="noopener">Online starten</a>
-      <a href="#classes" class="btn-outline">Kommende Programme</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFp_A1N3_kAxOEvoYqfNoiFbez8gVqYoOW-F76Ag1zfbTNw/viewform?usp=header" class="btn-primary" target="_blank" rel="noopener">Einführungs-Webinar</a>
+      <a href="#classes" class="btn-outline">Workshops</a>
     </div>
   </div>
   <!-- <div class="hero-image-wrap"> -->
@@ -113,312 +110,23 @@
 
 <!-- BAND -->
 <div class="band">
-  <p>
-    Hatha Yoga <em>in seiner ursprünglichen Form.</em><br />
-    Als Technologie <em>für innere Balance.</em><br />
-     <!-- <em>Make them yours.</em> -->
-  </p>
+  
   <blockquote class="band-quote">
-    Hatha-Yoga ist keine sportliche Betätigung. Es hilft mir, ein inneres Gleichgewicht zu finden, in dem äußere Umstände meine Freude nicht trüben.
-    <!-- <cite>— Nanda</cite> -->
+    Hatha Yoga ist die Wissenschaft, den Körper zu nutzen, um sich auf die höchste Möglichkeit vorzubereiten.
+      <cite>— Sadhguru</cite>
   </blockquote>
 </div>
 
-<!-- VIDEO -->
-<section class="video-section" id="video">
-  <div class="container reveal">
-    <h2 class="title">Warum Yoga?</h2>
-    <p class="label"><em>In</em> is the only way out.</p>
-
-    <!--
-      Toggle data-mode below to switch source: "youtube" or "local".
-      YOUTUBE: set data-youtube-id to the video ID (the part after v= in the URL).
-      LOCAL:   set data-local-src to your video file path, and data-local-poster
-               to a poster image (e.g. an exported first frame).
-      Nothing is downloaded until the visitor clicks play — the poster image
-      (a single small file) is the only network cost on page load.
-    -->
-    <div class="video-facade"
-         id="video-facade"
-         data-mode="youtube"
-         data-youtube-id="iqFu1awvhws"
-         data-local-src="/videos/in-is-the-only-way-out.mp4"
-         data-local-poster="/images/video-cover.webp"
-         role="button" tabindex="0"
-         aria-label="Play video: In is the only way out">
-      <img class="video-poster" id="video-poster" loading="lazy" alt="">
-      <button type="button" class="video-play" aria-hidden="true" tabindex="-1">
-        <svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
-      </button>
-    </div>
-  </div>
-</section>
-
-<script>
-  (function () {
-    const facade = document.getElementById('video-facade');
-    const poster = document.getElementById('video-poster');
-    if (!facade || !poster) return;
-
-    const mode = facade.dataset.mode; // "youtube" or "local"
-
-    // Set the poster image without loading anything else yet.
-    if (mode === 'local') {
-      poster.src = facade.dataset.localPoster;
-    } else {
-      poster.src = facade.dataset.localPoster;
-      // poster.src = 'https://img.youtube.com/vi/' + facade.dataset.youtubeId + '/hqdefault.jpg';
-    }
-
-    function loadVideo() {
-      facade.innerHTML = '';
-      if (mode === 'local') {
-        const video = document.createElement('video');
-        video.src = facade.dataset.localSrc;
-        video.controls = true;
-        video.autoplay = true;
-        video.playsInline = true;
-        facade.appendChild(video);
-      } else {
-        const iframe = document.createElement('iframe');
-        iframe.src = 'https://www.youtube-nocookie.com/embed/' + facade.dataset.youtubeId + '?autoplay=1&rel=0';
-        iframe.title = 'In is the only way out';
-        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-        iframe.allowFullscreen = true;
-        facade.appendChild(iframe);
-      }
-      facade.removeEventListener('click', loadVideo);
-      facade.removeEventListener('keydown', onKey);
-    }
-    function onKey(e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadVideo(); }
-    }
-    facade.addEventListener('click', loadVideo);
-    facade.addEventListener('keydown', onKey);
-  })();
-</script>
-
-<!-- WELCOME -->
-<section class="welcome-section" id="welcome">
-  <div class="container reveal">
-    <h2 class="title">Willkommen bei Isha Hatha Yoga</h2>
-    <p class="label">Lass es uns <em>möglich machen.</em></p>
-    <div class="welcome-inner">
-      <div class="welcome-img-col">
-        <div class="img-placeholder welcome-img">
-          <img src="/images/nanda.webp" alt="" width="100%">
-          <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
-          <span>Add image — Nanda, with her Sadhguru Gurukulam certification</span> -->
-        </div>
-      </div>
-      <div class="welcome-text">
-        <!-- <p>Es ist wunderbar, dass wir uns hier begegnen.</p> -->
-        <p>In dieser hektischen und sich rasch wandelnden Welt ist es wichtig, innere Balance aufzubauen — nicht nur, um mit Anmut zu funktionieren, sondern um sicherzustellen, dass die Zyklen von Körper und Geist nicht aus der Bahn geraten.</p>
-        <p>Zu diesem Zweck möchte ich Ihnen eine Technik vorstellen, die sich seit Jahrtausenden bewährt hat — ganz einfach, weil sie funktioniert. Das klassische Isha Hatha-Yoga ist im Grunde darauf ausgerichtet, dieses innere Gleichgewicht herzustellen.</p>
-        <p>Ein 21-wöchiges, umfassendes Lehrerausbildungsprogramm (über 1.750 Stunden), das vom Sadhguru Gurukulam, Isha Foundation in seinem Ashram in Indien angeboten wird, sowie jahrelange Praxis geben mir eine solide Grundlage, um Sie zu unterstützen, falls Sie diese Gelegenheit nutzen möchten. Um Ihre Hatha-Yoga-Reise zu beginnen, kontaktieren Sie mich gerne oder nehmen Sie an einem Einführungswebinar teil.</p>
-        <p class="welcome-signature"> <img src="/images/SG_Logo5.png" alt="" height="40px"> <br>
-          — Nanda</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFp_A1N3_kAxOEvoYqfNoiFbez8gVqYoOW-F76Ag1zfbTNw/viewform?usp=header" class="btn-primary welcome-cta" target="_blank" rel="noopener">Zum Einführungswebinar</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- YOGA -->
-<section class="practices" id="yoga">
-  <div class="container">
-    <div class="practices-intro reveal">
-      <div>
-        <h2 class="title">Hatha Yoga Methoden</h2>
-        <p class="label"><em>Zeit</em> für mich.</p>
-        <p class="body-text">Sechs Hauptmethoden, die jeweils für sich allein vollständig sind. Angeordnet in drei Schritten — das System reinigen und aktivieren, die Struktur stärken und Balance bringen. Keine Vorerfahrung nötig, um eine davon zu erlernen.</p>
-      </div>
-    </div>
-
-    <div class="yoga-categories">
-      <div class="yoga-category-row reveal">
-        <div class="yoga-category-card cat-dawn" style="background-image: url(/images/Promo\ -\ PP318.webp)" >
-          <svg class="cat-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="20" cy="24" r="11" fill="none" stroke="var(--violet)" stroke-width="1.4"/>
-            <path d="M20 13 A9 9 0 0 1 20 35" fill="none" stroke="var(--violet)" stroke-width="1.4"/>
-          </svg>
-          <span class="cat-num">Schritt Eins</span>
-          <h3>Reinigen &amp; Aktivieren</h3>
-          <p>Das System morgens als Erstes reinigen und den Körper geschmeidig halten.</p>
-        </div>
-        <article class="practice-card reveal">
-          <div class="img-placeholder practice-card-img">
-            <img src="/images/Promo - PP244-2000px.webp" alt="Bhuta Shuddhi Bild" width="100%">
-          </div>
-          <div class="practice-card-body">
-            <span class="p-tag">Reinigung · Elemente</span>
-            <h3>Bhuta Shuddhi</h3>
-            <p>Eine tägliche Praxis zur Reinigung der fünf Elemente im Körper — sie setzt an der Wurzel der Ungleichgewichte an, die zu Krankheit führen können.</p>
-            <blockquote class="p-quote">Bei Bhuta Shuddhi geht es darum, alles abzubauen, was man aufgebaut hat, damit die Schöpfung des Schöpfers in einem selbst aufsteigen und erstrahlen kann. <br> — Sadhguru</blockquote>
-            <div class="p-meta"><span>1,5 Std. zum Erlernen</span><span>10 Min. Praxis</span></div>
-          </div>
-        </article>
-        <article class="practice-card reveal">
-          <div class="img-placeholder practice-card-img">
-            <img src="/images/Promo - PP115-2000px.webp" alt="Upa-Yoga Bild" width="100%">
-          </div>
-          <div class="practice-card-body">
-            <span class="p-tag">Grundlage · Anfänger</span>
-            <h3>Upa-Yoga</h3>
-            <p>Zehn einfache, aber kraftvolle Übungen, die Gelenke, Muskeln und das Energiesystem aktivieren, angesammelte Spannungen lösen und dem ganzen System Leichtigkeit bringen.</p>
-            <div class="p-meta"><span>4-5 Std. zum Erlernen</span><span>~30 Min. Praxis</span></div>
-          </div>
-        </article>
-      </div>
-
-      <div class="yoga-category-row reveal">
-        <div class="yoga-category-card cat-noon" style="background-image: url(/images/Promo\ -\ PP316.webp)">
-          <svg class="cat-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <line x1="20" y1="8" x2="20" y2="32" stroke="var(--orange)" stroke-width="1.4"/>
-            <circle cx="20" cy="12" r="2.6" fill="var(--orange)"/>
-            <circle cx="20" cy="20" r="2.6" fill="var(--orange)"/>
-            <circle cx="20" cy="28" r="2.6" fill="var(--orange)"/>
-          </svg>
-          <span class="cat-num">Schritt Zwei</span>
-          <h3>Das System stärken.</h3>
-          <!-- <p>Diese Übungen bringen dich nach und nach ans Ziel.</p> -->
-          <p>Wie dynamisch und wie ruhig ich sein kann, hängt davon ab, wie gut ich meine Wirbelsäule pflege.</p>
-        </div>
-        <article class="practice-card reveal">
-          <div class="img-placeholder practice-card-img">
-            <img src="/images/Promo - PP090-2000px.webp" alt="Angamardana Bild" width="100%">
-          </div>
-          <div class="practice-card-body">
-            <span class="p-tag">Beweglichkeit · Fitness</span>
-            <h3>Angamardana</h3>
-            <p>Eine Serie von 31 Übungen, um den Körper zu beleben und höchste körperliche und geistige Fitness zu kultivieren — ganz ohne Geräte.</p>
-            <blockquote class="p-quote">Angamardana ist eine wunderbare Methode, den menschlichen Organismus auf höhere Möglichkeiten vorzubereiten. Vor allem ist es eine der einfachsten und wirkungsvollsten Methoden, Fitness zu erlangen, da keine Geräte oder Hilfsmittel nötig sind. <br> — Sadhguru</blockquote>
-            <div class="p-meta"><span>11-14 Std. zum Erlernen</span><span>~40 Min. Praxis</span></div>
-          </div>
-        </article>
-        <article class="practice-card reveal">
-          <div class="img-placeholder practice-card-img">
-            <img src="/images/Promo - PP041-2000px.webp" alt="Surya Shakti Bild" width="100%">
-          </div>
-          <div class="practice-card-body">
-            <span class="p-tag">Kraft · Bänder</span>
-            <h3>Surya Shakti</h3>
-            <p>Eine 18-stufige Sonnengruss-Sequenz, die das System energetisiert und die Bänder stärkt, die Skelett und Muskulatur verbinden.</p>
-            <div class="p-meta"><span>3-4 Std. zum Erlernen</span><span>1-3 Min./Zyklus</span></div>
-          </div>
-        </article>
-        
-      </div>
-
-      <div class="yoga-category-row reveal">
-        <div class="yoga-category-card cat-twilight" style="background-image:url('/images/Promo\ -\ PP317.webp');">
-          <svg class="cat-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="13" cy="24" r="7" fill="var(--orange)"/>
-            <circle cx="26" cy="16" r="9" fill="var(--twilight-deep)"/>
-            <circle cx="30" cy="12" r="8" fill="#f3e6e2"/>
-          </svg>
-          <span class="cat-num">Schritt Drei</span>
-          <h3>Balance bringen</h3>
-          <p>Bevor Stille und Ruhe kommen können, muss zuerst Balance da sein.</p>
-        </div>
-        <article class="practice-card reveal">
-          <div class="img-placeholder practice-card-img">
-            <img src="/images/Promo - PP237-2000px.webp" alt="Surya Kriya Bild" width="100%">
-          </div>
-          <div class="practice-card-body">
-            <span class="p-tag">Energie · Wohlbefinden</span>
-            <h3>Surya Kriya</h3>
-            <p>Eine kraftvolle, 21-stufige, uralte yogische Praxis, konzipiert als ganzheitlicher Prozess für Gesundheit und inneres Wohlbefinden.</p>
-            <blockquote class="p-quote">Man sollte sich Surya Kriya mit Hingabe und Ehrfurcht nähern – es ist ein kraftvoller Prozess. Man kann ihn nutzen, um einfach Rückenschmerzen zu lindern, oder um sich vollständig zu transformieren. Dieses Potenzial ist vorhanden. <br> — Sadhguru</blockquote>
-            <div class="p-meta"><span>6-8 Std. zum Erlernen</span><span>~20 Min./Zyklus</span></div>
-          </div>
-        </article>
-        <article class="practice-card reveal">
-          <div class="img-placeholder practice-card-img">
-            <img src="/images/Promo - PP285-2000px.webp" alt="Yogasanas Bild" width="100%">
-          </div>
-          <div class="practice-card-body">
-            <span class="p-tag">Haltungen · Bewusstsein</span>
-            <h3>Yogasanas</h3>
-            <p>Eine klassische Reihe kraftvoller Haltungen, mit denen man das Bewusstsein erheben und mit der Energiestruktur des Körpers arbeiten kann.</p>
-            <div class="p-meta"><span>10-12 Std. zum Erlernen</span><span>1-1,5 Std. Praxis</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BENEFITS -->
-<section class="benefits" id="benefits">
-  <div class="container">
-    <div class="reveal">
-      <h2 class="title">Warum praktizieren</h2>
-      <p class="label">Eine vollständige Wissenschaft von<br /><em>Körper &amp; Sein</em></p>
-      <p class="body-text">Diese Praktiken erfordern keine Geräte und keine Vorerfahrung. Ob Sie körperliche Vitalität, geistige Klarheit oder eine tiefere Auseinandersetzung mit dem Leben suchen — klassisches Hatha Yoga bietet einen systematischen Weg für jede Dimension Ihres Wohlbefindens.</p>
-    </div>
-    <hr class="rule" />
-    <div class="benefits-grid reveal">
-      <div class="benefit-item">
-        <div class="benefit-num">01</div>
-        <h4>Herz-Kreislauf-Gesundheit</h4>
-        <p>Verbesserte Herzeffizienz und normalisierter Blutdruck.</p>
-      </div>
-      <div class="benefit-item">
-        <div class="benefit-num">02</div>
-        <h4>Balance des Nervensystems</h4>
-        <p>Regulierung des autonomen Nervensystems für tiefe Ruhe.</p>
-      </div>
-      <div class="benefit-item">
-        <div class="benefit-num">03</div>
-        <h4>Hormonelle Funktion</h4>
-        <p>Hormonelle Balance zur Unterstützung von Immunsystem und Gesundheit.</p>
-      </div>
-      <div class="benefit-item">
-        <div class="benefit-num">04</div>
-        <h4>Gewichtsnormalisierung</h4>
-        <p>Stoffwechselgleichgewicht und ein gesunder Körper auf lange Sicht.</p>
-      </div>
-      <div class="benefit-item">
-        <div class="benefit-num">05</div>
-        <h4>Beweglichkeit &amp; Kraft</h4>
-        <p>Verbesserte Gelenkgesundheit, Haltung und Muskelkraft.</p>
-      </div>
-      <div class="benefit-item">
-        <div class="benefit-num">06</div>
-        <h4>Energie &amp; Vitalität</h4>
-        <p>Gesteigerter Pranafluss und nachhaltige körperliche Energie.</p>
-      </div>
-      <div class="benefit-item">
-        <div class="benefit-num">07</div>
-        <h4>Emotionales Wohlbefinden</h4>
-        <p>Gehobene Stimmung und dauerhafte innere Balance.</p>
-      </div>
-      <div class="benefit-item">
-        <div class="benefit-num">08</div>
-        <h4>Geistige Klarheit</h4>
-        <p>Verbesserte Konzentration, weniger Angst und Niedergeschlagenheit.</p>
-      </div>
-    </div>
-    <blockquote class="why-practice-quote reveal">
-      <p>Ihre körperliche Gesundheit, Ihr psychisches Wohlbefinden und Ihre spirituelle Möglichkeit hängen davon ab, wie gut Sie mit der Existenz im Einklang sind. Im Grunde zielt Hatha Yoga darauf ab, genau diesen Einklang herzustellen.</p>
-      <cite>— Sadhguru</cite>
-    </blockquote>
-  </div>
-</section>
 
 <!-- CLASSES -->
 <section class="classes-section" id="classes">
   <div class="container reveal">
-    <h2 class="title">Kommende Programme</h2>
-    <p class="label">Los geht's! </p>
-    <p class="body-text" style="margin-bottom:2rem;">Die Kurse finden in Kollbrunn, Winterthur, und Zürich statt. Jeder Kurs ist ein Erlebnis und bereitet Sie darauf vor, selbstständig zu üben. Der Unterricht findet auf Englisch statt.</p>
+    <p class="label">Kommende Workshops</p>
+    <h2 class="title">Yoga<em> in Kollbrunn, Winterthur und Zürich</em></h2>
+    <p class="body-text" style="margin-bottom:2rem;">Gut strukturiert, präzise und als innerer Prozess. Der Unterricht findet auf Englisch statt.<br> 
+Nehmen Sie das Gelernte mit nach Hause und übernehmen Sie die Verantwortung für Ihre Gesundheit, Ihr Wohlbefinden und Ihre Lebensfreude.</p>
 
-    <!-- <div class="no-classes-state">
-      <p>There are no classes scheduled at this time. New dates are added regularly — reach out via WhatsApp, Telegram, or email to be notified when the next session is announced, or to arrange a class at your preferred location.</p>
-      <a href="https://wa.me/41779818111" class="btn-primary" target="_blank" rel="noopener" style="font-size:0.68rem;">Get in Touch</a>
-    </div> -->
-
+    
     <div class="classes-table-wrap">
       <div class="classes-table">
         <div class="class-row-header">
@@ -496,7 +204,7 @@
     </div>
 
     <!-- <p class="host-note" style="margin-top:2.5rem;">Want to host a class at your location? <a href="mailto:nanda@shivoham.ch">Get in touch</a></p> -->
-    <p class="contact-phone">+41 77 981 81 11</p>
+    <p class="contact-phone">nanda@shivoham.ch | +41 77 981 81 11</p>
     <div class="contact-methods">
       <a href="https://wa.me/41779818111" class="contact-btn wa" target="_blank" rel="noopener">WhatsApp</a>
       <a href="https://t.me/NandaSasidharan" class="contact-btn" target="_blank" rel="noopener">Telegram</a>
@@ -505,12 +213,287 @@
   </div>
 </section>
 
+
+<!-- YOGA -->
+<section class="practices" id="yoga">
+  <div class="container">
+    <div class="practices-intro reveal">
+      <div>
+        <p class="label">Werkzeuge zur Selbstveränderung</p>
+        <h2 class="title">Die wichtigsten <em>Praktiken</em></h2>
+        <p class="body-text">Sechs Hauptübungen. Angeordnet in drei Gruppen — das System reinigen und aktivieren, die Struktur stärken und Balance bringen. Keine Vorerfahrung nötig, um eine davon zu erlernen.</p>
+      </div>
+    </div>
+
+    <div class="yoga-categories">
+      <div class="yoga-category-row reveal">
+        <div class="yoga-category-card cat-dawn" style="background-image: url(/images/Promo\ -\ PP318.webp)" >
+          <svg class="cat-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="20" cy="24" r="11" fill="none" stroke="var(--violet)" stroke-width="1.4"/>
+            <path d="M20 13 A9 9 0 0 1 20 35" fill="none" stroke="var(--violet)" stroke-width="1.4"/>
+          </svg>
+          <span class="cat-num">Gruppe Eins</span>
+          <h3>Reinigen &amp; Aktivieren</h3>
+          <p>Das System morgens als Erstes reinigen und den Körper geschmeidig halten.</p>
+        </div>
+        
+        <article class="practice-card reveal">
+          <div class="img-placeholder practice-card-img">
+            <img src="/images/Promo - PP115-2000px.webp" alt="Upa-Yoga Bild" width="100%">
+          </div>
+          <div class="practice-card-body">
+            <span class="p-tag">Grundlage · Anfänger</span>
+            <h3>Upa-Yoga</h3>
+            <p>Zehn einfache, aber kraftvolle Übungen, die Gelenke, Muskeln und das Energiesystem aktivieren, angesammelte Spannungen lösen und dem ganzen System Leichtigkeit bringen.</p>
+            <div class="p-meta"><span>4-5 Std. zum Erlernen</span><span>~30 Min. Praxis</span></div>
+          </div>
+        </article>
+        <article class="practice-card reveal">
+          <div class="img-placeholder practice-card-img">
+            <img src="/images/Promo - PP244-2000px.webp" alt="Bhuta Shuddhi Bild" width="100%">
+          </div>
+          <div class="practice-card-body">
+            <span class="p-tag">Reinigung · Elemente</span>
+            <h3>Bhuta Shuddhi</h3>
+            <p>Eine tägliche Praxis zur Reinigung der fünf Elemente im Körper — sie setzt an der Wurzel der Ungleichgewichte an, die zu Krankheit führen können.</p>
+            <blockquote class="p-quote">Bei Bhuta Shuddhi geht es darum, alles abzubauen, was man aufgebaut hat, damit die Schöpfung des Schöpfers in einem selbst aufsteigen und erstrahlen kann. <br> — Sadhguru</blockquote>
+            <div class="p-meta"><span>1,5 Std. zum Erlernen</span><span>10 Min. Praxis</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="yoga-category-row reveal">
+        <div class="yoga-category-card cat-noon" style="background-image: url(/images/Promo\ -\ PP317.webp)">
+          <svg class="cat-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="20" y1="8" x2="20" y2="32" stroke="var(--orange)" stroke-width="1.4"/>
+            <circle cx="20" cy="12" r="2.6" fill="var(--orange)"/>
+            <circle cx="20" cy="20" r="2.6" fill="var(--orange)"/>
+            <circle cx="20" cy="28" r="2.6" fill="var(--orange)"/>
+          </svg>
+          <span class="cat-num">Gruppe Zwei</span>
+          <h3>Kraft & Beweglichkeit.</h3>
+          <!-- <p>Diese Übungen bringen dich nach und nach ans Ziel.</p> -->
+          <p>Wie dynamisch und wie ruhig ich sein kann, hängt davon ab, wie gut ich meine Wirbelsäule pflege.</p>
+        </div>
+        
+        <article class="practice-card reveal">
+          <div class="img-placeholder practice-card-img">
+            <img src="/images/Promo - PP041-2000px.webp" alt="Surya Shakti Bild" width="100%">
+          </div>
+          <div class="practice-card-body">
+            <span class="p-tag">Kraft · Bänder</span>
+            <h3>Surya Shakti</h3>
+            <p>Eine 18-stufige Sonnengruss-Sequenz, die das System energetisiert und die Bänder stärkt, die Skelett und Muskulatur verbinden.</p>
+            <div class="p-meta"><span>3-4 Std. zum Erlernen</span><span>1-3 Min./Zyklus</span></div>
+          </div>
+        </article>
+        <article class="practice-card reveal">
+          <div class="img-placeholder practice-card-img">
+            <img src="/images/Promo - PP090-2000px.webp" alt="Angamardana Bild" width="100%">
+          </div>
+          <div class="practice-card-body">
+            <span class="p-tag">Beweglichkeit · Fitness</span>
+            <h3>Angamardana</h3>
+            <p>Eine Serie von 31 Übungen, um den Körper zu beleben und höchste körperliche und geistige Fitness zu kultivieren — ganz ohne Geräte.</p>
+            <blockquote class="p-quote">Angamardana ist eine wunderbare Methode, den menschlichen Organismus auf höhere Möglichkeiten vorzubereiten. Vor allem ist es eine der einfachsten und wirkungsvollsten Methoden, Fitness zu erlangen, da keine Geräte oder Hilfsmittel nötig sind. <br> — Sadhguru</blockquote>
+            <div class="p-meta"><span>11-14 Std. zum Erlernen</span><span>~40 Min. Praxis</span></div>
+          </div>
+        </article>
+        
+      </div>
+
+      <div class="yoga-category-row reveal">
+        <div class="yoga-category-card cat-twilight" style="background-image:url('/images/Promo\ -\ PP319.webp');">
+          <svg class="cat-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="13" cy="24" r="7" fill="var(--orange)"/>
+            <circle cx="26" cy="16" r="9" fill="var(--twilight-deep)"/>
+            <circle cx="30" cy="12" r="8" fill="#f3e6e2"/>
+          </svg>
+          <span class="cat-num">Gruppe Drei</span>
+          <h3>Balance bringen</h3>
+          <p>Bevor Stille und Ruhe kommen können, muss zuerst Balance da sein.</p>
+        </div>
+        <article class="practice-card reveal">
+          <div class="img-placeholder practice-card-img">
+            <img src="/images/Promo - PP237-2000px.webp" alt="Surya Kriya Bild" width="100%">
+          </div>
+          <div class="practice-card-body">
+            <span class="p-tag">Energie · Wohlbefinden</span>
+            <h3>Surya Kriya</h3>
+            <p>Eine kraftvolle, 21-stufige, uralte yogische Praxis, konzipiert als ganzheitlicher Prozess für Gesundheit und inneres Wohlbefinden.</p>
+            <div class="p-meta"><span>6-8 Std. zum Erlernen</span><span>~20 Min./Zyklus</span></div>
+          </div>
+        </article>
+        <article class="practice-card reveal">
+          <div class="img-placeholder practice-card-img">
+            <img src="/images/Promo - PP285-2000px.webp" alt="Yogasanas Bild" width="100%">
+          </div>
+          <div class="practice-card-body">
+            <span class="p-tag">Haltungen · Bewusstsein</span>
+            <h3>Yogasanas</h3>
+            <p>Eine klassische Reihe kraftvoller Haltungen, mit denen man das Bewusstsein erheben und mit der Energiestruktur des Körpers arbeiten kann.</p>
+            <blockquote class="p-quote">Das Üben von Asanas mit der nötigen Hingabe wird Ihre physiologische, psychologische und energetische Struktur verändern und so ein energiegeladenes, kreatives und glückseliges Leben ermöglichen. <br> — Sadhguru</blockquote>
+            <div class="p-meta"><span>10-12 Std. zum Erlernen</span><span>1-1,5 Std. Praxis</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- VIDEO -->
+<section class="why-section" id="why">
+  <div class="container reveal">
+    <p class="label">Von all den Dingen, die ich tun kann –</p>
+    <h2 class="title">Warum Hatha-Yoga?</h2>
+    <p class="body-text">Entscheidend ist, wie angenehm du dein Leben empfindest.    
+    </p>
+<br>
+    <p class="body-text">Yoga entspringt der Erkenntnis, dass der Ursprung all unserer Erfahrungen in uns selbst liegt. Beim Hatha Yoga geht es darum, das System zu reinigen, Kraft und Vitalität aufzubauen sowie Gleichgewicht und Stabilität zu schaffen – mit dem Ziel, die eigene Fähigkeit, das Leben wahrzunehmen und zu erfahren, zu erweitern. Es geht darum, die Kontrolle über den eigenen Körper, den Geist, die Emotionen und die Energien zu übernehmen, sodass man seine Lebenserfahrung von innen heraus gestalten kann. 
+    </p>
+<br>
+    <p class="body-text">Der unmittelbare Grund, warum du Hatha-Yoga praktizieren möchtest, kann unterschiedlich sein. Vielleicht tust du es zur Entspannung, als körperliche Betätigung, zu therapeutischen Zwecken oder um die Mechanismen des Lebens zu erforschen. Entscheidend sind deine Bereitschaft und dein Engagement. 
+    </p>
+
+    <div class="video-section" id="video">
+    <!--
+      Toggle data-mode below to switch source: "youtube" or "local".
+      YOUTUBE: set data-youtube-id to the video ID (the part after v= in the URL).
+      LOCAL:   set data-local-src to your video file path, and data-local-poster
+               to a poster image (e.g. an exported first frame).
+      Nothing is downloaded until the visitor clicks play — the poster image
+      (a single small file) is the only network cost on page load.
+    -->
+    <div class="video-facade"
+         id="video-facade"
+         data-mode="youtube"
+         data-youtube-id="iqFu1awvhws"
+         data-local-src="/videos/in-is-the-only-way-out.mp4"
+         data-local-poster="/images/video-cover.webp"
+         role="button" tabindex="0"
+         aria-label="Play video: In is the only way out">
+      <img class="video-poster" id="video-poster" loading="lazy" alt="">
+      <button type="button" class="video-play" aria-hidden="true" tabindex="-1">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </div>
+  </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const facade = document.getElementById('video-facade');
+    const poster = document.getElementById('video-poster');
+    if (!facade || !poster) return;
+
+    const mode = facade.dataset.mode; // "youtube" or "local"
+
+    // Set the poster image without loading anything else yet.
+    if (mode === 'local') {
+      poster.src = facade.dataset.localPoster;
+    } else {
+      poster.src = facade.dataset.localPoster;
+      // poster.src = 'https://img.youtube.com/vi/' + facade.dataset.youtubeId + '/hqdefault.jpg';
+    }
+
+    function loadVideo() {
+      facade.innerHTML = '';
+      if (mode === 'local') {
+        const video = document.createElement('video');
+        video.src = facade.dataset.localSrc;
+        video.controls = true;
+        video.autoplay = true;
+        video.playsInline = true;
+        facade.appendChild(video);
+      } else {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + facade.dataset.youtubeId + '?autoplay=1&rel=0';
+        iframe.title = 'In is the only way out';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        facade.appendChild(iframe);
+      }
+      facade.removeEventListener('click', loadVideo);
+      facade.removeEventListener('keydown', onKey);
+    }
+    function onKey(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); loadVideo(); }
+    }
+    facade.addEventListener('click', loadVideo);
+    facade.addEventListener('keydown', onKey);
+  })();
+</script>
+
+
+<!-- BENEFITS -->
+<section class="benefits" id="benefits">
+  <div class="container">
+    <div class="reveal">
+      <p class="label">Eine vollständige Wissenschaft von Körper &amp; Sein</p>
+      <h2 class="title">Körperliche <em>Vorteile</em></h2>
+      <p class="body-text">Ob Sie körperliche Vitalität, geistige Klarheit oder eine tiefere Auseinandersetzung mit dem Leben suchen — klassisches Hatha Yoga bietet einen systematischen Weg für jede Dimension Ihres Wohlbefindens.</p>
+    </div>
+    <hr class="rule" />
+    <div class="benefits-grid reveal">
+      <div class="benefit-item">
+        <div class="benefit-num">01</div>
+        <h4>Herz-Kreislauf-Gesundheit</h4>
+        <p>Verbesserte Herzeffizienz und normalisierter Blutdruck.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">02</div>
+        <h4>Balance des Nervensystems</h4>
+        <p>Regulierung des autonomen Nervensystems für tiefe Ruhe.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">03</div>
+        <h4>Hormonelle Funktion</h4>
+        <p>Hormonelle Balance zur Unterstützung von Immunsystem und Gesundheit.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">04</div>
+        <h4>Gewichtsnormalisierung</h4>
+        <p>Stoffwechselgleichgewicht und ein gesunder Körper auf lange Sicht.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">05</div>
+        <h4>Beweglichkeit &amp; Kraft</h4>
+        <p>Verbesserte Gelenkgesundheit, Haltung und Muskelkraft.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">06</div>
+        <h4>Energie &amp; Vitalität</h4>
+        <p>Gesteigerter Pranafluss und nachhaltige körperliche Energie.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">07</div>
+        <h4>Emotionales Wohlbefinden</h4>
+        <p>Gehobene Stimmung und dauerhafte innere Balance.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-num">08</div>
+        <h4>Geistige Klarheit</h4>
+        <p>Verbesserte Konzentration, weniger Angst und Niedergeschlagenheit.</p>
+      </div>
+    </div>
+    <blockquote class="why-practice-quote reveal">
+      <p>Ihre körperliche Gesundheit, Ihr psychisches Wohlbefinden und Ihre spirituelle Möglichkeit hängen davon ab, wie gut Sie mit der Existenz im Einklang sind. Im Grunde zielt Hatha Yoga darauf ab, genau diesen Einklang herzustellen.</p>
+      <cite>— Sadhguru</cite>
+    </blockquote>
+  </div>
+</section>
+
+
+
 <!-- FAQ -->
 <section class="faq-section" id="faq">
   <div class="container reveal">
-    <h2 class="title">Häufige Fragen</h2>
-    <p class="label">Bevor ich <em>beginne</em></p>
-    <p class="body-text">Was brauche ich, um zu starten?</p>
+    <p class="label">Bevor ich beginne</p>
+    <h2 class="title">Häufig gestellte <em>Fragen</em></h2>
+    <!-- <p class="body-text">Was brauche ich, um zu starten?</p> -->
 
     <div class="faq-list">
       <div class="faq-item">
@@ -619,8 +602,8 @@
 <section class="testimonials">
   <div class="container">
     <div class="reveal">
-      <h2 class="title">Was Teilnehmende sagen</h2>
-      <p class="label">Stimmen der <em>Teilnehmenden</em></p>
+      <p class="label">Stimmen der Teilnehmenden</p>
+      <h2 class="title">Was Teilnehmende <em>sagen</em> </h2>
       <!-- <p class="body-text">Einige meiner Freunde haben freundlicherweise ihre Erfahrungen aus den Kursen geteilt. </p> -->
     </div>
     <div class="testimonials-grid">
@@ -710,8 +693,8 @@
 <section class="about" id="about">
   <div class="container">
     <div class="reveal">
-      <h2 class="title">Die Tradition</h2>
-      <p class="label">Der <em>Ursprung</em></p>
+      <p class="label">Der Ursprung und der Lehrer</p>
+      <h2 class="title">Über <em>uns</em></h2>
     </div>
     <div class="about-stack">
       <div class="about-card reveal">
@@ -741,6 +724,22 @@
           <p>In diesem Programm wird Hatha Yoga als gelebte Erfahrung in der wunderschönen Umgebung des Isha Yoga Centers in Indien unter der Anleitung eines lebenden Meisters gelehrt. Nach Abschluss des Programms haben die Teilnehmenden das Privileg und die Erfüllung, dieses Wissen an viele weitere Menschen weiterzugeben.</p>
           <a href="https://isha.sadhguru.org/global/en/yoga-meditation/yoga-teacher-training/hatha-yoga-teacher-training?sourcem=Teachers%20Training" target="_blank" rel="noopener" class="about-cert" style="text-decoration:none;">Hatha-Yoga-Lehrerausbildung</a>
         </div>
+      </div>
+      <div class="about-divider"></div>
+      <div class="about-card reveal">
+        <div class="img-placeholder about-person-img">
+          <img src="/images/nanda1.jpg" alt="isha hatha yoga teacher" style="height:100%;object-fit:cover;display:block;">
+        </div>
+        <div class="about-person">
+          <h3>Nanda</h3>
+          <span class="role">Hatha-Yoga-Lehrerausbildung</span>
+          <p>Nanda hat einen Doktortitel in Elektrotechnik. Als ihm klar wurde, dass es bei moderner Bildung größtenteils um die Vorbereitung auf industrielle Arbeit geht - und nicht um das Leben an sich -, suchte er nach einer anderen Richtung.</p>
+          <p>Das Inner Engineering-Programm von Sadhguru sowie das 21-wöchige, umfassende Lehrerausbildungsprogramm (über 1750 Stunden), das 2021 vom Sadhguru Gurukulam der Isha Foundation in deren Ashram in Indien angeboten wurde, stellten wesentliche Schritte in diese Richtung dar.</p>
+          <p>Was ihn an dieser Reise begeistert, ist der 180-Grad-Wandel in der Wahrnehmung des Lebens, der es zugleich süß und abenteuerlich macht.</p>
+          <img src="/images/SG_Logo5.png" alt="" height="50px"><br><br>
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYFp_A1N3_kAxOEvoYqfNoiFbez8gVqYoOW-F76Ag1zfbTNw/viewform?usp=header" class="btn-primary welcome-cta" target="_blank" rel="noopener">Einführungs-Webinar</a>
+          </div>
       </div>
     </div>
   </div>

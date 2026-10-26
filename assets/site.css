@@ -143,13 +143,14 @@
     .hero-text { position: relative; z-index: 1; }
     .hero-image-wrap { position: relative; z-index: 1; }
 
-    .hero-title {
+    .hero-label {
       font-size: 0.68rem; letter-spacing: 0.32em;
+      font-weight: 600; 
       text-transform: uppercase; color: var(--orange);
       margin-bottom: 1.5rem;
       opacity: 0; animation: fadeUp 0.9s 0.2s forwards;
     }
-    .hero-label {
+    .hero-title {
       font-family: 'Fraunces', serif;
       font-size: clamp(2.8rem, 5vw, 5rem);
       font-weight: 600; line-height: 1.08;
@@ -157,7 +158,7 @@
       margin-bottom: 1.5rem;
       opacity: 0; animation: fadeUp 0.9s 0.4s forwards;
     }
-    .hero-label em { font-style: italic; color: var(--orange); }
+    .hero-title em { font-style: italic; color: var(--orange); }
     .hero-sub {
       font-size: 1.05rem; color: var(--text-mid);
       letter-spacing: 0.05em; margin-bottom: 0.5rem;
@@ -259,18 +260,18 @@
     section { padding: var(--gap) clamp(1.25rem, 4vw, 2rem); }
     .container { max-width: 1100px; margin: 0 auto; }
     .container-narrow { max-width: 780px; margin: 0 auto; }
-    .title {
-      font-size: 0.66rem; letter-spacing: 0.32em;
+    .label {
+      font-size: 0.66rem; letter-spacing: 0.32em; font-weight: 600;
       text-transform: uppercase; color: var(--orange);
       display: block; margin-bottom: 0.85rem;
     }
-    .label {
+    .title {
       font-family: 'Fraunces', serif;
       font-size: clamp(2rem, 4vw, 3rem);
       font-weight: 600; color: var(--text);
       line-height: 1.18; margin-bottom: 1.2rem;
     }
-    .label em { font-style: italic; color: var(--violet); }
+    .title em { font-style: italic; color: var(--violet); }
     .body-text { color: var(--text-lt); font-size: 1rem; line-height: 1.95; max-width: 600px; }
     .rule { width: 44px; height: 1px; background: var(--orange); border: none; margin: 2rem 0; }
 
@@ -299,7 +300,7 @@
     }
     .band p em { color: var(--orange); font-style: italic; }
     .band-quote {
-      margin-top: 2.5rem;
+      /* margin-top: 2.5rem; */
       font-family: 'Fraunces', serif;
       font-size: clamp(1.05rem, 1.8vw, 1.35rem);
       font-style: italic;
@@ -307,8 +308,8 @@
       max-width: 720px;
       margin-left: auto; margin-right: auto;
       line-height: 1.72;
-      border-top: 1px solid var(--border-acc);
-      padding-top: 2rem;
+      /* border-top: 1px solid var(--border-acc); */
+      /* padding-top: 2rem; */
       position: relative; z-index: 1;
     }
     .band-quote cite {
@@ -506,7 +507,7 @@
     .contact-btn:hover { border-color: var(--border-acc); color: var(--orange); }
     .contact-btn.wa { background: var(--violet); border-color: var(--violet); color: #fff; }
     .contact-btn.wa:hover { background: var(--violet-lt); border-color: var(--violet-lt); }
-    .contact-phone { font-family: 'Fraunces', serif; font-size: 1.5rem; color: var(--text); letter-spacing: 0.08em; margin-top: 2.5rem; }
+    .contact-phone { font-family: 'Fraunces', serif; font-size: 1.1rem; color: var(--text); letter-spacing: 0.08em; margin-top: 2.5rem; }
 
     /* ── NO CLASSES STATE ── */
     .no-classes-state {
@@ -660,7 +661,7 @@
       }
       .hero::before, .hero::after { display: none; }
       .hero-text { display: flex; flex-direction: column; align-items: center; }
-      .hero-label { font-size: clamp(2.4rem, 11vw, 3.2rem); }
+      .hero-title { font-size: clamp(2.4rem, 11vw, 3.2rem); }
       .hero-rule { margin-left: auto; margin-right: auto; }
       .hero-img { aspect-ratio: 4/3; max-height: 300px; }
       .hero-quote {
@@ -683,7 +684,7 @@
       /* Sections */
       section { padding: var(--gap) 1.25rem; }
       .band { padding: 3rem 1.25rem; }
-      .label { font-size: clamp(1.75rem, 7vw, 2.5rem); }
+      .title { font-size: clamp(1.75rem, 7vw, 2.5rem); }
       .benefits-grid { grid-template-columns: 1fr; gap: 1rem; }
       .practices-grid { grid-template-columns: 1fr; gap: 1rem; }
       .testimonials-grid { grid-template-columns: 1fr; }
@@ -694,7 +695,7 @@
       .why-practice-quote { padding: 1.75rem 1.5rem; }
       footer { padding: 2.5rem 1.25rem; }
     }
-  .gallery-section { background: var(--bg-2); }
+  .gallery-section { background: var(--bg-1); }
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -868,7 +869,7 @@
 /* ══════════════════════════════════════════
    FAQ — accordion, animated via CSS grid-rows
 ══════════════════════════════════════════ */
-.faq-section { background: var(--white); }
+.faq-section { background: var(--bg); }
 .faq-list { margin-top: 2.75rem; max-width: 800px; }
 .faq-item { border-bottom: 1px solid var(--border); }
 .faq-item:first-child { border-top: 1px solid var(--border); }
@@ -913,18 +914,21 @@
 @media (max-width: 600px) {
   .faq-question { font-size: 0.98rem; padding: 1.4rem 0.1rem; }
 }
-
+/* ══════════════════════════════════════════
+   WHY HATHA YOGA
+══════════════════════════════════════════ */
+.why-section { background: var(--bg-2); }
 
 /* ══════════════════════════════════════════
    VIDEO — click-to-load facade (YouTube or local, no upfront weight)
 ══════════════════════════════════════════ */
-.video-section { background: var(--bg); text-align: center; }
+.video-section { background: var(--bg-2); text-align: center; }
 .video-section .label { max-width: 700px; margin-left: auto; margin-right: auto; }
  
 .video-facade {
   position: relative;
   max-width: 860px;
-  margin: 2.5rem auto 0;
+  margin: 4.5rem auto 0;
   aspect-ratio: 16/9;
   border-radius: 8px;
   overflow: hidden;
