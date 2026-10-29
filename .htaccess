@@ -49,7 +49,7 @@ Options -Indexes
 </Files>
 
 # Never serve the config file
-<Files "*.php">
+<FilesMatch "^(?!submit\.php$).*\.php$">
     Order allow,deny
     Deny from all
-</Files>
+</FilesMatch>
