@@ -1,0 +1,2 @@
+# Saved messages are private: block all web access to this folder
+Require all denied

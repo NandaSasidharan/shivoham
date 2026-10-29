@@ -47,3 +47,9 @@ Options -Indexes
     Order allow,deny
     Deny from all
 </Files>
+
+# Never serve the config file
+<Files "*.php">
+    Order allow,deny
+    Deny from all
+</Files>
