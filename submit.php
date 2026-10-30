@@ -13,8 +13,8 @@ function reply(int $status, array $body): void {
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') reply(405, ['error' => 'Method not allowed.']);
 
-$cfg = require __DIR__ . '/config.php';
-$dataDir = __DIR__ . '/data';
+$cfg = require dirname(__DIR__) . '/basic/config.php';
+$dataDir = dirname(__DIR__) . '/basic/data';
 
 // ---- Rate limit (per IP) ----
 function rate_limited(array $cfg, string $dir): bool {
