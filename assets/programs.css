@@ -1,0 +1,192 @@
+/* ══════════════════════════════════════════
+   SHIVOHAM — program pages + Workshops dropdown
+   Loads after site.css; reuses its tokens.
+══════════════════════════════════════════ */
+
+/* ── Workshops dropdown ── */
+.nav-links .has-sub { position: relative; padding: 1.1rem 0; margin: -1.1rem 0; }
+.nav-links .has-sub > a::after {
+  content: ""; display: inline-block; width: 5px; height: 5px; margin: 0 0 3px 0.6rem;
+  border: solid currentColor; border-width: 0 1px 1px 0; transform: rotate(45deg);
+}
+.nav-sub {
+  position: absolute; top: 100%; left: -1.25rem; min-width: 230px; list-style: none;
+  padding: 0.5rem 0; background: rgba(251,248,242,0.98);
+  border: 1px solid var(--border); border-top: 2px solid var(--orange);
+  box-shadow: 0 14px 32px -12px rgba(74,64,72,0.25);
+  opacity: 0; visibility: hidden; transform: translateY(6px);
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+.has-sub:hover .nav-sub, .has-sub:focus-within .nav-sub { opacity: 1; visibility: visible; transform: none; }
+.nav-links .nav-sub a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap; }
+.nav-links .nav-sub a:hover { background: var(--orange-pale); color: var(--orange); }
+.nav-links a[aria-current] { color: var(--orange); }
+
+/* ── Figures: real image if present, labelled placeholder otherwise ── */
+.fig { position: relative; }
+.fig img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ── Program hero ── */
+.hero.program-hero { min-height: auto; padding-top: 9rem; padding-bottom: 5rem; }
+
+/* ── Intro ── */
+.program-intro { background: var(--bg); }
+.program-intro .lead p { font-size: 1.08rem; color: var(--text-lt); line-height: 1.95; max-width: 680px; margin-bottom: 1.2rem; }
+
+/* ── Program path (a real sequence, so numbered) ── */
+.program-path { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; counter-reset: step; }
+.program-path li { position: relative; padding-top: 4rem; }
+.program-path li::before {
+  counter-increment: step; content: counter(step);
+  position: absolute; top: 0; left: 0; width: 2.6rem; height: 2.6rem;
+  display: grid; place-items: center; border: 1px solid var(--orange); border-radius: 50%;
+  font-family: 'Fraunces', serif; color: var(--orange); background: var(--bg);
+}
+.program-path li::after { content: ""; position: absolute; top: 1.3rem; left: 3.4rem; right: -1.5rem; height: 1px; background: var(--border-acc); }
+.program-path li:last-child::after { display: none; }
+.program-path h3 { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 600; color: var(--text); }
+.program-path a { color: inherit; text-decoration: none; }
+.program-path a:hover { color: var(--orange); }
+.program-path p { font-size: 0.9rem; color: var(--text-lt); }
+
+/* ── Format cards (online / in person, work programs) ── */
+.format-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+.format-card { background: var(--white); border: 1px solid var(--border); display: flex; flex-direction: column; }
+.format-card .fig { aspect-ratio: 16/9; }
+.format-body { padding: 1.5rem 1.75rem 1.75rem; display: flex; flex-direction: column; flex: 1; align-items: flex-start; }
+.format-card h3 { font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 600; color: var(--text); margin-bottom: 0.6rem; }
+.format-card p { font-size: 0.92rem; color: var(--text-lt); line-height: 1.85; margin-bottom: 1rem; }
+.format-links { list-style: none; width: 100%; }
+.format-links li { padding: 0.7rem 0; border-top: 1px solid var(--border); font-size: 0.92rem; }
+.format-links a { color: var(--violet); text-decoration: none; }
+.format-links a:hover { color: var(--orange); }
+.format-links small { display: block; color: var(--text-lt); font-size: 0.78rem; line-height: 1.5; }
+.format-card .btn-outline-light { margin-top: auto; }
+
+/* ── Parts and practices ── */
+.part-section.alt { background: var(--bg-2); }
+.practice-block { background: var(--white); border: 1px solid var(--border); padding: 2.5rem; margin-top: 2rem; scroll-margin-top: 6rem; }
+.practice-top { display: grid; grid-template-columns: 1.05fr 1fr; gap: 2.5rem; align-items: start; }
+.practice-block.flip .practice-media { order: 2; }
+.practice-media .fig, .practice-media .video-facade { aspect-ratio: 16/9; width: 100%; }
+.practice-block .video-facade { margin: 0; max-width: none; }
+.practice-block h3 { font-family: 'Fraunces', serif; font-size: clamp(1.7rem, 3vw, 2.2rem); font-weight: 600; line-height: 1.2; color: var(--text); margin-bottom: 1rem; }
+.practice-text p { font-size: 0.97rem; color: var(--text-lt); line-height: 1.95; margin-bottom: 1rem; }
+.practice-text .p-meta { display: flex; }
+.benefit-panel { margin-top: 2rem; padding-top: 1.75rem; border-top: 1px solid var(--border); }
+.benefit-list { list-style: none; columns: 2; column-gap: 3rem; margin-top: 0.5rem; }
+.benefit-list li { break-inside: avoid; position: relative; padding: 0.35rem 0 0.35rem 1.4rem; font-size: 0.93rem; color: var(--text-mid); line-height: 1.65; }
+.benefit-list li::before { content: ""; position: absolute; left: 0; top: 0.95rem; width: 6px; height: 6px; border-radius: 50%; background: var(--orange); }
+
+/* ── Pull quotes on the work page ── */
+.band p + p { margin-top: 2rem; }
+
+/* ── Program cards (homepage + "other programs") ── */
+.program-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
+.program-card {
+  display: flex; flex-direction: column; background: var(--white);
+  border: 1px solid var(--border); border-top: 3px solid var(--pc, var(--orange));
+  padding: 1.6rem 1.5rem; text-decoration: none; color: inherit;
+  transition: box-shadow 0.25s, border-color 0.25s;
+}
+.program-card:hover { box-shadow: 0 10px 32px rgba(74,64,72,0.10); border-color: var(--border-acc); border-top-color: var(--pc, var(--orange)); }
+.program-card .pc-group { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--pc, var(--orange)); margin-bottom: 0.5rem; }
+.program-card h3 { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; color: var(--text); margin-bottom: 0.6rem; line-height: 1.2; }
+.program-card h3 em { font-style: italic; color: var(--violet); }
+.program-card p { font-size: 0.9rem; color: var(--text-lt); line-height: 1.75; margin-bottom: 1rem; }
+.program-card .p-meta { margin-top: auto; }
+.program-card:hover h3 { color: var(--violet); }
+.programs-more { background: var(--bg); }
+
+/* ── Accessibility ── */
+a:focus-visible, button:focus-visible, .video-facade:focus-visible { outline: 2px solid var(--violet); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .hero-label, .hero-title, .hero-sub, .hero-location, .hero-rule, .hero-quote, .hero-ctas, .hero-img { animation: none; opacity: 1; }
+  .nav-sub { transition: none; }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .hero.program-hero { padding-top: 6rem; padding-bottom: 3rem; }
+  .practice-top { grid-template-columns: 1fr; gap: 1.5rem; }
+  .practice-block.flip .practice-media { order: 0; }
+}
+@media (max-width: 700px) {
+  .program-path { grid-template-columns: 1fr; gap: 0.5rem; }
+  .program-path li { padding: 0 0 1.5rem 3.6rem; min-height: 3rem; }
+  .program-path li::after { top: 2.8rem; bottom: 0; left: 1.3rem; right: auto; width: 1px; height: auto; }
+}
+@media (max-width: 600px) {
+  .practice-block { padding: 1.5rem 1.25rem; }
+  .benefit-list { columns: 1; }
+  .nav-links .has-sub { padding: 0; margin: 0; }
+  .nav-links .has-sub > a::after { display: none; }
+  .nav-sub { position: static; opacity: 1; visibility: visible; transform: none; min-width: 0; border: 0; box-shadow: none; background: none; padding: 0 0 0.6rem 1rem; }
+  .nav-links .nav-sub li { border: 0; }
+  .nav-links .nav-sub a { padding: 0.5rem 0; font-size: 0.8rem; }
+}
+
+/* ── v1.1: practice titles are h2; vision block ── */
+.practice-block h2 { font-family: 'Fraunces', serif; font-size: clamp(1.7rem, 3vw, 2.2rem); font-weight: 600; line-height: 1.2; color: var(--text); margin-bottom: 1rem; }
+.part-section .container > .reveal:first-child:not(.practice-block) { margin-bottom: -0.5rem; }
+
+.vision { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.vision-text { font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.45; color: var(--text); max-width: 820px; margin-top: 0.75rem; }
+.vision-text em { font-style: italic; color: var(--violet); }
+
+
+
+
+/* ── v1.3: signature in contact form, attributed band, videos in cards ── */
+.hello-sign { font-family: 'Fraunces', serif; font-style: italic; color: var(--violet); margin: -0.4rem 0 1.4rem; }
+.band > cite { display: block; margin-top: 1.5rem; font-style: normal; font-family: 'Jost', sans-serif; font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--orange); position: relative; z-index: 1; }
+.format-card .video-facade { aspect-ratio: 16/9; width: 100%; margin: 0; max-width: none; }
+
+/* ── v1.4: homepage practice cards link to their details; prices wrap ── */
+.practice-card { position: relative; }
+.practice-card h3 a { color: inherit; text-decoration: none; }
+.practice-card h3 a::after { content: ""; position: absolute; inset: 0; }
+.practice-card:hover h3 a { color: var(--violet); }
+.practice-text .p-meta { flex-wrap: wrap; }
+
+/* ── v1.5: group cards — full-bleed image, text blended into the lower part ── */
+a.yoga-category-card {
+  position: relative; display: flex; flex-direction: column; justify-content: flex-end;
+  min-height: 420px; padding: 0; overflow: hidden; border: 0; background: var(--twilight-deep);
+  background-image: none; text-decoration: none; color: #fff;
+}
+.cat-img { position: absolute; inset: 0; margin: 0; background: var(--twilight-deep); }
+.cat-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.9s cubic-bezier(.2,.6,.2,1); }
+.cat-img::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(200,153,95, 0.9) 0%, rgba(200,153,95,0.3) 20%, rgba(200,153,95,0.0) 35%, rgba(200,153,95,0) 100%);
+}
+a.yoga-category-card:hover .cat-img img { transform: scale(1.04); }
+.cat-body { position: relative; z-index: 1; padding: 0 1.9rem 2rem; }
+.cat-body::before { content: ""; display: block; width: 2rem; height: 1px; background: rgba(255,255,255,0.7); margin-bottom: 1.1rem; }
+a.yoga-category-card h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: clamp(1.55rem, 2.2vw, 1.95rem); line-height: 1.2; color: #fff; margin: 0 0 0.6rem; text-shadow: 0 1px 14px rgba(0,0,0,0.25); }
+a.yoga-category-card p { margin: 0; font-size: 0.93rem; line-height: 1.7; color: rgba(255,255,255,0.9); text-shadow: 0 1px 10px rgba(0,0,0,0.25); }
+@media (max-width: 900px) { a.yoga-category-card { min-height: 360px; } }
+
+/* ── v1.5: Yoga at Work — quiet editorial banner under the workshops table ── */
+.work-banner {
+  display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+  margin: 3.5rem 0 1.5rem; padding: 2.25rem 0;
+  border-top: 1px solid var(--border-acc); border-bottom: 1px solid var(--border-acc);
+  text-decoration: none; color: inherit;
+}
+.wb-label { display: block; font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.7rem; }
+.work-banner h3 { font-family: 'Fraunces', serif; font-weight: 500; font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.2; color: var(--text); margin-bottom: 0.7rem; transition: color 0.25s; }
+.work-banner h3 em { font-style: italic; color: var(--violet); }
+.work-banner p { max-width: 560px; font-size: 0.97rem; line-height: 1.8; color: var(--text-lt); }
+.wb-arrow { flex: none; width: 3.4rem; height: 3.4rem; display: grid; place-items: center; border: 1px solid var(--border-acc); border-radius: 50%; color: var(--violet); transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.25s; }
+.work-banner:hover h3 { color: var(--violet); }
+.work-banner:hover .wb-arrow { background: var(--violet); border-color: var(--violet); color: #fff; transform: translateX(4px); }
+@media (max-width: 600px) { .work-banner { gap: 1.25rem; padding: 1.75rem 0; } .wb-arrow { width: 2.8rem; height: 2.8rem; } }
+@media (prefers-reduced-motion: reduce) { .cat-img img, .wb-arrow { transition: none; } a.yoga-category-card:hover .cat-img img { transform: none; } }
+
+/* ── v1.7: sessions are rendered from /assets/sessions.json ── */
+#sessions-rows { display: contents; }
+.sessions-empty { padding: 1.75rem 1.5rem; font-size: 0.92rem; color: var(--text-lt); }
+#sessions-rows .class-row:last-child { border-bottom: 1px solid var(--border); }

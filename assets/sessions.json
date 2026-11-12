@@ -1,0 +1,31 @@
+{
+  "_help": "Add one object to 'sessions' for every workshop date. Dates are YYYY-MM-DD. 'slots' are the daily time blocks [start, end] (24h). Past sessions disappear by themselves after their end date. English and German pages both read this file.",
+  "currency": "CHF",
+  "registerForm": "https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url",
+  "performer": "Nanda",
+  "organizer": { "name": "Shivoham Classical Hatha Yoga", "url": "https://shivoham.ch/" },
+  "location": {
+    "name": "Shivoham, Kollbrunn",
+    "locality": "Kollbrunn",
+    "region": "Zurich",
+    "country": "CH",
+    "label": { "en": "Kollbrunn, Zurich", "de": "Kollbrunn, Zürich" }
+  },
+  "sessions": [
+    {
+      "practice": "Yogasanas",
+      "start": "2026-11-28",
+      "end": "2026-11-29",
+      "slots": [["08:15", "10:45"], ["16:00", "18:30"]],
+      "price": 0,
+      "tag": { "en": "Postures to elevate consciousness", "de": "Haltungen, die das Bewusstsein erheben" },
+      "summary": { "en": "Two 2.5 hour sessions per day", "de": "Zwei 2,5-stündige Einheiten pro Tag" },
+      "details": { "en": "/yoga-for-inner-balance/#yogasanas", "de": "/de/yoga-fuer-innere-balance/#yogasanas" },
+      "description": {
+        "en": "Two-day classical Hatha Yoga workshop on Yogasanas, structured by Sadhguru and taught by Nanda in Kollbrunn near Zurich. Two 2.5-hour sessions per day. No prior experience required.",
+        "de": "Zweitägiger Workshop zu klassischen Hatha-Yoga-Yogasanas nach der Struktur von Sadhguru, unterrichtet von Nanda in Kollbrunn bei Zürich. Zwei 2,5-stündige Einheiten pro Tag. Keine Vorerfahrung erforderlich."
+      },
+      "image": "/images/Promo - PP285-2000px.webp"
+    }
+  ]
+}

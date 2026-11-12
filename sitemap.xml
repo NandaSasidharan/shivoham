@@ -3,11 +3,56 @@
 	<url>
 		<loc>https://www.shivoham.ch</loc>
 		<priority>1.00</priority>
-		<lastmod>2026-10-29</lastmod>
+		<lastmod>2026-11-12</lastmod>
+	</url>
+	<url>
+		<loc>https://www.shivoham.ch/yoga-for-joy</loc>
+		<priority>0.67</priority>
+		<lastmod>2026-11-11</lastmod>
+	</url>
+	<url>
+		<loc>https://www.shivoham.ch/yoga-for-inner-balance</loc>
+		<priority>0.67</priority>
+		<lastmod>2026-11-11</lastmod>
+	</url>
+	<url>
+		<loc>https://www.shivoham.ch/yoga-for-health</loc>
+		<priority>0.67</priority>
+		<lastmod>2026-11-11</lastmod>
+	</url>
+	<url>
+		<loc>https://www.shivoham.ch/yoga-at-work</loc>
+		<priority>0.67</priority>
+		<lastmod>2026-11-11</lastmod>
+	</url>
+	<url>
+		<loc>https://www.shivoham.ch/submit.php</loc>
+		<priority>0.67</priority>
+		<lastmod>2026-10-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.shivoham.ch/de</loc>
-		<priority>0.90</priority>
-		<lastmod>2026-10-29</lastmod>
+		<priority>0.67</priority>
+		<lastmod>2026-11-12</lastmod>
+	</url>
+	<url>
+		<loc>https://www.shivoham.ch/de/yoga-fuer-innere-balance</loc>
+		<priority>0.33</priority>
+		<lastmod>2026-11-11</lastmod>
+	</url>
+	<url>
+		<loc>https://www.shivoham.ch/de/yoga-fuer-gesundheit</loc>
+		<priority>0.33</priority>
+		<lastmod>2026-11-11</lastmod>
+	</url>
+	<url>
+		<loc>https://www.shivoham.ch/de/yoga-fuer-freude</loc>
+		<priority>0.33</priority>
+		<lastmod>2026-11-11</lastmod>
+	</url>
+	<url>
+		<loc>https://www.shivoham.ch/de/yoga-am-arbeitsplatz</loc>
+		<priority>0.33</priority>
+		<lastmod>2026-11-11</lastmod>
 	</url>
 </urlset>
