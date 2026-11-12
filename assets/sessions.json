@@ -17,7 +17,7 @@
       "start": "2026-11-28",
       "end": "2026-11-29",
       "slots": [["08:15", "10:45"], ["16:00", "18:30"]],
-      "price": 0,
+      "price": 350,
       "tag": { "en": "Postures to elevate consciousness", "de": "Haltungen, die das Bewusstsein erheben" },
       "summary": { "en": "Two 2.5 hour sessions per day", "de": "Zwei 2,5-stündige Einheiten pro Tag" },
       "details": { "en": "/yoga-for-inner-balance/#yogasanas", "de": "/de/yoga-fuer-innere-balance/#yogasanas" },
