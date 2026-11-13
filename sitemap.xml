@@ -1,58 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://www.shivoham.ch</loc>
-		<priority>1.00</priority>
-		<lastmod>2026-11-12</lastmod>
-	</url>
-	<url>
-		<loc>https://www.shivoham.ch/yoga-for-joy</loc>
-		<priority>0.67</priority>
-		<lastmod>2026-11-11</lastmod>
-	</url>
-	<url>
-		<loc>https://www.shivoham.ch/yoga-for-inner-balance</loc>
-		<priority>0.67</priority>
-		<lastmod>2026-11-11</lastmod>
-	</url>
-	<url>
-		<loc>https://www.shivoham.ch/yoga-for-health</loc>
-		<priority>0.67</priority>
-		<lastmod>2026-11-11</lastmod>
-	</url>
-	<url>
-		<loc>https://www.shivoham.ch/yoga-at-work</loc>
-		<priority>0.67</priority>
-		<lastmod>2026-11-11</lastmod>
-	</url>
-	<url>
-		<loc>https://www.shivoham.ch/submit.php</loc>
-		<priority>0.67</priority>
-		<lastmod>2026-10-30</lastmod>
-	</url>
-	<url>
-		<loc>https://www.shivoham.ch/de</loc>
-		<priority>0.67</priority>
-		<lastmod>2026-11-12</lastmod>
-	</url>
-	<url>
-		<loc>https://www.shivoham.ch/de/yoga-fuer-innere-balance</loc>
-		<priority>0.33</priority>
-		<lastmod>2026-11-11</lastmod>
-	</url>
-	<url>
-		<loc>https://www.shivoham.ch/de/yoga-fuer-gesundheit</loc>
-		<priority>0.33</priority>
-		<lastmod>2026-11-11</lastmod>
-	</url>
-	<url>
-		<loc>https://www.shivoham.ch/de/yoga-fuer-freude</loc>
-		<priority>0.33</priority>
-		<lastmod>2026-11-11</lastmod>
-	</url>
-	<url>
-		<loc>https://www.shivoham.ch/de/yoga-am-arbeitsplatz</loc>
-		<priority>0.33</priority>
-		<lastmod>2026-11-11</lastmod>
-	</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://shivoham.ch/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shivoham.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shivoham.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shivoham.ch/"/>
+  </url>
+  <url>
+    <loc>https://shivoham.ch/de/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shivoham.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shivoham.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shivoham.ch/"/>
+  </url>
+  <url>
+    <loc>https://shivoham.ch/yoga-for-joy/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shivoham.ch/yoga-for-joy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shivoham.ch/de/yoga-fuer-freude/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shivoham.ch/yoga-for-joy/"/>
+  </url>
+  <url>
+    <loc>https://shivoham.ch/de/yoga-fuer-freude/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shivoham.ch/yoga-for-joy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shivoham.ch/de/yoga-fuer-freude/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shivoham.ch/yoga-for-joy/"/>
+  </url>
+  <url>
+    <loc>https://shivoham.ch/yoga-for-health/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shivoham.ch/yoga-for-health/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shivoham.ch/de/yoga-fuer-gesundheit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shivoham.ch/yoga-for-health/"/>
+  </url>
+  <url>
+    <loc>https://shivoham.ch/de/yoga-fuer-gesundheit/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shivoham.ch/yoga-for-health/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shivoham.ch/de/yoga-fuer-gesundheit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shivoham.ch/yoga-for-health/"/>
+  </url>
+  <url>
+    <loc>https://shivoham.ch/yoga-for-inner-balance/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shivoham.ch/yoga-for-inner-balance/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shivoham.ch/de/yoga-fuer-innere-balance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shivoham.ch/yoga-for-inner-balance/"/>
+  </url>
+  <url>
+    <loc>https://shivoham.ch/de/yoga-fuer-innere-balance/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shivoham.ch/yoga-for-inner-balance/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shivoham.ch/de/yoga-fuer-innere-balance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shivoham.ch/yoga-for-inner-balance/"/>
+  </url>
+  <url>
+    <loc>https://shivoham.ch/yoga-at-work/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shivoham.ch/yoga-at-work/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shivoham.ch/de/yoga-am-arbeitsplatz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shivoham.ch/yoga-at-work/"/>
+  </url>
+  <url>
+    <loc>https://shivoham.ch/de/yoga-am-arbeitsplatz/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shivoham.ch/yoga-at-work/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://shivoham.ch/de/yoga-am-arbeitsplatz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shivoham.ch/yoga-at-work/"/>
+  </url>
 </urlset>

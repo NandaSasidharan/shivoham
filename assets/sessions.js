@@ -6,15 +6,19 @@
   var de = /^\/de(\/|$)/.test(location.pathname);
   var lang = de ? 'de' : 'en';
   var L = de
-    ? { locale: 'de-CH', register: 'Anmelden', details: 'Details',
-        empty: 'Zurzeit sind keine Termine geplant. Sagen Sie hallo, um über neue Termine informiert zu werden.' }
-    : { locale: 'en-GB', register: 'Register', details: 'Details',
-        empty: 'No sessions are scheduled at the moment. Say hello to be informed about new dates.' };
+    ? { locale: 'de-CH', register: 'Anmelden', details: 'Details', online: 'Online', kind: 'Hatha-Yoga-Workshop',
+        empty: 'Zurzeit sind keine Termine geplant. Sagen Sie hallo, um über neue Termine informiert zu werden.',
+        fallback: 'Bitte kontaktieren Sie Nanda für die nächsten Termine.' }
+    : { locale: 'en-GB', register: 'Register', details: 'Details', online: 'Online', kind: 'Hatha Yoga Workshop',
+        empty: 'No sessions are scheduled at the moment. Say hello to be informed about new dates.',
+        fallback: 'Please contact Nanda for upcoming dates.' };
 
   var PIN = '<svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>';
+  var GLOBE = '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>';
   var CLOCK = '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>';
 
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function pick(v) { return (v && typeof v === 'object') ? v[lang] : v; }   // text or {en, de}
   function parse(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
   function month(d, loc) { return new Intl.DateTimeFormat(loc, { month: 'long' }).format(d); }
 
@@ -31,7 +35,7 @@
     if (sm) return y1 + ' ' + m1 + ' ' + d1 + '-' + d2;
     return y1 + ' ' + m1 + ' ' + d1 + ' - ' + (y1 !== y2 ? y2 + ' ' : '') + m2 + ' ' + d2;
   }
-  // Date text passed to the registration form (always English)
+  // Date text passed to the default registration form (always English)
   function formDate(a, b) {
     var m1 = month(a, 'en-GB'), m2 = month(b, 'en-GB'), d1 = a.getDate(), d2 = b.getDate(), y = b.getFullYear();
     if (a.getTime() === b.getTime()) return d1 + ' ' + m1 + ' ' + y;
@@ -41,7 +45,7 @@
   function slotsText(slots) {
     return (slots || []).map(function (s) { return s[0].replace(/^0/, '') + ' - ' + s[1].replace(/^0/, ''); }).join(' & ');
   }
-  // Zurich offset for ISO dates (EU summer time: last Sunday of March to last Sunday of October)
+  // Zurich offset (EU summer time: last Sunday of March to last Sunday of October)
   function lastSun(y, m) { var d = new Date(Date.UTC(y, m + 1, 0)); d.setUTCDate(d.getUTCDate() - d.getUTCDay()); return d.getTime(); }
   function offset(d) {
     var t = Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()), y = d.getFullYear();
@@ -52,52 +56,74 @@
     return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()) + 'T' + hhmm + ':00' + offset(d);
   }
 
+  // Registration link: the session's own "registerUrl" if given; otherwise the in-person or the
+  // online Google form (see "forms" in sessions.json), pre-filled with the program name and the dates.
+  function registerLink(data, s, a, b) {
+    var own = pick(s.registerUrl);
+    if (own) return own;
+    var key = s.form || (s.mode === 'online' ? 'online' : 'in-person');
+    var f = (data.forms || {})[key] || (data.forms || {})['in-person'];
+    var q = function (v) { return encodeURIComponent(v).replace(/%20/g, '+'); };
+    return f.url + '&' + f.programEntry + '=' + q(s.formProgram || s.practice) + '&' + f.dateEntry + '=' + q(formDate(a, b));
+  }
+  function placeOf(loc) {
+    return { '@type': 'Place', name: loc.name,
+      address: { '@type': 'PostalAddress', addressLocality: loc.locality, addressRegion: loc.region, addressCountry: loc.country } };
+  }
+
+  function showMessage(text) { box.innerHTML = '<p class="sessions-empty">' + esc(text) + '</p>'; }
+
   fetch('/assets/sessions.json', { cache: 'no-cache' })
     .then(function (r) { return r.json(); })
     .then(function (data) {
       var today = new Date(); today = new Date(today.getFullYear(), today.getMonth(), today.getDate());
       var list = (data.sessions || []).filter(function (s) { return parse(s.end || s.start) >= today; })
         .sort(function (x, y) { return parse(x.start) - parse(y.start); });
+      if (!list.length) { showMessage(L.empty); return; }
 
       // Table rows
-      if (!list.length) { box.innerHTML = '<p class="sessions-empty">' + esc(L.empty) + '</p>'; return; }
       box.innerHTML = list.map(function (s) {
-        var a = parse(s.start), b = parse(s.end || s.start);
-        var link = data.registerForm + '&entry.956495107=' + encodeURIComponent(s.practice).replace(/%20/g, '+') +
-                   '&entry.1383122517=' + encodeURIComponent(formDate(a, b)).replace(/%20/g, '+');
-        var sum = (s.summary && s.summary[lang]) ? esc(s.summary[lang]) + ' <br>' : '';
+        var a = parse(s.start), b = parse(s.end || s.start), loc = s.location || data.location, mode = s.mode || 'in-person';
+        var link = registerLink(data, s, a, b), mail = /^mailto:/i.test(link);
+        var where = mode === 'online' ? GLOBE + esc(L.online)
+                  : mode === 'mixed' ? PIN + esc(pick(loc.label)) + ' + ' + esc(L.online)
+                  : PIN + esc(pick(loc.label));
+        var timeHtml = [pick(s.summary) ? esc(pick(s.summary)) : '', esc(slotsText(s.slots))].filter(Boolean).join(' <br>');
+        var cost = typeof s.price === 'number' ? esc(data.currency) + ' ' + esc(s.price) : esc(pick(s.price) || '');
         return '<div class="class-row">' +
-          '<div class="class-practice"><h3>' + esc(s.practice) + ' <em>' + esc(rangeText(a, b)) + '</em></h3>' +
-            (s.tag ? '<span class="c-tag">' + esc(s.tag[lang]) + '</span>' : '') + '</div>' +
-          '<div class="class-detail">' + PIN + esc(data.location.label[lang]) + '</div>' +
-          '<div class="class-detail">' + CLOCK + sum + esc(slotsText(s.slots)) + '</div>' +
-          '<div class="class-detail">' + esc(data.currency) + ' ' + esc(s.price) +
-            (s.details ? ' | <a href="' + esc(s.details[lang]) + '" rel="noopener">' + L.details + '</a>' : '') + '</div>' +
-          '<a href="' + esc(link) + '" class="class-register" target="_blank" rel="noopener">' + L.register + '</a>' +
+          '<div class="class-practice"><h3><span class="c-date">' + esc(rangeText(a, b)) + '</span><span class="c-name">' + esc(s.practice) +
+            (pick(s.practiceTail) ? ' <em>' + esc(pick(s.practiceTail)) + '</em>' : '') + '</span></h3>' +
+            (pick(s.tag) ? '<span class="c-tag">' + esc(pick(s.tag)) + '</span>' : '') + '</div>' +
+          '<div class="class-detail">' + where + '</div>' +
+          '<div class="class-detail">' + CLOCK + timeHtml + '</div>' +
+          '<div class="class-detail">' + cost + (pick(s.details) ? (cost ? ' | ' : '') + '<a href="' + esc(pick(s.details)) + '" rel="noopener">' + L.details + '</a>' : '') + '</div>' +
+          '<a href="' + esc(link) + '" class="class-register"' + (mail ? '' : ' target="_blank"') + ' rel="noopener">' + esc(pick(s.registerLabel) || L.register) + '</a>' +
         '</div>';
       }).join('');
 
       // schema.org Event data, one block per upcoming session
       document.querySelectorAll('script[data-sessions-ld]').forEach(function (n) { n.remove(); });
       list.forEach(function (s) {
-        var a = parse(s.start), b = parse(s.end || s.start), slots = s.slots || [];
-        var link = data.registerForm + '&entry.956495107=' + encodeURIComponent(s.practice).replace(/%20/g, '+') +
-                   '&entry.1383122517=' + encodeURIComponent(formDate(a, b)).replace(/%20/g, '+');
+        var a = parse(s.start), b = parse(s.end || s.start), slots = s.slots || [], loc = s.location || data.location, mode = s.mode || 'in-person';
+        var link = registerLink(data, s, a, b);
+        if (/^mailto:/i.test(link)) link = location.origin + '/#classes';
+        var virtual = { '@type': 'VirtualLocation', url: s.onlineUrl || (location.origin + '/') };
         var ev = {
           '@context': 'https://schema.org', '@type': 'Event',
-          name: s.practice + (de ? ' – Hatha-Yoga-Workshop' : ' – Hatha Yoga Workshop'),
-          description: s.description ? s.description[lang] : undefined,
+          name: s.practice + (pick(s.practiceTail) ? ' ' + pick(s.practiceTail) : '') + ' – ' + (pick(s.kind) || L.kind),
+          description: pick(s.description),
           startDate: slots.length ? iso(a, slots[0][0]) : s.start,
           endDate: slots.length ? iso(b, slots[slots.length - 1][1]) : (s.end || s.start),
           eventStatus: 'https://schema.org/EventScheduled',
-          eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-          inLanguage: 'en',
-          location: { '@type': 'Place', name: data.location.name,
-            address: { '@type': 'PostalAddress', addressLocality: data.location.locality, addressRegion: data.location.region, addressCountry: data.location.country } },
+          eventAttendanceMode: mode === 'online' ? 'https://schema.org/OnlineEventAttendanceMode'
+                              : mode === 'mixed' ? 'https://schema.org/MixedEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode',
+          inLanguage: s.language || 'en',
+          location: mode === 'online' ? virtual : mode === 'mixed' ? [placeOf(loc), virtual] : placeOf(loc),
           image: s.image ? [new URL(s.image, location.origin).href] : undefined,
           performer: { '@type': 'Person', name: data.performer },
           organizer: Object.assign({ '@type': 'Organization' }, data.organizer),
-          offers: { '@type': 'Offer', price: String(s.price), priceCurrency: data.currency, availability: 'https://schema.org/InStock', url: link }
+          offers: typeof s.price === 'number' ? { '@type': 'Offer', price: String(s.price), priceCurrency: data.currency, availability: 'https://schema.org/InStock', url: link,
+                    validFrom: iso(s.registrationOpens ? parse(s.registrationOpens) : today, '00:00') } : undefined
         };
         var el = document.createElement('script');
         el.type = 'application/ld+json'; el.setAttribute('data-sessions-ld', '');
@@ -105,5 +131,5 @@
         document.head.appendChild(el);
       });
     })
-    .catch(function () { /* leave the table empty if the file cannot be loaded */ });
+    .catch(function () { showMessage(L.fallback); });   // file missing, broken, or malformed
 })();

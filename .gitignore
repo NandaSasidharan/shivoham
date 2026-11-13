@@ -44,6 +44,9 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# Help files
+*.docx
+
 # Windows shortcuts
 *.lnk
 

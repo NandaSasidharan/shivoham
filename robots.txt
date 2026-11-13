@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /submit.php
 
 Sitemap: https://shivoham.ch/sitemap.xml

@@ -1,31 +1,136 @@
 {
-  "_help": "Add one object to 'sessions' for every workshop date. Dates are YYYY-MM-DD. 'slots' are the daily time blocks [start, end] (24h). Past sessions disappear by themselves after their end date. English and German pages both read this file.",
+  "_help": "Add one object to 'sessions' for every date. Dates are YYYY-MM-DD; 'slots' are the daily time blocks [start, end] in 24h. Past sessions disappear after their end date. Both language versions read this file. Registration: sessions with mode 'online' use the 'online' form in 'forms', all others the 'in-person' form; the program name and the dates are pre-filled (the program name is the 'practice', or 'formProgram' if you want a different name in the form). Optional per session: practiceTail (an emphasised ending after the program name, e.g. 'online'), registrationOpens (YYYY-MM-DD, the day registration opened; used by Google as the offer's start date, default is today), form ('in-person' or 'online' to force a form), registerUrl (a completely different form or link, text or {en,de}; a mailto: link also works), registerLabel, mode ('in-person' default, 'online' or 'mixed'), onlineUrl, location (own venue), kind (e.g. 'Retreat'), price (a number, or text such as {en,de} for 'On request'), language, and omit 'slots' for multi-day retreats. See '_examples'.",
   "currency": "CHF",
-  "registerForm": "https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url",
+  "forms": {
+    "in-person": {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSc6UWuGrbUttkzxmx407pbam971u_LAD0BBFvZJVvI-0a6t1Q/viewform?usp=pp_url",
+      "programEntry": "entry.956495107",
+      "dateEntry": "entry.1383122517"
+    },
+    "online": {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdYFp_A1N3_kAxOEvoYqfNoiFbez8gVqYoOW-F76Ag1zfbTNw/viewform?usp=pp_url",
+      "programEntry": "entry.1383122517",
+      "dateEntry": "entry.687244353"
+    }
+  },
   "performer": "Nanda",
-  "organizer": { "name": "Shivoham Classical Hatha Yoga", "url": "https://shivoham.ch/" },
+  "organizer": {
+    "name": "Shivoham Classical Hatha Yoga",
+    "url": "https://shivoham.ch/"
+  },
   "location": {
     "name": "Shivoham, Kollbrunn",
     "locality": "Kollbrunn",
     "region": "Zurich",
     "country": "CH",
-    "label": { "en": "Kollbrunn, Zurich", "de": "Kollbrunn, Zürich" }
+    "label": {
+      "en": "Kollbrunn, Zurich",
+      "de": "Kollbrunn, Zürich"
+    }
   },
   "sessions": [
     {
       "practice": "Yogasanas",
       "start": "2026-11-28",
       "end": "2026-11-29",
-      "slots": [["08:15", "10:45"], ["16:00", "18:30"]],
+      "slots": [
+        [
+          "08:15",
+          "10:45"
+        ],
+        [
+          "16:00",
+          "18:30"
+        ]
+      ],
       "price": 350,
-      "tag": { "en": "Postures to elevate consciousness", "de": "Haltungen, die das Bewusstsein erheben" },
-      "summary": { "en": "Two 2.5 hour sessions per day", "de": "Zwei 2,5-stündige Einheiten pro Tag" },
-      "details": { "en": "/yoga-for-inner-balance/#yogasanas", "de": "/de/yoga-fuer-innere-balance/#yogasanas" },
+      "tag": {
+        "en": "Postures to elevate consciousness",
+        "de": "Haltungen, die das Bewusstsein erheben"
+      },
+      "summary": {
+        "en": "Two 2.5 hour sessions per day",
+        "de": "Zwei 2,5-stündige Einheiten pro Tag"
+      },
+      "details": {
+        "en": "/yoga-for-inner-balance/#yogasanas",
+        "de": "/de/yoga-fuer-innere-balance/#yogasanas"
+      },
       "description": {
         "en": "Two-day classical Hatha Yoga workshop on Yogasanas, structured by Sadhguru and taught by Nanda in Kollbrunn near Zurich. Two 2.5-hour sessions per day. No prior experience required.",
         "de": "Zweitägiger Workshop zu klassischen Hatha-Yoga-Yogasanas nach der Struktur von Sadhguru, unterrichtet von Nanda in Kollbrunn bei Zürich. Zwei 2,5-stündige Einheiten pro Tag. Keine Vorerfahrung erforderlich."
       },
-      "image": "/images/Promo - PP285-2000px.webp"
+      "image": "/images/Promo - PP285-2000px.webp",
+      "registrationOpens": "2026-11-13"
+    }
+  ],
+  "_examples": [
+    {
+      "practice": "Upa-Yoga",
+      "start": "2027-01-16",
+      "end": "2027-01-17",
+      "slots": [
+        [
+          "09:00",
+          "11:00"
+        ]
+      ],
+      "price": 150,
+      "mode": "online",
+      "onlineUrl": "https://shivoham.ch/",
+      "summary": {
+        "en": "Two live sessions on Zoom",
+        "de": "Zwei Live-Sitzungen über Zoom"
+      },
+      "description": {
+        "en": "Online live class.",
+        "de": "Online-Live-Kurs."
+      },
+      "kind": {
+        "en": "Online class",
+        "de": "Online-Kurs"
+      },
+      "formProgram": "Yoga for Joy",
+      "practiceTail": {
+        "en": "online",
+        "de": "online"
+      }
+    },
+    {
+      "practice": "Hatha Yoga Retreat",
+      "start": "2027-05-07",
+      "end": "2027-05-09",
+      "kind": {
+        "en": "Retreat",
+        "de": "Retreat"
+      },
+      "price": {
+        "en": "On request",
+        "de": "Auf Anfrage"
+      },
+      "registerUrl": "mailto:nanda@shivoham.ch",
+      "registerLabel": {
+        "en": "More details",
+        "de": "Mehr Details"
+      },
+      "location": {
+        "name": "Retreat venue",
+        "locality": "Davos",
+        "region": "Graubünden",
+        "country": "CH",
+        "label": {
+          "en": "Davos",
+          "de": "Davos"
+        }
+      },
+      "summary": {
+        "en": "Full weekend retreat",
+        "de": "Retreat über das ganze Wochenende"
+      },
+      "description": {
+        "en": "Weekend retreat.",
+        "de": "Wochenend-Retreat."
+      }
     }
   ]
 }
