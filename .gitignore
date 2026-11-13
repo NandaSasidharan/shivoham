@@ -46,6 +46,7 @@ $RECYCLE.BIN/
 
 # Help files
 *.docx
+*.py
 
 # Windows shortcuts
 *.lnk

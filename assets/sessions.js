@@ -131,5 +131,5 @@
         document.head.appendChild(el);
       });
     })
-    .catch(function () { showMessage(L.fallback); });   // file missing, broken, or malformed
+    .catch(function () { if (!box.querySelector('.class-row')) showMessage(L.fallback); });   // file missing or broken: keep what is already on the page
 })();
