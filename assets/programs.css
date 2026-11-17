@@ -198,3 +198,6 @@ a.yoga-category-card p { margin: 0; font-size: 0.93rem; line-height: 1.7; color:
 .class-practice .c-name { font-family: 'Fraunces', serif; font-size: 1.3rem; font-weight: 400; color: var(--text); }
 .class-practice .c-name em { font-size: inherit; font-style: italic; color: var(--violet); }
 .class-practice .c-tag { margin-top: 0.3rem; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ── v2.1: About-section contact buttons, anchor offset ── */
+#nanda { scroll-margin-top: 6rem; }
