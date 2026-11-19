@@ -13,7 +13,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
 # =============================================
 
 # 1. /de/ and all subpages → /de/
-RewriteRule ^de(/about|programs|yogic-practices|support|yoga|contact|sadhguru|retreat|blogs)(/.*)?$ /de/ [R=301,L]
+RewriteRule ^de/(about|programs|yogic-practices|support|yoga|contact|sadhguru|retreat|blogs)(/.*)?$ /de/ [R=301,L]
 
 # 2. All these folders → homepage (/)
 RewriteRule ^(ml|about|programs|yogic-practices|support|yoga|contact|sadhguru|retreat|blogs)(/.*)?$ / [R=301,L]
