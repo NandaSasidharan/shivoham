@@ -1,16 +1,19 @@
 /* Builds the "Upcoming workshops" table rows and the schema.org Event data
    from /assets/sessions.json. Works for the English and the German homepage. */
 (function () {
-  var box = document.getElementById('sessions-rows');
-  if (!box) return;
+  var box = document.getElementById('sessions-rows');            // in-person table
+  var boxOnline = document.getElementById('sessions-online');    // online table
+  if (!box && !boxOnline) return;
   var de = /^\/de(\/|$)/.test(location.pathname);
   var lang = de ? 'de' : 'en';
   var L = de
     ? { locale: 'de-CH', register: 'Anmelden', details: 'Details', online: 'Online', kind: 'Hatha-Yoga-Workshop',
         empty: 'Zurzeit sind keine Termine geplant. Sagen Sie hallo, um über neue Termine informiert zu werden.',
+        emptyOnline: 'Zurzeit sind keine Online-Kurse geplant. Sagen Sie hallo, um über neue Termine informiert zu werden.',
         fallback: 'Bitte kontaktieren Sie Nanda für die nächsten Termine.' }
     : { locale: 'en-GB', register: 'Register', details: 'Details', online: 'Online', kind: 'Hatha Yoga Workshop',
         empty: 'No sessions are scheduled at the moment. Say hello to be informed about new dates.',
+        emptyOnline: 'No online classes are scheduled at the moment. Say hello to be informed about new dates.',
         fallback: 'Please contact Nanda for upcoming dates.' };
 
   var PIN = '<svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>';
@@ -71,7 +74,7 @@
       address: { '@type': 'PostalAddress', addressLocality: loc.locality, addressRegion: loc.region, addressCountry: loc.country } };
   }
 
-  function showMessage(text) { box.innerHTML = '<p class="sessions-empty">' + esc(text) + '</p>'; }
+  function showMessage(el, text) { if (el) el.innerHTML = '<p class="sessions-empty">' + esc(text) + '</p>'; }
 
   fetch('/assets/sessions.json', { cache: 'no-cache' })
     .then(function (r) { return r.json(); })
@@ -79,27 +82,32 @@
       var today = new Date(); today = new Date(today.getFullYear(), today.getMonth(), today.getDate());
       var list = (data.sessions || []).filter(function (s) { return parse(s.end || s.start) >= today; })
         .sort(function (x, y) { return parse(x.start) - parse(y.start); });
-      if (!list.length) { showMessage(L.empty); return; }
-
       // Table rows
-      box.innerHTML = list.map(function (s) {
+      function rowHtml(s) {
         var a = parse(s.start), b = parse(s.end || s.start), loc = s.location || data.location, mode = s.mode || 'in-person';
         var link = registerLink(data, s, a, b), mail = /^mailto:/i.test(link);
         var where = mode === 'online' ? GLOBE + esc(L.online)
                   : mode === 'mixed' ? PIN + esc(pick(loc.label)) + ' + ' + esc(L.online)
                   : PIN + esc(pick(loc.label));
         var timeHtml = [pick(s.summary) ? esc(pick(s.summary)) : '', esc(slotsText(s.slots))].filter(Boolean).join(' <br>');
-        var cost = typeof s.price === 'number' ? esc(data.currency) + ' ' + esc(s.price) : esc(pick(s.price) || '');
+        var cost = typeof s.price === 'number' ? esc(data.currency) + ' ' + esc(s.price) : esc(pick(s.price) || '–');
         return '<div class="class-row">' +
-          '<div class="class-practice"><h3><span class="c-date">' + esc(rangeText(a, b)) + '</span><span class="c-name">' + esc(s.practice) +
-            (pick(s.practiceTail) ? ' <em>' + esc(pick(s.practiceTail)) + '</em>' : '') + '</span></h3>' +
+          '<div class="class-practice"><h4><span class="c-date">' + esc(rangeText(a, b)) + '</span><span class="c-name">' + esc(s.practice) +
+            (pick(s.practiceTail) ? ' <em>' + esc(pick(s.practiceTail)) + '</em>' : '') + '</span></h4>' +
             (pick(s.tag) ? '<span class="c-tag">' + esc(pick(s.tag)) + '</span>' : '') + '</div>' +
           '<div class="class-detail">' + where + '</div>' +
           '<div class="class-detail">' + CLOCK + timeHtml + '</div>' +
           '<div class="class-detail">' + cost + (pick(s.details) ? (cost ? ' | ' : '') + '<a href="' + esc(pick(s.details)) + '" rel="noopener">' + L.details + '</a>' : '') + '</div>' +
           '<a href="' + esc(link) + '" class="class-register"' + (mail ? '' : ' target="_blank"') + ' rel="noopener">' + esc(pick(s.registerLabel) || L.register) + '</a>' +
         '</div>';
-      }).join('');
+      }
+      function fill(el, items, emptyText) {
+        if (!el) return;
+        if (!items.length) { showMessage(el, emptyText); return; }
+        el.innerHTML = items.map(rowHtml).join('');
+      }
+      fill(box, list.filter(function (s) { return s.mode !== 'online'; }), L.empty);
+      fill(boxOnline, list.filter(function (s) { return s.mode === 'online'; }), L.emptyOnline);
 
       // schema.org Event data, one block per upcoming session
       document.querySelectorAll('script[data-sessions-ld]').forEach(function (n) { n.remove(); });
@@ -131,5 +139,7 @@
         document.head.appendChild(el);
       });
     })
-    .catch(function () { if (!box.querySelector('.class-row')) showMessage(L.fallback); });   // file missing or broken: keep what is already on the page
+    .catch(function () {
+      [box, boxOnline].forEach(function (el) { if (el && !el.querySelector('.class-row')) showMessage(el, L.fallback); });
+    });   // file missing or broken: keep what is already on the page
 })();
