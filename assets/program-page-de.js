@@ -115,11 +115,11 @@
       fields.forEach(function (f) { v[f] = el(f).value.trim(); });
       var ok = true;
       function fail(f, msg) { el('e-' + f).textContent = msg; ok = false; }
-      if (!v.name) fail('name', 'Bitte geben Sie Ihren Namen ein.');
-      if (!v.location) fail('location', 'Bitte geben Sie Ihren Ort ein.');
-      if (!v.email) fail('email', 'Bitte geben Sie Ihre E-Mail-Adresse ein.');
-      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email)) fail('email', 'Bitte geben Sie eine gültige E-Mail-Adresse ein.');
-      if (!v.message) fail('message', 'Bitte schreiben Sie eine Nachricht.');
+      if (!v.name) fail('name', 'Bitte gib deinen Namen ein.');
+      if (!v.location) fail('location', 'Bitte gib deinen Ort ein.');
+      if (!v.email) fail('email', 'Bitte gib deine E-Mail-Adresse ein.');
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email)) fail('email', 'Bitte gib eine gültige E-Mail-Adresse ein.');
+      if (!v.message) fail('message', 'Bitte schreib eine Nachricht.');
       if (!ok) return;
 
       var sub = el('news').checked;
@@ -134,19 +134,19 @@
       }).then(function (res) {
         if (!res.ok) {
           var f = res.data.fields || {};
-          Object.keys(f).forEach(function (k) { if (el('e-' + k)) el('e-' + k).textContent = 'Bitte überprüfen Sie diese Angabe.'; });
+          Object.keys(f).forEach(function (k) { if (el('e-' + k)) el('e-' + k).textContent = 'Bitte überprüfe diese Angabe.'; });
           if (!Object.keys(f).length) el('e-form').textContent = res.status === 429
-            ? 'Zu viele Nachrichten. Bitte versuchen Sie es in einigen Minuten erneut.'
-            : 'Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.';
+            ? 'Zu viele Nachrichten. Bitte versuche es in einigen Minuten erneut.'
+            : 'Deine Nachricht konnte nicht gesendet werden. Bitte versuche es erneut.';
           return;
         }
-        el('thanks-text').textContent = 'Vielen Dank, ' + v.name + '. Ihre Nachricht ist angekommen, ich melde mich bald bei Ihnen.'
-          + (sub ? ' Sie haben auch den Newsletter abonniert.' : '');
+        el('thanks-text').textContent = 'Vielen Dank, ' + v.name + '. Deine Nachricht ist angekommen, ich melde mich bald bei dir.'
+          + (sub ? ' Du hast auch den Newsletter abonniert.' : '');
         form.hidden = true; thanks.hidden = false;
         resetForm();
         el('done').focus();
       }).catch(function () {
-        el('e-form').textContent = 'Der Server ist nicht erreichbar. Bitte prüfen Sie Ihre Verbindung und versuchen Sie es erneut.';
+        el('e-form').textContent = 'Der Server ist nicht erreichbar. Bitte prüfe deine Verbindung und versuche es erneut.';
       }).then(function () {
         sendBtn.disabled = false; sendBtn.textContent = 'Nachricht senden';
       });

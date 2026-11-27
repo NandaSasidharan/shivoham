@@ -206,3 +206,15 @@ a.yoga-category-card p { margin: 0; font-size: 0.93rem; line-height: 1.7; color:
 .table-subtitle { font-family: 'Fraunces', serif; font-weight: 500; font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.2; color: var(--text); margin: 3rem 0 1.25rem; }
 .table-subtitle em { font-style: italic; color: var(--violet); }
 .body-text + .table-subtitle { margin-top: 1.75rem; }
+
+/* ── v2.5: bands are just quote text (violet) with an optional citation ── */
+.band p { color: var(--violet); }
+.band p em { font-style: inherit; color: inherit; }
+.band > cite { margin-top: 1.25rem; }
+
+/* ── v2.5: logo in Nanda's card, evenly spaced between the text and the buttons ── */
+.about-logo { margin: 0.3rem 0 .15rem; }
+.about-logo img { display: block; height: 50px; width: auto; }
+
+/* ── v2.6: About split in two sections ── */
+.about.about-teacher { background: var(--bg); }

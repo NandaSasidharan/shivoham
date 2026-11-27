@@ -8,9 +8,9 @@
   var lang = de ? 'de' : 'en';
   var L = de
     ? { locale: 'de-CH', register: 'Anmelden', details: 'Details', online: 'Online', kind: 'Hatha-Yoga-Workshop',
-        empty: 'Zurzeit sind keine Termine geplant. Sagen Sie hallo, um über neue Termine informiert zu werden.',
-        emptyOnline: 'Zurzeit sind keine Online-Kurse geplant. Sagen Sie hallo, um über neue Termine informiert zu werden.',
-        fallback: 'Bitte kontaktieren Sie Nanda für die nächsten Termine.' }
+        empty: 'Zurzeit sind keine Termine geplant. Sag hallo, um über neue Termine informiert zu werden.',
+        emptyOnline: 'Zurzeit sind keine Online-Kurse geplant. Sag hallo, um über neue Termine informiert zu werden.',
+        fallback: 'Bitte kontaktiere Nanda für die nächsten Termine.' }
     : { locale: 'en-GB', register: 'Register', details: 'Details', online: 'Online', kind: 'Hatha Yoga Workshop',
         empty: 'No sessions are scheduled at the moment. Say hello to be informed about new dates.',
         emptyOnline: 'No online classes are scheduled at the moment. Say hello to be informed about new dates.',
